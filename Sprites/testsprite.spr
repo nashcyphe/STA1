@@ -1,0 +1,19 @@
+sprite_table
+
+# Blend mode - Defined in ST3D.h - Same values as D3DBLEND.
+# First hex digit - source blend mode
+# Second hex digit - dest blend mode
+
+# @reference=texture size in pixels from which the u,v,w, and h values
+# were measured.  This value will effect all subsequent textures until
+# a different value is specified.
+
+# Name		File			U	V	W	H
+
+
+@reference=128
+@tmaterial=additive
+
+testex	wcompovr		0	0	64	64	@anim=tex2x2
+@sprite_node testsprt testex const (10,10) (1,1,1) billboard
+

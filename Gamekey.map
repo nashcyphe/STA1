@@ -1,0 +1,20 @@
+###################################################
+#
+# Star Trek Key Map File
+#
+# Old I'76 style key mappings, it is probably best
+# not to add any more here.  Use the new input.map
+# instead.
+#
+###################################################
+
+# Edit Mode
+TOGGLE_EDIT_MODE				CTRL+A
+
+# Load and save bzn and sav game files.
+SAVE_GAME					CTRL+S
+LOAD_GAME					CTRL+O
+
+# Game options.
+MAIN_MENU					CTRL+X
+PAUSE_GAME					PAUSE

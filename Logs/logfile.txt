@@ -1,0 +1,51 @@
+[  LogClasses::            log::  574@      2] Logging the Following LogClasses:
+[  LogClasses::            log::  309@     21]   PHYSICS              [0001-0000000001]
+[  LogClasses::            log::  309@     23]   MemoryFail           [0012-0000001100]
+[  LogClasses::            log::  309@     25]   Fatal                [0039-0000100111]
+[  LogClasses::            log::  309@     27]   LogClasses           [0279-0100010111]
+[  LogClasses::            log::  309@     30]   Exception            [0441-0110111001]
+[  LogClasses::            log::  309@     32]   Warning              [0473-0111011001]
+[  LogClasses::            log::  309@     34]   Error                [0568-1000111000]
+[  LogClasses::            log::  309@     36]   Assertion            [0634-1001111010]
+[  LogClasses::            log::  309@     40]   MemoryLeak           [0914-1110010010]
+[  LogClasses::            log::  309@     42]   Diagnostic           [0920-1110011000]
+[       Error::        IParser::  245@     78] IParse ERROR: Config or AIP int parameter 'GIVE_ALL_MISSIONS' not found. 
+[     Warning::ST3D_GraphicsEngine::   82@    329] Storm3D Warning: CreateWindow: HWND 0x14039a
+[  Diagnostic::    UserProfile::  750@    592] DeviceUpdateCallback: HWND 0x14039a
+[     Warning::ST3D_GraphicsEngine::   82@    820] Storm3D Warning: Sprites\emitter.spr: Couldn't find particle sprite node definition 'wborgbpart'
+[  Diagnostic::   AudioManager::  667@   1757] DirectSound: Supports sample rates within 10 Hz of requested.
+[  Diagnostic::   AudioManager::  671@   1758] DirectSound: Supports 16-bit primary buffer.
+[  Diagnostic::   AudioManager::  673@   1760] DirectSound: Supports 8-bit primary buffer.
+[  Diagnostic::   AudioManager::  675@   1764] DirectSound: Supports monophonic primary buffer.
+[  Diagnostic::   AudioManager::  677@   1766] DirectSound: Supports stereo primary buffer.
+[  Diagnostic::   AudioManager::  679@   1767] DirectSound: Supports 16-bit secondary buffer.
+[  Diagnostic::   AudioManager::  681@   1769] DirectSound: Supports 8-bit secondary buffer.
+[  Diagnostic::   AudioManager::  683@   1771] DirectSound: Supports monophonic secondary buffer.
+[  Diagnostic::   AudioManager::  685@   1773] DirectSound: Supports stereo secondary buffer.
+[  Diagnostic::   AudioManager::  688@   1775] DirectSound: Minimum Secondary Sample Rate 100
+[  Diagnostic::   AudioManager::  689@   1778] DirectSound: Maximum Secondary Sample Rate 200000
+[  Diagnostic::   AudioManager::  690@   1780] DirectSound: Primary Buffers (should be 1) 1
+[  Diagnostic::   AudioManager::  691@   1782] DirectSound: Maximum Hardware Mixing - All 1
+[  Diagnostic::   AudioManager::  692@   1784] DirectSound: Maximum Hardware Mixing - Static 1
+[  Diagnostic::   AudioManager::  693@   1785] DirectSound: Maximum Hardware Mixing - Streaming 1
+[  Diagnostic::   AudioManager::  694@   1787] DirectSound: Free Hardware Mixing - All 0
+[  Diagnostic::   AudioManager::  695@   1790] DirectSound: Free Hardware Mixing - Static 0
+[  Diagnostic::   AudioManager::  696@   1793] DirectSound: Free Hardware Mixing - Streaming 0
+[  Diagnostic::   AudioManager::  697@   1794] DirectSound: Maximum Hardware 3D - All 0
+[  Diagnostic::   AudioManager::  698@   1796] DirectSound: Maximum Hardware 3D - Static 0
+[  Diagnostic::   AudioManager::  699@   1798] DirectSound: Maximum Hardware 3D - Streaming 0
+[  Diagnostic::   AudioManager::  700@   1799] DirectSound: Free Hardware 3D - All 0
+[  Diagnostic::   AudioManager::  701@   1803] DirectSound: Free Hardware 3D - Static 0
+[  Diagnostic::   AudioManager::  702@   1805] DirectSound: Free Hardware 3D - Streaming 0
+[  Diagnostic::   AudioManager::  703@   1807] DirectSound: Total Hardware Memory Bytes 0
+[  Diagnostic::   AudioManager::  704@   1808] DirectSound: Free Hardware Memory Bytes 0
+[  Diagnostic::   AudioManager::  705@   1811] DirectSound: Maximum Contiguous Free Hardware Memory Bytes 0
+[  Diagnostic::   AudioManager::  706@   1812] DirectSound: Unlock Transfer Rate Hardware (unreliable) 0
+[  Diagnostic::   AudioManager::  707@   1816] DirectSound: CPU Overhead Software Buffers (unreliable) 0
+[  Diagnostic::      GameEvent::  428@   6524] GameEvent ComputerAcknowledge sound gvobcv13.wav does not exist. 
+[  Diagnostic::        Program:: 1773@   6530] Program::GameSystemOpen() took 4 seconds. 
+[  Diagnostic::MultiplayerConnection::  723@  15618] Creating new Instant Action Session
+[  Diagnostic::   AudioSound2D::   31@  58701] AudioSound2D buffers stored: 0
+[  Diagnostic::   AudioSound3D::  163@  58703] AudioSound3D buffers stored: 0
+[  Diagnostic::  AudioStream2D::  136@  58705] AudioStream2D buffers stored: 0
+[       Error::         Entity::  333@  58862] Entities High Water Mark is 0

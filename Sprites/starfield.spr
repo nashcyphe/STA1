@@ -1,0 +1,28 @@
+sprite_table
+
+# -----------------
+# Starfield sprites
+# -----------------
+
+# All starfield sprites are additively blended
+@tmaterial=additive
+
+# set reference texture size
+@reference=128
+
+# Name      	File       	U 	V 	W 	H 		
+
+# Background star representations
+bstar.0	    	mstars		54	4	8	8	
+
+# Medium star representations
+mstar.0			mstars		0	0	16	16		
+mstar.1			mstars		16	0	16	16		
+mstar.2			mstars		32	0	16	16		
+mstar.3			mstars		0	80	32	48		
+mstar.4			mstars		32	48	32	32		
+mstar.5			mstars		32	80	32	48	
+mstar.6			mstars		64	64	64	64		
+
+# Close star representations
+cstar.0	mstars		64	0	64	64

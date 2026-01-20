@@ -1,0 +1,50 @@
+{
+    "clientId": "54530202993505986",
+    "gameId": "1582325353",
+    "language": "English",
+    "languages": [
+        "en-US"
+    ],
+    "name": "Star Trek\u2122: Armada",
+    "playTasks": [
+        {
+            "category": "game",
+            "isPrimary": true,
+            "languages": [
+                "*"
+            ],
+            "name": "Star Trek\u2122: Armada",
+            "path": "Armada.exe",
+            "type": "FileTask"
+        },
+        {
+            "category": "tool",
+            "languages": [
+                "*"
+            ],
+            "name": "DirectX Settings",
+            "path": "dxcfg.exe",
+            "type": "FileTask"
+        },
+        {
+            "category": "document",
+            "languages": [
+                "*"
+            ],
+            "name": "Manual",
+            "path": "manual.pdf",
+            "type": "FileTask"
+        },
+        {
+            "category": "document",
+            "languages": [
+                "*"
+            ],
+            "link": "http://www.gog.com/support/star_trek_armada",
+            "name": "Support",
+            "type": "URLTask"
+        }
+    ],
+    "rootGameId": "1582325353",
+    "version": 1
+}

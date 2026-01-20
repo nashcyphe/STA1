@@ -1,0 +1,1 @@
+netsh advfirewall firewall add rule name="Star Trek Armada" dir=in action=allow program="%~dp0Armada.exe" enable=yes

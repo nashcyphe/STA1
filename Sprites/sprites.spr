@@ -1,0 +1,18 @@
+sprite_table
+
+# Sprite tables to load :-
+
+@include tex_anim.spr
+@include cursor.spr
+@include animation.spr
+@include explosion.spr
+@include lights.spr
+@include nebula.spr
+@include planets.spr
+@include asteroid.spr
+@include damage.spr
+@include weapon.spr
+@include starfield.spr
+@include emitter.spr
+@include gui_map.spr
+@include testsprite.spr

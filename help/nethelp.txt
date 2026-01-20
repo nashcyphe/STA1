@@ -1,0 +1,60 @@
+CURRENT GAME WINDOW
+
+This lists all of the current games which are being created and are 
+underway.  The game name is followed by: the map name, the number 
+of players currently in the game over the total allowed in the game,
+the game latency, and the game icons.  Games can be sorted by using 
+the filter above the game window.
+
+Icons in the Current Game Window
+
+EXPLOSION: indicates that a game has launched and is currently in 
+progress.
+
+COLORED NETPLUG: indicates the latency to the game.
+Green is low latency and will generally provide games with less lag.
+
+LOCK: indicates that a game is passworded.
+
+CLOSED DOOR: indicates that a game is closed and no more players 
+may enter.
+
+TWO FACES: indicates a head to head game (2 player only).
+
+STOP LIGHTS: this indicates the ping filter setting.
+To enter the game your latency to the game must be at least the 
+cooresponding color. 
+
+
+PLAYERS WINDOW
+
+This shows a list of players in the current room.
+
+To chat privatly with a player, click on the player and then click 
+on the public/private button next to the text entry field.
+
+To Ignore/Unignor a player right click on the player's name.
+
+Players which appear in gold colored text are not in the game and are
+in the Won.net web chat.
+
+
+CHAT WINDOW
+
+This window displays all of the chat in the current room.
+
+
+CHANGE ROOM BUTTON
+
+This allows you to choose another room or create your own.
+
+
+WON.net
+
+This will launch your browser and take you to the won.net homepage.
+
+
+MESSAGE BOARDS
+
+This will take you to the Armada message boards.
+

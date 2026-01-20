@@ -1,0 +1,1154 @@
+sprite_table
+
+# Shared GUI sprites, a.k.a. non-race specific.
+
+## SPRITE DATA ##
+
+# @reference=texture size in pixels from which the u,v,w, and h values
+# were measured.  This value will effect all subsequent textures until
+# a different value is specified.
+
+# Must include this first to ensure texture animations are found
+@include tex_anim_gui.spr
+
+# Name      		File       		U 	V 	W 	H 	
+
+# Bridge Components
+# -----------------
+
+######## Default Bridge Scene
+
+@skip=off
+@reference=256
+@tmaterial=interface
+
+bridge_panel.0			dbg10		0	0	256	256
+bridge_panel.1			dbg20		0	0	256	256
+bridge_panel.2			dbg30		0	0	128	256
+bridge_panel.3			dbg40		0	0	256	224
+bridge_panel.4			dbg50		0	0	256	224
+bridge_panel.5			dbg60		0	0	128	224
+
+@tmaterial=interface
+bridge_layer_0		dlightsA	0	0	128	128	@anim=tex2x2slow_gui
+bridge_layer_1		dlightsB	0	0	128	80	@anim=tex2x2slow_gui
+bridge_layer_2		dlightsC	0	0	256	64	@anim=tex1x4slow_gui
+bridge_layer_3		dhelmlt		0	0	64	64	@anim=tex4x4slow_gui
+bridge_layer_4		dhelmhd		0	0	64	64	@anim=tex4x4slow_gui
+bridge_layer_5		dhelmrt		0	0	64	64	@anim=tex4x4slow_gui
+bridge_layer_6		temppink	0	0	64	64	
+
+########  Federation Bridge Scene
+@reference=256
+@tmaterial=interface
+
+f_bridge_panel.0		fbg10		0	0	256	256
+f_bridge_panel.1		fbg20		0	0	256	256
+f_bridge_panel.2		fbg30		0	0	128	256
+f_bridge_panel.3		fbg40		0	0	256	224
+f_bridge_panel.4		fbg50		0	0	256	224
+f_bridge_panel.5		fbg30		128	0	128	224
+
+@tmaterial=interface
+@reference=64
+f_bridge_layer_0		fpanel4		0	0	32	32	@anim=tex2x2slow_gui
+f_bridge_layer_1		fpanel1		0	0	32	32	@anim=tex2x2slow_gui
+@reference=128
+f_bridge_layer_2		fpanel2		0	0	112	64	@anim=tex1x2_gui
+f_bridge_layer_3		fpanel3		0	0	116	32	@anim=tex1x4slow_gui
+@reference=256
+f_bridge_layer_4		temppink	0	0	64	64
+f_bridge_layer_5		temppink	0	0	64	64
+f_bridge_layer_6		temppink	0	0	64	64
+
+########  Klingon Bridge Scene
+@reference=256
+@tmaterial=interface
+
+k_bridge_panel.0		kbg10		0	0	256	256
+k_bridge_panel.1		kbg20		0	0	256	256
+k_bridge_panel.2		kbg30		0	0	128	256
+k_bridge_panel.3		kbg40		0	0	256	224
+k_bridge_panel.4		kbg50		0	0	256	224
+k_bridge_panel.5		kbg30		128	0	128	224
+
+@tmaterial=interface
+k_bridge_layer_4		temppink	0	0	64	64
+k_bridge_layer_5		temppink	0	0	64	64
+k_bridge_layer_6		temppink	0	0	64	64
+@reference=64
+k_bridge_layer_0		kpanel1		0	0	32	32	@anim=tex2x2slow2_gui
+k_bridge_layer_1		kpanel2		0	0	64	16	@anim=tex1x4med_gui
+k_bridge_layer_2		kpanel3		0	0	64	16	@anim=tex1x4slow_gui
+@reference=32
+k_bridge_layer_3		kpanel4		0	0	32	8	@anim=tex1x4_gui
+
+########  Romulan Bridge Scene
+@reference=256
+@tmaterial=interface
+
+r_bridge_panel.0		rbg10		0	0	256	256
+r_bridge_panel.1		rbg20		0	0	256	256
+r_bridge_panel.2		rbg30		0	0	128	256
+r_bridge_panel.3		rbg40		0	0	256	224
+r_bridge_panel.4		rbg50		0	0	256	224
+r_bridge_panel.5		rbg60		0	0	128	224
+r_bridge_layer_4		rbgsela	0	0	256	256		#sela's head
+
+@reference=128
+r_bridge_layer_5		temppink	0	0	64	64
+r_bridge_layer_6		temppink	0	0	64	64
+r_bridge_layer_0		rbglites1	0	0	128	32	@anim=tex1x4med_gui #lights
+r_bridge_layer_1		rbglites2	0	0	128	64	@anim=tex1x2med_gui
+r_bridge_layer_2		rbglites3	0	0	128	64	@anim=tex1x2med_gui
+r_bridge_layer_3		rbglites4	0	0	128	64	@anim=tex1x2med_gui
+
+########  Borg Bridge Scene
+@reference=256
+@tmaterial=interface
+b_bridge_panel.0		bbg10		0	0	256	256
+b_bridge_panel.1		bbg20		0	0	256	256
+b_bridge_panel.2		bbg30		0	0	128	256
+b_bridge_panel.3		bbg40		0	0	256	224
+b_bridge_panel.4		bbg50		0	0	256	224
+b_bridge_panel.5		bbg60		0	0	128	224
+b_bridge_layer_4		temppink	0	0	64	64
+
+
+@reference=64
+blite1			blite1		0	0	32	32	@anim=tex2x2slow_gui
+blite2			blite2		0	0	32	32	@anim=tex2x2slow_gui
+@reference=128
+blite3			blite3		0	0	64	64	@anim=tex2x2slow2_gui
+@reference=64
+blite4			blite4		0	0	32	32	@anim=tex2x2slow_gui
+@tmaterial=additive
+@reference=256
+bbgrswp			bbgrswp		0	0	64	64	@anim=tex4x4slow_gui
+bbglswp			bbglswp		0	0	64	64	@anim=tex4x4slow_gui
+
+# Drop Player Pop-up Components
+# -----------------------------
+
+# Drop Player Screen
+@reference=128
+@tmaterial=interface
+#top
+drop_player_panel.0		objectives	0	0	64	64	#upper left	
+drop_player_panel.1		objectives	32	0	64	64	#upper center	
+drop_player_panel.2		objectives	32	0	64	64	#upper center
+drop_player_panel.3		objectives	64	0	64	64	#upper right		
+#bot	
+drop_player_panel.4		objectives	0	64	64	64	#bot left
+drop_player_panel.5		objectives	32	64	32	64	#bot center plain	
+drop_player_panel.6		objectives	32	64	32	64	#bot center plain	
+drop_player_panel.7		objectives	32	64	32	64	#bot center plain	
+drop_player_panel.8		objectives	32	64	32	64	#bot center plain	
+drop_player_panel.9		objectives	32	64	32	64	#bot center plain
+drop_player_panel.10		objectives	96	64	32	64	#bot right	
+#left side
+drop_player_panel.11		objectives	0	32	16	32	#left side
+drop_player_panel.12		objectives	0	32	16	32	#left side
+drop_player_panel.13		objectives	0	32	16	32	#left side
+drop_player_panel.14		objectives	0	32	16	32	#left side
+#right side
+drop_player_panel.15		objectives	112	32	16	32	#right side	
+drop_player_panel.16		objectives	112	32	16	32	#right side	
+drop_player_panel.17		objectives	112	32	16	32	#right side	
+drop_player_panel.18		objectives	112	32	16	32	#right side	
+@reference=256			
+drop_drop_button			CommMenu	32	165	126	23
+
+# Pause Pop-up Components
+# -----------------------------
+
+# Pause Screen
+@reference=128
+@tmaterial=interface
+#top
+pause_game_panel.0		objectives	0	0	64	64	#upper left	
+pause_game_panel.1		objectives	32	0	64	64	#upper center	
+pause_game_panel.2		objectives	32	0	64	64	#upper center
+pause_game_panel.3		objectives	64	0	64	64	#upper right		
+#bot	
+pause_game_panel.4		objectives	0	64	64	64	#bot left
+pause_game_panel.5		objectives	32	64	32	64	#bot center plain	
+pause_game_panel.6		objectives	32	64	32	64	#bot center plain	
+pause_game_panel.7		objectives	32	64	32	64	#bot center plain	
+pause_game_panel.8		objectives	32	64	32	64	#bot center plain	
+pause_game_panel.9		objectives	32	64	32	64	#bot center plain
+pause_game_panel.10		objectives	96	64	32	64	#bot right	
+#left side
+pause_game_panel.11		objectives	0	32	16	32	#left side
+#right side
+pause_game_panel.12		objectives	112	32	16	32	#right side	
+@reference=256			
+pause_unpause_button		CommMenu	32	165	126	23
+
+# Objective Pop-up Components
+# ---------------------------
+
+# Objectives Screen
+@reference=128
+@tmaterial=interface
+#top
+objectives_panel.0		objectives	0	0	64	64	#upper left	
+objectives_panel.1		objectives	32	0	64	64	#upper center	
+objectives_panel.2		objectives	32	0	64	64	#upper center	
+objectives_panel.3		objectives	32	0	64	64	#upper center	
+objectives_panel.4		objectives	32	0	64	64	#upper center	
+objectives_panel.5		objectives	64	0	64	64	#upper right
+#bot	
+objectives_panel.6		objectives	0	64	64	64	#bot left
+objectives_panel.7		objectives	32	64	32	64	#bot center plain	
+objectives_panel.8		objectives	32	64	32	64	#bot center plain	
+objectives_panel.9		objectives	32	64	32	64	#bot center plain	
+objectives_panel.10		objectives	32	64	32	64	#bot center plain	
+objectives_panel.11		objectives	32	64	32	64	#bot center plain	
+objectives_panel.12		objectives	32	64	32	64	#bot center plain	
+objectives_panel.13		objectives	32	64	32	64	#bot center plain	
+objectives_panel.14		objectives	32	64	32	64	#bot center plain	
+objectives_panel.15		objectives	32	64	32	64	#bot center plain	
+objectives_panel.16		objectives	96	64	32	64	#bot right	
+#left side
+objectives_panel.17		objectives	0	32	16	32	#left side
+objectives_panel.18		objectives	0	32	16	32	#left side
+objectives_panel.19		objectives	0	32	16	32	#left side
+objectives_panel.20		objectives	0	32	16	32	#left side
+objectives_panel.21		objectives	0	32	16	32	#left side
+#right side
+objectives_panel.22		objectives	112	32	16	32	#right side	
+objectives_panel.23		objectives	112	32	16	32	#right side	
+objectives_panel.24		objectives	112	32	16	32	#right side	
+objectives_panel.25		objectives	112	32	16	32	#right side	
+objectives_panel.26		objectives	112	32	16	32	#right side	
+
+
+# Comm Pop-up Components
+# ----------------------
+
+# Comm Screen
+@reference=256
+@tmaterial=interface
+comm_panel.0			CommMenu	32	64	192	82	#giving area
+comm_panel.1			CommMenu	0	0	32	256	#left side
+comm_panel.2			CommMenu	224	0	32	256	#right side
+comm_panel.3			CommMenu	32	0	192	50	#top 
+comm_panel.4			CommMenu	32	0	64	50		
+comm_panel.5			CommMenu	32	0	192	50	
+comm_panel.6			CommMenu	32	192	192	64	#bottom
+comm_panel.7			CommMenu	32	192	64	64
+comm_panel.8			CommMenu	96	192	96	64
+comm_panel.9			CommMenu	32	192	96	64
+
+
+comm_generic_button		CommMenu	52	95	98	20
+comm_up_button			CommMenu	110	71	19	9
+comm_down_button		CommMenu	110	81	19	9
+comm_toggle_button		CommMenu	205	165	19	19
+comm_toggle_check		CommMenu	110	120	19	19
+comm_okay_button		CommMenu	32	165	126	23
+comm_bar_player			CommMenu	32	146	173	19
+comm_bar_team			CommMenu	53	120	57	19
+comm_alliance_red		CommMenu	53	71	19	19
+comm_alliance_yellow		CommMenu	72	71	19	19
+comm_alliance_green		CommMenu	91	71	19	19
+comm_alliance_red_him		CommMenu	179	165	19	19
+comm_alliance_yellow_him	CommMenu	205	146	19	19
+comm_alliance_green_him		CommMenu	160	165	19	19
+comm_select_button		CommMenu	129	71	19	19
+comm_select_check		CommMenu	129	120	19	19
+comm_indicator			CommMenu	34	106	2	2
+
+# Minimap Components
+# ------------------
+
+# Minimap Layers
+@reference=128
+@tmaterial=default
+map_background			gminimap	0	0	128	128
+map_fog				gfog		0	0	128	128
+map_shroud			gshroud		0	0	128	128
+
+# Selection Components
+# --------------------
+
+# Selection Reticle
+@reference=64
+@tmaterial=additive
+selection.00			GCselect	0	0	22	22			#upper left
+selection.10			GCselect	21	0	22	22			#upper mid
+selection.20			GCselect	43	0	21	22			#upper right
+selection.01			GCselect	0	21	22	22			#center left
+selection.11			GCselect	21	21	22	22			#center mid
+selection.21			GCselect	43	21	21	22			#center right
+selection.02			GCselect	0	43	22	21			#bottom left
+selection.12			GCselect	21	43	22	21			#bottom mid
+selection.22			GCselect	43	43	21	21			#bottom right
+
+# Drop down selection circle.
+@reference=64
+@tmaterial=add_nomipf
+selectionCircle			Gshadow		0	0	64	64
+selectionBillboard		Gshadow		0	0	64	64
+gridFXSprite			GgridFX		0	0	64	64
+
+# Selection Bars
+@reference=256
+select_shield_bar		fguib04		126	184	96	10		
+select_energy_bar		fguib04		126	172	96	10		
+select_crew_dot		fguib04		214	74	14	14
+
+# Selection Systems
+@reference=32
+@tmaterial=additive
+select_system.0			gminisys	21	1	9	9		
+select_system.1			gminisys	11	11	9	9		
+select_system.2			gminisys	11	1	9	9		
+select_system.3			gminisys	1	11	9	9		
+select_system.4			gminisys	1	1	9	9		
+
+# Backing for the groups...
+@reference=8
+@tmaterial=additive
+group_background		colors		5	5	2	2
+
+# Buttons
+# -------
+
+# Button borders
+@reference=64
+bb_build			gbbuildol00	0	0	64	64		
+bb_research			gbrsrchol00	0	0	64	64		
+bb_weapon			gboffwepol00	0	0	64	64		
+bb_dweapon			gbdefwpol00	0	0	64	64		
+bb_standard			gbordersol00	0	0	64	64		
+
+# General Buttons
+
+@reference=128
+@tmaterial=default
+b_move				gbgenorders1	64	0	64	64	
+b_attack			gbgenorders1	0	0	64	64	
+b_stop				gbgenorders1	0	64	64	64	
+b_transport			gbgenorders1	64	64	64	64	
+b_guard				gbgenorders2	64	64	64	64	
+b_patrol			gbgenorders2	0	0	64	64	
+b_scout				gbgenorders2	64	0	64	64	
+b_sandd				gbgenorders2	0	64	64	64	
+b_decom				gbgenorders3	64	64	64	64	
+b_galert			gbgenorders3	0	0	64	64	
+b_yalert			gbgenorders3	64	0	64	64	
+b_ralert			gbgenorders3	0	64	64	64	
+b_cancel			gbcancel00	0	0	64	64		
+@reference=64
+@tmaterial=default
+b_flag				gbflag00	0	0	64	64		
+b_recrew			gbrecrew00	0	0	64	64		
+b_order				gbforder00	0	0	64	64		
+b_standdown			gbstnddn00	0	0	64	64		
+b_repair			gbrepair00	0	0	64	64		
+b_build	   			gbbuild00	0	0	64	64		
+b_harvest			gbharve00	0	0	64	64		
+b_rally				gbrally00	0	0	64	64		
+b_frupgrade			gbfrupgrd00	0	0	64	64		
+b_brupgrade			gbbrupgrd00	0	0	64	64		
+b_krupgrade			gbkrupgrd00	0	0	64	64		
+b_rrupgrade			gbrrupgrd00	0	0	64	64		
+b_research			gbresrch00	0	0	64	64		
+b_back				gbback00	0	0	64	64		
+b_cancel			gbcancel00	0	0	64	64		
+
+# Federation build buttons
+@reference=128
+@tmaterial=default
+b_fbase				gbfbld300	0	0	64	64		
+b_fbattle			gbfbld100	0	0	64	64		
+b_fconst			gbfbld100	64	0	64	64		
+b_fcruise1			gbfbld200	64	0	64	64		
+b_fcruise2			gbfbld100	0	64	64	64		
+b_fdestroy			gbfbld100	64	64	64	64		
+b_ffreight			gbfbld200	0	0	64	64		
+b_fmining			gbfbld300	64	0	64	64		
+b_fscout			gbfbld200	0	64	64	64		
+b_fsensor			gbfbld300	0	64	64	64		
+b_fspecial			gbfbld200	64	64	64	64		
+b_fyard				gbfbld300	64	64	64	64		
+b_fedpod1			gbfpod100	0	0	64	64		
+b_fedpod2			gbfpod100	64	0	64	64	
+b_fedpod3			gbfpod100	0	64	64	64	
+b_fedpod4	    		gbfpod100	64	64	64	64	
+b_fedpod5			gbfpod200	0	0	64	64		
+b_fedpod6			gbfpod200	64	0	64	64		
+b_fedpod7			gbfpod200	0	64	64	64		
+b_fedpod8			gbfpod200	64	64	64	64		
+		
+@reference=64
+b_fedpod9			gbfpod900	0	0	64	64
+b_fedoff			gbfoffq		0	0	64	64
+b_fresear			gbfrsrch00	0	0	64	64		
+b_fsuperbl			gbfsuper00	0	0	64	64			
+b_fresear2			gbfrsrch200	0	0	64	64		
+b_fturret			gbfturret00	0	0	64	64		
+b_fturret2			gbfturret200	0	0	64	64
+b_fyard2			gbfyard200	0	0	64	64	
+
+
+# Klingon build buttons
+@reference=128
+@tmaterial=default
+b_kbase				gbkbld300	0	0	64	64		
+b_kbattle			gbkbld100	0	0	64	64		
+b_kconst			gbkbld100	64	0	64	64		
+b_kcruise1			gbkbld100	0	64	64	64		
+b_kcruise2			gbkbld100	64	64	64	64		
+b_kdestroy			gbkbld200	0	0	64	64		
+b_kfreight			gbkbld200	64	0	64	64		
+b_kmining			gbkbld300	64	0	64	64		
+b_kscout			gbkbld200	0	64	64	64		
+b_kspecial			gbkbld200	64	64	64	64		
+b_ksuperbl			gbkbld300	0	64	64	64		
+b_kyard				gbkbld300	64	64	64	64
+b_klipod1			gbkpod100	0	0	64	64		
+b_klipod2			gbkpod100	64	0	64	64		
+b_klipod3			gbkpod100	0	64	64	64		
+b_klipod4			gbkpod100	64	64	64	64		
+b_klipod5			gbkpod200	0	0	64	64		
+b_klipod6			gbkpod200	64	0	64	64		
+b_klipod7			gbkpod200	0	64	64	64
+b_klipod8			gbkpod200	64	64	64	64			
+@reference=64
+b_klingoff			gbkoffq		0	0	64	64
+b_kresear			gbkrsrch00	0	0	64	64		
+b_ksensor			gbksensor00	0	0	64	64		
+b_klipod9			gbkpod900	0	0	64	64			
+b_kresear2			gbkrsrch200	0	0	64	64		
+b_kturret			gbkturret00	0	0	64	64
+b_kturret2			gbkturret200	0	0	64	64		
+b_kyard2			gbkyard200	0	0	64	64
+b_ksuper			gbksuper	0	0	64	64
+
+# Romulan build buttons
+@reference=128
+b_rbase				gbrbld300	0	0	64	64		
+b_rbattle			gbrbld100	0	0	64	64		
+b_rconst			gbrbld100	64	0	64	64		
+b_rcruise1			gbrbld200	0	0	64	64		
+b_rcruise2			gbrbld200	64	0	64	64		
+b_rdestroy			gbrbld100	0	64	64	64		
+b_rfreight			gbrbld100	64	64	64	64		
+b_rmining			gbrbld300	64	0	64	64		
+b_rscout			gbrbld200	0	64	64	64		
+b_rspecial			gbrbld200	64	64	64	64		
+b_rsuperbl			gbrbld300	0	64	64	64		
+b_ryard				gbrbld300	64	64	64	64
+b_rompod1			gbrpod100	0	0	64	64		
+b_rompod2        		gbrpod100	64	0	64	64		
+b_rompod3			gbrpod100	0	64	64	64		
+b_rompod4			gbrpod100	64	64	64	64		
+b_rompod5			gbrpod200	0	0	64	64		
+b_rompod6			gbrpod200	64	0	64	64		
+b_rompod7			gbrpod200	0	64	64	64		
+b_rompod8			gbrpod200	64	64	64	64		
+@reference=64
+b_romoff			gbroffq		0	0	64	64
+b_rsensor			gbrsensor00	0	0	64	64		
+b_rresear			gbrrsrch00	0	0	64	64			
+b_rompod9			gbrpod900	0	0	64	64		
+b_rresear2			gbrrsrch200	0	0	64	64		
+b_rturret			gbrturret00	0	0	64	64
+b_rturret2			gbrturret200	0	0	64	64		
+b_ryard2			gbryard200	0	0	64	64	
+b_rsuper			gbrsuper	0	0	64	64
+
+# Borg build buttons
+@reference=128
+b_bbase				gbbbld200	0	0	64	64		
+b_bbattle			gbbbld100	0	0	64	64		
+b_bdestroy			gbbbld100	0	64	64	64		
+b_bfreight			gbbbld100	64	0	64	64	
+b_bmining			gbbbld200	64	0	64	64		
+b_bscout			gbbbld100	64	64	64	64		
+b_bsuperbl			gbbbld200	0	64	64	64		
+b_byard				gbbbld200	64	64	64	64	
+b_borpod1			gbbpod100	0	0	64	64
+b_borpod2			gbbpod100	64	0	64	64		
+b_borpod3			gbbpod100	0	64	64	64		
+b_borpod4			gbbpod100	64	64	64	64	
+b_borpod5			gbbpod200	0	0	64	64		
+b_borpod6			gbbpod200	64	0	64	64		
+b_borpod7			gbbpod200	64	64	64	64		
+b_borpod8			gbbpod200	0	64	64	64		
+		
+@reference=64
+b_borgoff			gbboffq		0	0	64	64
+b_bconst			gbbconst00	0	0	64	64	
+b_bcruise1			gbbcruise100	0	0	64	64		
+b_bcruise2			gbbcruise200	0	0	64	64		
+b_bresear			gbbrsrch00	0	0	64	64		
+b_borpod9			gbbpod900	0	0	64	64	
+b_bsensor			gbbsensor00	0	0	64	64		
+b_bspecial			gbbspec00	0	0	64	64		
+b_bresear2			gbbrsrch200	0	0	64	64		
+b_bturret			gbbturret200	0	0	64	64
+b_bturret2			gbbturret00	0	0	64	64		
+b_byard2			gbbyard200	0	0	64	64
+
+# Dominion build buttons
+@reference=128
+b_zjemdest			gbzships	0	0	64	64
+b_zjembat			gbzships	64	0	64	64
+b_zcarddes			gbzships	0	64	64	64
+b_zcardbat			gbzships	64	64	64	64
+
+# Alien build buttons.
+b_zentity			gbzships		0	0	64	64
+
+# Special weapon buttons
+@reference=64
+b_gtempor			gbtmpdis00		0	0	64	64		
+b_gbholeg			gbbhole00		0	0	64	64		
+b_grwave			gbripple00		0	0	64	64		
+b_grfield			gbrwave00		0	0	64	64		
+b_gposijam			gbsensjam00		0	0	64	64		
+b_gplasmac			gbplasmac00		0	0	64	64			
+b_gshieldh			gbshieldd00		0	0	64	64		
+b_ggrvmine			gbgrvmine00		0	0	64	64		
+b_gionstm			gbionstm00		0	0	64	64		
+b_gdchant			gbdchant00		0	0	64	64		
+b_gshieldi			gbshieldi00		0	0	64	64		
+b_gesconv			gbenrcvr00		0	0	64	64			
+b_gkcteam			gbkcteam00		0	0	64	64		
+b_gmicro			gbmicro00		0	0	64	64		
+b_goverrid			gbcompovr00		0	0	64	64		
+b_gpdlaser			gbpdl00			0	0	64	64		
+b_gromspy			gbromspy00		0	0	64	64		
+b_gborgbor			gbbaabore00		0	0	64	64			
+b_gwcover			gbengovr00		0	0	64	64		
+b_gmyotron			gbmyotron00		0	0	64	64		
+b_gripple			gbripple00		0	0	64	64			
+b_gselfdes			gbselfdes00		0	0	64	64		
+b_gcloak			gbcloak00		0	0	64	64		
+b_grcloak			gbcloak00		0	0	64	64		
+b_gkcloak			gbcloak00		0	0	64	64		
+b_gmastran			gbmastran00		0	0	64	64		
+b_gtracbm			gbtrcbm00		0	0	64	64		
+b_gtracbmo			gbtrcbm00		0	0	64	64
+b_gholdbm			gbholdbm00		0	0	64	64		
+b_gchainp			gbchnrxn00		0	0	64	64		
+b_gamine			gbamine00		0	0	64	64		
+b_gremod			gbremod00		0	0	64	64		
+b_gfeedbk			gbfdbk00		0	0	64	64		
+b_gcorbom			gbcorbom00		0	0	64	64		
+b_gmanheim			gbmanheim00		0	0	64	64
+b_hamine			gbamine00		0	0	64	64
+b_hcorbom			gbcorbom00		0	0	64	64
+b_hcloak			gbcloak00		0	0	64	64
+b_hmanheim			gbmanheim00		0	0	64	64
+b_hplasmac			gbplasmac00		0	0	64	64
+b_hshieldi			gbshieldi00		0	0	64	64
+b_hholdbm			gbholdbm00		0	0	64	64
+b_hwcover			gbengovr00		0	0	64	64
+b_hplasma2			gbplasmac00		0	0	64	64
+b_gomegbm			gbotrcbm00		0	0	64	64		
+b_hmicro			gbmicro00		0	0	64	64		
+b_hpoleron  			gbpolrntrp00		0	0	64	64
+b_hshieldh			gbshieldd00		0	0	64	64			
+b_gdetect2			gbtachyon00		0	0	64	64		
+b_gdetect3			gbbsensary00		0	0	64	64			
+b_gpcloak			gbpcloak00		0	0	64	64		
+b_gnanites			gbnanite00		0	0	64	64		
+b_gtwarpd			gbtwarpd00		0	0	64	64		
+b_gregen			gbregen00		0  	0	64	64			
+b_gpsyblst			gbpblast00		0	0	64	64		
+b_gholoemt			gbholoem00		0	0	64	64			
+b_gutribm			gbutritium00		0	0	64	64			
+b_gpoleron  			gbpolrntrp00		0	0	64	64
+b_gfedrep  			gbfrepair00		0	0	64	64
+b_gnttblst			gbpblast00		0	0	64	64		
+
+
+# Wireframes
+# ----------
+
+## SPRITE DATA  ##
+
+
+# Ship Wireframes
+@reference=128
+@tmaterial=interface
+bbattlew1			bwbattle	40	0	40	40		
+bbattlew2			bwbattle	0	40	40	40		
+bbattlew3			bwbattle	40	40	40	40		
+bbattlew4			bwbattle	80	0	40	40		
+bbattlew5			bwbattle	0	0	40	40		
+bconstw1			bwconst		40	0	40	40		
+bconstw2			bwconst		0	40	40	40		
+bconstw3			bwconst		40	40	40	40		
+bconstw4			bwconst		80	0	40	40		
+bconstw5			bwconst		0	0	40	40		
+bcruise1w1			bwcruise1	40	0	40	40		
+bcruise1w2			bwcruise1	0	40	40	40		
+bcruise1w3			bwcruise1	40	40	40	40		
+bcruise1w4			bwcruise1	80	0	40	40		
+bcruise1w5			bwcruise1	0	0	40	40		
+bcruise2w1			bwcruise2	40	0	40	40		
+bcruise2w2			bwcruise2	0	40	40	40		
+bcruise2w3			bwcruise2	40	40	40	40		
+bcruise2w4			bwcruise2	80	0	40	40		
+bcruise2w5			bwcruise2	0	0	40	40		
+bdestroyw1			bwdestroy	40	0	40	40		
+bdestroyw2			bwdestroy	0	40	40	40		
+bdestroyw3			bwdestroy	40	40	40	40		
+bdestroyw4			bwdestroy	80	0	40	40		
+bdestroyw5			bwdestroy	0	0	40	40		
+bfreightw1			bwfreight	40	0	40	40		
+bfreightw2			bwfreight	0	40	40	40		
+bfreightw3			bwfreight	40	40	40	40		
+bfreightw4			bwfreight	80	0	40	40		
+bfreightw5			bwfreight	0	0	40	40	
+blocutusw1			bwbattle	40	0	40	40		
+blocutusw2			bwbattle	0	40	40	40		
+blocutusw3			bwbattle	40	40	40	40		
+blocutusw4			bwbattle	80	0	40	40		
+blocutusw5			bwbattle	0	0	40	40		
+bscoutw1			bwscout		40	0	40	40		
+bscoutw2			bwscout		0	40	40	40		
+bscoutw3			bwscout		40	40	40	40		
+bscoutw4			bwscout		80	0	40	40		
+bscoutw5			bwscout		0	0	40	40		
+bspecialw1			bwspecial	40	0	40	40		
+bspecialw2			bwspecial	0	40	40	40		
+bspecialw3			bwspecial	40	40	40	40		
+bspecialw4			bwspecial	80	0	40	40		
+bspecialw5			bwspecial	0	0	40	40		
+
+fbattlew1			fwbattle	40	0	40	40		
+fbattlew2			fwbattle	0	40	40	40		
+fbattlew3			fwbattle	40	40	40	40		
+fbattlew4			fwbattle	80	0	40	40		
+fbattlew5			fwbattle	0	0	40	40		
+favengerw1			fwdestroy	40	0	40	40		
+favengerw2			fwdestroy	0	40	40	40		
+favengerw3			fwdestroy	40	40	40	40		
+favengerw4			fwdestroy	80	0	40	40		
+favengerw5			fwdestroy	0	0	40	40		
+fconstw1			fwconst		40	0	40	40		
+fconstw2			fwconst		0	40	40	40		
+fconstw3			fwconst		40	40	40	40		
+fconstw4			fwconst		80	0	40	40		
+fconstw5			fwconst		0	0	40	40		
+fcruise1w1			fwcruise1	40	0	40	40		
+fcruise1w2			fwcruise1	0	40	40	40		
+fcruise1w3			fwcruise1	40	40	40	40		
+fcruise1w4			fwcruise1	80	0	40	40		
+fcruise1w5			fwcruise1	0	0	40	40		
+fcruise2w1			fwcruise2	40	0	40	40		
+fcruise2w2			fwcruise2	0	40	40	40		
+fcruise2w3			fwcruise2	40	40	40	40		
+fcruise2w4			fwcruise2	80	0	40	40		
+fcruise2w5			fwcruise2	0	0	40	40		
+fdestroyw1			fwdestroy	40	0	40	40		
+fdestroyw2			fwdestroy	0	40	40	40		
+fdestroyw3			fwdestroy	40	40	40	40		
+fdestroyw4			fwdestroy	80	0	40	40		
+fdestroyw5			fwdestroy	0	0	40	40		
+fentdw1				fwentd		40	0	40	40		
+fentdw2				fwentd		0	40	40	40		
+fentdw3				fwentd		40	40	40	40		
+fentdw4				fwentd		80	0	40	40		
+fentdw5				fwentd		0	0	40	40		
+fentew1				fwbattle	40	0	40	40		
+fentew2				fwbattle	0	40	40	40		
+fentew3				fwbattle	40	40	40	40		
+fentew4				fwbattle	80	0	40	40		
+fentew5				fwbattle	0	0	40	40		
+ffreightw1			fwfreight	40	0	40	40		
+ffreightw2			fwfreight	0	40	40	40		
+ffreightw3			fwfreight	40	40	40	40		
+ffreightw4			fwfreight	80	0	40	40		
+ffreightw5			fwfreight	0	0	40	40		
+fgalaxyw1			fwentd		40	0	40	40		
+fgalaxyw2			fwentd		0	40	40	40		
+fgalaxyw3			fwentd		40	40	40	40		
+fgalaxyw4			fwentd		80	0	40	40		
+fgalaxyw5			fwentd		0	0	40	40	
+fpremw1				fwprem		40	0	40	40		
+fpremw2				fwprem		0	40	40	40		
+fpremw3				fwprem		40	40	40	40		
+fpremw4				fwprem		80	0	40	40		
+fpremw5				fwprem		0	0	40	40		
+fpremneww1			fwprem		40	0	40	40		
+fpremneww2			fwprem		0	40	40	40		
+fpremneww3			fwprem		40	40	40	40		
+fpremneww4			fwprem		80	0	40	40		
+fpremneww5			fwprem		0	0	40	40	
+fscoutw1			fwscout		40	0	40	40		
+fscoutw2			fwscout		0	40	40	40		
+fscoutw3			fwscout		40	40	40	40		
+fscoutw4			fwscout		80	0	40	40		
+fscoutw5			fwscout		0	0	40	40		
+fspecialw1			fwspec		40	0	40	40		
+fspecialw2			fwspec		0	40	40	40		
+fspecialw3			fwspec		40	40	40	40		
+fspecialw4			fwspec		80	0	40	40		
+fspecialw5			fwspec		0	0	40	40		
+
+kbattlew1			kwbattle	40	0	40	40		
+kbattlew2			kwbattle	0	40	40	40		
+kbattlew3			kwbattle	40	40	40	40		
+kbattlew4			kwbattle	80	0	40	40		
+kbattlew5			kwbattle	0	0	40	40		
+kconstw1			kwconst		40	0	40	40		
+kconstw2			kwconst		0	40	40	40		
+kconstw3			kwconst		40	40	40	40		
+kconstw4			kwconst		80	0	40	40		
+kconstw5			kwconst		0	0	40	40		
+kcruise1w1			kwcruise1	40	0	40	40		
+kcruise1w2			kwcruise1	0	40	40	40		
+kcruise1w3			kwcruise1	40	40	40	40		
+kcruise1w4			kwcruise1	80	0	40	40		
+kcruise1w5			kwcruise1	0	0	40	40		
+kcruise2w1			kwcruise2	40	0	40	40		
+kcruise2w2			kwcruise2	0	40	40	40		
+kcruise2w3			kwcruise2	40	40	40	40		
+kcruise2w4			kwcruise2	80	0	40	40		
+kcruise2w5			kwcruise2	0	0	40	40		
+kdestroyw1			kwdestroy	40	0	40	40		
+kdestroyw2			kwdestroy	0	40	40	40		
+kdestroyw3			kwdestroy	40	40	40	40		
+kdestroyw4			kwdestroy	80	0	40	40		
+kdestroyw5			kwdestroy	0	0	40	40	
+kfreightw1			kwfreight	40	0	40	40		
+kfreightw2			kwfreight	0	40	40	40		
+kfreightw3			kwfreight	40	40	40	40		
+kfreightw4			kwfreight	80	0	40	40		
+kfreightw5			kwfreight	0	0	40	40		
+kscoutw1			kwscout		40	0	40	40		
+kscoutw2			kwscout		0	40	40	40		
+kscoutw3			kwscout		40	40	40	40		
+kscoutw4			kwscout		80	0	40	40		
+kscoutw5			kwscout		0	0	40	40		
+kspecialw1			kwspec		40	0	40	40		
+kspecialw2			kwspec		0	40	40	40		
+kspecialw3			kwspec		40	40	40	40		
+kspecialw4			kwspec		80	0	40	40		
+kspecialw5			kwspec		0	0	40	40		
+ksuperw1			kwsuper		40	0	40	40		
+ksuperw2			kwsuper		0	40	40	40		
+ksuperw3			kwsuper		40	40	40	40		
+ksuperw4			kwsuper		80	0	40	40		
+ksuperw5			kwsuper		0	0	40	40	
+ktoralw1			kwbattle	40	0	40	40		
+ktoralw2			kwbattle	0	40	40	40		
+ktoralw3			kwbattle	40	40	40	40		
+ktoralw4			kwbattle	80	0	40	40		
+ktoralw5			kwbattle	0	0	40	40		
+kmartokw1			kwbattle	40	0	40	40		
+kmartokw2			kwbattle	0	40	40	40		
+kmartokw3			kwbattle	40	40	40	40		
+kmartokw4			kwbattle	80	0	40	40		
+kmartokw5			kwbattle	0	0	40	40		
+
+rbattlew1			rwbattle	40	0	40	40		
+rbattlew2			rwbattle	0	40	40	40		
+rbattlew3			rwbattle	40	40	40	40		
+rbattlew4			rwbattle	80	0	40	40		
+rbattlew5			rwbattle	0	0	40	40		
+rdestroyw1			rwdestry	40	0	40	40		
+rdestroyw2			rwdestry	0	40	40	40		
+rdestroyw3			rwdestry	40	40	40	40		
+rdestroyw4			rwdestry	80	0	40	40		
+rdestroyw5			rwdestry	0	0	40	40		
+rconstw1			rwconst		40	0	40	40		
+rconstw2			rwconst		0	40	40	40		
+rconstw3			rwconst		40	40	40	40		
+rconstw4			rwconst		80	0	40	40		
+rconstw5			rwconst		0	0	40	40		
+rcruise1w1			rwcrus1		40	0	40	40		
+rcruise1w2			rwcrus1		0	40	40	40		
+rcruise1w3			rwcrus1		40	40	40	40		
+rcruise1w4			rwcrus1		80	0	40	40		
+rcruise1w5			rwcrus1		0	0	40	40		
+rcruise2w1			rwcrus2		40	0	40	40		
+rcruise2w2			rwcrus2		0	40	40	40		
+rcruise2w3			rwcrus2		40	40	40	40		
+rcruise2w4			rwcrus2		80	0	40	40		
+rcruise2w5			rwcrus2		0	0	40	40		
+rfreightw1			rwfrght		40	0	40	40		
+rfreightw2			rwfrght		0	40	40	40		
+rfreightw3			rwfrght		40	40	40	40		
+rfreightw4			rwfrght		80	0	40	40		
+rfreightw5			rwfrght		0	0	40	40		
+romegaw1			rwomega		40	0	40	40		
+romegaw2			rwomega		0	40	40	40		
+romegaw3			rwomega		40	40	40	40		
+romegaw4			rwomega		80	0	40	40		
+romegaw5			rwomega		0	0	40	40	
+romegaonw1			rwomega		40	0	40	40		
+romegaonw2			rwomega		0	40	40	40		
+romegaonw3			rwomega		40	40	40	40		
+romegaonw4			rwomega		80	0	40	40		
+romegaonw5			rwomega		0	0	40	40	
+rscoutw1			rwscout		40	0	40	40		
+rscoutw2			rwscout		0	40	40	40		
+rscoutw3			rwscout		40	40	40	40		
+rscoutw4			rwscout		80	0	40	40		
+rscoutw5			rwscout		0	0	40	40		
+rselaw1				rwbattle	40	0	40	40		
+rselaw2				rwbattle	0	40	40	40		
+rselaw3				rwbattle	40	40	40	40		
+rselaw4				rwbattle	80	0	40	40		
+rselaw5				rwbattle	0	0	40	40	
+rspecialw1			rwspec		40	0	40	40		
+rspecialw2			rwspec		0	40	40	40		
+rspecialw3			rwspec		40	40	40	40		
+rspecialw4			rwspec		80	0	40	40		
+rspecialw5			rwspec		0	0	40	40		
+rsuperw1			rwsuper		40	0	40	40		
+rsuperw2			rwsuper		0	40	40	40		
+rsuperw3			rwsuper		40	40	40	40		
+rsuperw4			rwsuper		80	0	40	40		
+rsuperw5			rwsuper		0	0	40	40		
+
+zcardbatw1			cwbattle	40	0	40	40		
+zcardbatw2			cwbattle	0	40	40	40		
+zcardbatw3			cwbattle	40	40	40	40		
+zcardbatw4			cwbattle	80	0	40	40		
+zcardbatw5			cwbattle	0	0	40	40	
+
+zcarddesw1			cwdestroy	40	0	40	40		
+zcarddesw2			cwdestroy	0	40	40	40		
+zcarddesw3			cwdestroy	40	40	40	40		
+zcarddesw4			cwdestroy	80	0	40	40		
+zcarddesw5			cwdestroy	0	0	40	40	
+	
+
+zentityw1			entityw		40	0	40	40		
+zentityw2			entityw		0	40	40	40		
+zentityw3			entityw		40	40	40	40		
+zentityw4			entityw		80	0	40	40		
+zentityw5			entityw		0	0	40	40	
+
+zferengiw1			ferengiw	40	0	40	40		
+zferengiw2			ferengiw	0	40	40	40		
+zferengiw3			ferengiw	40	40	40	40		
+zferengiw4			ferengiw	80	0	40	40		
+zferengiw5			ferengiw	0	0	40	40	
+
+zjembatw1			jwbattle	40	0	40	40		
+zjembatw2			jwbattle	0	40	40	40		
+zjembatw3			jwbattle	40	40	40	40		
+zjembatw4			jwbattle	80	0	40	40		
+zjembatw5			jwbattle	0	0	40	40		
+zjemdestw1			jwdestroy	40	0	40	40		
+zjemdestw2			jwdestroy	0	40	40	40		
+zjemdestw3			jwdestroy	40	40	40	40		
+zjemdestw4			jwdestroy	80	0	40	40		
+zjemdestw5			jwdestroy	0	0	40	40	
+
+zbreenw1			zwbreen		40	0	40	40		
+zbreenw2			zwbreen		0	40	40	40		
+zbreenw3			zwbreen		40	40	40	40		
+zbreenw4			zwbreen		80	0	40	40		
+zbreenw5			zwbreen		0	0	40	40	
+
+	
+
+zmamaw1				mamaw		40	0	40	40		
+zmamaw2				mamaw		0	40	40	40		
+zmamaw3				mamaw		40	40	40	40		
+zmamaw4				mamaw		80	0	40	40		
+zmamaw5				mamaw		0	0	40	40	
+
+zsonbatw1			swbattle	40	0	40	40		
+zsonbatw2			swbattle	0	40	40	40		
+zsonbatw3			swbattle	40	40	40	40		
+zsonbatw4			swbattle	80	0	40	40		
+zsonbatw5			swbattle	0	0	40	40		
+zsondestw1			swdestroy	40	0	40	40		
+zsondestw2			swdestroy	0	40	40	40		
+zsondestw3			swdestroy	40	40	40	40		
+zsondestw4			swdestroy	80	0	40	40		
+zsondestw5			swdestroy	0	0	40	40		
+
+
+
+# Building Wireframes
+@reference=128	
+bbasew1				bwbase		40	0	40	40		
+bbasew2				bwbase		0	40	40	40		
+bbasew3				bwbase		40	40	40	40		
+bbasew4				bwbase		80	0	40	40		
+bbasew5				bwbase		0	0	40	40		
+bminingw1			bwmining	40	0	40	40		
+bminingw2			bwmining	0	40	40	40		
+bminingw3			bwmining	40	40	40	40		
+bminingw4			bwmining	80	0	40	40		
+bminingw5			bwmining	0	0	40	40		
+bomegaw1			bwomega		40	0	40	40		
+bomegaw2			bwomega		0	40	40	40		
+bomegaw3			bwomega		40	40	40	40		
+bomegaw4			bwomega		80	0	40	40		
+bomegaw5			bwomega		0	0	40	40	
+bresearw1			bwrsear1	40	0	40	40		
+bresearw2			bwrsear1	0	40	40	40		
+bresearw3			bwrsear1	40	40	40	40		
+bresearw4			bwrsear1	80	0	40	40		
+bresearw5			bwrsear1	0	0	40	40		
+bresear2w1			bwrsear2	40	0	40	40		
+bresear2w2			bwrsear2	0	40	40	40		
+bresear2w3			bwrsear2	40	40	40	40		
+bresear2w4			bwrsear2	80	0	40	40		
+bresear2w5			bwrsear2	0	0	40	40		
+bsensorw1			bwsensor	40	0	40	40		
+bsensorw2			bwsensor	0	40	40	40		
+bsensorw3			bwsensor	40	40	40	40		
+bsensorw4			bwsensor	80	0	40	40		
+bsensorw5			bwsensor	0	0	40	40		
+bsuperblw1			bwsuper		40	0	40	40		
+bsuperblw2			bwsuper		0	40	40	40		
+bsuperblw3			bwsuper		40	40	40	40		
+bsuperblw4			bwsuper		80	0	40	40		
+bsuperblw5			bwsuper		0	0	40	40		
+bturretw1			bwturret1	40	0	40	40		
+bturretw2			bwturret1	0	40	40	40		
+bturretw3			bwturret1	40	40	40	40		
+bturretw4			bwturret1	80	0	40	40		
+bturretw5			bwturret1	0	0	40	40	
+bturret2w1			bwturret2	40	0	40	40		
+bturret2w2			bwturret2	0	40	40	40		
+bturret2w3			bwturret2	40	40	40	40		
+bturret2w4			bwturret2	80	0	40	40		
+bturret2w5			bwturret2	0	0	40	40	
+byardw1				bwyard		40	0	40	40		
+byardw2				bwyard		0	40	40	40		
+byardw3				bwyard		40	40	40	40		
+byardw4				bwyard		80	0	40	40		
+byardw5				bwyard		0	0	40	40		
+byard2w1			bwyard2		40	0	40	40		
+byard2w2			bwyard2		0	40	40	40		
+byard2w3			bwyard2		40	40	40	40		
+byard2w4			bwyard2		80	0	40	40		
+byard2w5			bwyard2		0	0	40	40	
+
+fbasew1				fwbase		40	0	40	40		
+fbasew2				fwbase		0	40	40	40		
+fbasew3				fwbase		40	40	40	40		
+fbasew4				fwbase		80	0	40	40		
+fbasew5				fwbase		0	0	40	40	
+fbasehqw1			fwbasehq	40	0	40	40		
+fbasehqw2			fwbasehq	0	40	40	40		
+fbasehqw3			fwbasehq	40	40	40	40		
+fbasehqw4			fwbasehq	80	0	40	40		
+fbasehqw5			fwbase		0	0	40	40		
+fminingw1			fwmining	40	0	40	40		
+fminingw2			fwmining	0	40	40	40		
+fminingw3			fwmining	40	40	40	40		
+fminingw4			fwmining	80	0	40	40		
+fminingw5			fwmining	0	0	40	40		
+fresearw1			fwrsear1	40	0	40	40		
+fresearw2			fwrsear1	0	40	40	40		
+fresearw3			fwrsear1	40	40	40	40		
+fresearw4			fwrsear1	80	0	40	40		
+fresearw5			fwrsear1	0	0	40	40		
+fresear2w1			fwrsear2	40	0	40	40		
+fresear2w2			fwrsear2	0	40	40	40		
+fresear2w3			fwrsear2	40	40	40	40		
+fresear2w4			fwrsear2	80	0	40	40		
+fresear2w5			fwrsear2	0	0	40	40		
+fsensorw1			fwsensary	40	0	40	40		
+fsensorw2			fwsensary	0	40	40	40		
+fsensorw3			fwsensary	40	40	40	40		
+fsensorw4			fwsensary	80	0	40	40		
+fsensorw5			fwsensary	0	0	40	40		
+fsuperblw1			fwsuperbl	40	0	40	40		
+fsuperblw2			fwsuperbl	0	40	40	40		
+fsuperblw3			fwsuperbl	40	40	40	40		
+fsuperblw4			fwsuperbl	80	0	40	40		
+fsuperblw5			fwsuperbl	0	0	40	40	
+fturretw1			fwturret	40	0	40	40		
+fturretw2			fwturret	0	40	40	40		
+fturretw3			fwturret	40	40	40	40		
+fturretw4			fwturret	80	0	40	40		
+fturretw5			fwturret	0	0	40	40	
+fturret2w1			fwturret2	40	0	40	40		
+fturret2w2			fwturret2	0	40	40	40		
+fturret2w3			fwturret2	40	40	40	40		
+fturret2w4			fwturret2	80	0	40	40		
+fturret2w5			fwturret2	0	0	40	40		
+fyardw1				fwyard		40	0	40	40		
+fyardw2				fwyard		0	40	40	40		
+fyardw3				fwyard		40	40	40	40		
+fyardw4				fwyard		80	0	40	40		
+fyardw5				fwyard		0	0	40	40	
+fyard2w1			fwyard2		40	0	40	40		
+fyard2w2			fwyard2		0	40	40	40		
+fyard2w3			fwyard2		40	40	40	40		
+fyard2w4			fwyard2		80	0	40	40		
+fyard2w5			fwyard2		0	0	40	40		
+	
+kbasew1				kwbase		40	0	40	40		
+kbasew2				kwbase		0	40	40	40		
+kbasew3				kwbase		40	40	40	40		
+kbasew4				kwbase		80	0	40	40		
+kbasew5				kwbase		0	0	40	40		
+kminingw1			kwmining	40	0	40	40		
+kminingw2			kwmining	0	40	40	40		
+kminingw3			kwmining	40	40	40	40		
+kminingw4			kwmining	80	0	40	40		
+kminingw5			kwmining	0	0	40	40		
+kresearw1			kwresear1	40	0	40	40		
+kresearw2			kwresear1	0	40	40	40		
+kresearw3			kwresear1	40	40	40	40		
+kresearw4			kwresear1	80	0	40	40		
+kresearw5			kwresear1	0	0	40	40		
+kresear2w1			kwresear2	40	0	40	40		
+kresear2w2			kwresear2	0	40	40	40		
+kresear2w3			kwresear2	40	40	40	40		
+kresear2w4			kwresear2	80	0	40	40		
+kresear2w5			kwresear2	0	0	40	40		
+ksensorw1			kwsensor	40	0	40	40		
+ksensorw2			kwsensor	0	40	40	40		
+ksensorw3			kwsensor	40	40	40	40		
+ksensorw4			kwsensor	80	0	40	40		
+ksensorw5			kwsensor	0	0	40	40		
+ksuperblw1			kwsuperbl	40	0	40	40		
+ksuperblw2			kwsuperbl	0	40	40	40		
+ksuperblw3			kwsuperbl	40	40	40	40		
+ksuperblw4			kwsuperbl	80	0	40	40		
+ksuperblw5			kwsuperbl	0	0	40	40		
+kturretw1			kwturret	40	0	40	40		
+kturretw2			kwturret	0	40	40	40		
+kturretw3			kwturret	40	40	40	40		
+kturretw4			kwturret	80	0	40	40		
+kturretw5			kwturret	0	0	40	40	
+kturret2w1			kwturret2	40	0	40	40		
+kturret2w2			kwturret2	0	40	40	40		
+kturret2w3			kwturret2	40	40	40	40		
+kturret2w4			kwturret2	80	0	40	40		
+kturret2w5			kwturret2	0	0	40	40	
+kyardw1				kwyard		40	0	40	40		
+kyardw2				kwyard		0	40	40	40		
+kyardw3				kwyard		40	40	40	40		
+kyardw4				kwyard		80	0	40	40		
+kyardw5				kwyard		0	0	40	40		
+kyard2w1			kwyard2		40	0	40	40		
+kyard2w2			kwyard2		0	40	40	40		
+kyard2w3			kwyard2		40	40	40	40		
+kyard2w4			kwyard2		80	0	40	40		
+kyard2w5			kwyard2		0	0	40	40		
+	
+
+rbasew1				rwbase		40	0	40	40		
+rbasew2				rwbase		0	40	40	40		
+rbasew3				rwbase		40	40	40	40		
+rbasew4				rwbase		80	0	40	40		
+rbasew5				rwbase		0	0	40	40		
+rminingw1			rwmining	40	0	40	40		
+rminingw2			rwmining	0	40	40	40		
+rminingw3			rwmining	40	40	40	40		
+rminingw4			rwmining	80	0	40	40		
+rminingw5			rwmining	0	0	40	40		
+rresearw1			rwrsear1	40	0	40	40		
+rresearw2			rwrsear1	0	40	40	40		
+rresearw3			rwrsear1	40	40	40	40		
+rresearw4			rwrsear1	80	0	40	40		
+rresearw5			rwrsear1	0	0	40	40		
+rresear2w1			rwrsear2	40	0	40	40		
+rresear2w2			rwrsear2	0	40	40	40		
+rresear2w3			rwrsear2	40	40	40	40		
+rresear2w4			rwrsear2	80	0	40	40		
+rresear2w5			rwrsear2	0	0	40	40		
+rsensorw1			rwsensor	40	0	40	40		
+rsensorw2			rwsensor	0	40	40	40		
+rsensorw3			rwsensor	40	40	40	40		
+rsensorw4			rwsensor	80	0	40	40		
+rsensorw5			rwsensor	0	0	40	40		
+rsuperblw1			rwsuperbl	40	0	40	40		
+rsuperblw2			rwsuperbl	0	40	40	40		
+rsuperblw3			rwsuperbl	40	40	40	40		
+rsuperblw4			rwsuperbl	80	0	40	40		
+rsuperblw5			rwsuperbl	0	0	40	40		
+rturretw1			rwturret	40	0	40	40		
+rturretw2			rwturret	0	40	40	40		
+rturretw3			rwturret	40	40	40	40		
+rturretw4			rwturret	80	0	40	40		
+rturretw5			rwturret	0	0	40	40	
+rturret2w1			rwturret2	40	0	40	40		
+rturret2w2			rwturret2	0	40	40	40		
+rturret2w3			rwturret2	40	40	40	40		
+rturret2w4			rwturret2	80	0	40	40		
+rturret2w5			rwturret2	0	0	40	40	
+ryardw1				rwyard		40	0	40	40		
+ryardw2				rwyard		0	40	40	40		
+ryardw3				rwyard		40	40	40	40		
+ryardw4				rwyard		80	0	40	40		
+ryardw5				rwyard		0	0	40	40		
+ryard2w1			rwyard2		40	0	40	40		
+ryard2w2			rwyard2		0	40	40	40		
+ryard2w3			rwyard2		40	40	40	40		
+ryard2w4			rwyard2		80	0	40	40		
+ryard2w5			rwyard2		0	0	40	40		
+	
+zjemyardw1			jwyard		40	0	40	40		
+zjemyardw2			jwyard		0	40	40	40		
+zjemyardw3			jwyard		40	40	40	40		
+zjemyardw4			jwyard		80	0	40	40		
+zjemyardw5			jwyard		0	0	40	40	
+
+zclonfacw1			clonfacw	40	0	40	40		
+zclonfacw2			clonfacw	0	40	40	40		
+zclonfacw3			clonfacw	40	40	40	40		
+zclonfacw4			clonfacw	80	0	40	40		
+zclonfacw5			clonfacw	0	0	40	40	
+
+podallw1			clonfacw	40	0	40	40		
+podallw2			clonfacw	0	40	40	40		
+podallw3			clonfacw	40	40	40	40		
+podallw4			clonfacw	80	0	40	40		
+podallw5			clonfacw	0	0	40	40	
+
+# Other Wireframes
+@reference=64
+mdmoonw1			mwdmoon		40	0	20	20		
+mdmoonw2			mwdmoon		40	0	20	20		
+mdmoonw3			mwdmoon		40	0	20	20		
+mdmoonw4			mwdmoon		40	0	20	20	
+mdmoonw5			mwdmoon		0	0	40	40
+
+mmooninfw1			mwdmoon		40	0	20	20		
+mmooninfw2			mwdmoon		40	0	20	20		
+mmooninfw3			mwdmoon		40	0	20	20		
+mmooninfw4			mwdmoon		40	0	20	20		
+mmooninfw5			mwdmoon		0	0	40	40		
+
+mdmoon1w1			mwdmoon		40	0	20	20		
+mdmoon1w2			mwdmoon		40	0	20	20	
+mdmoon1w3			mwdmoon		40	0	20	20		
+mdmoon1w4			mwdmoon		40	0	20	20	
+mdmoon1w5			mwdmoon		0	0	40	40
+
+mdmoon2w1			mwdmoon		40	0	20	20	
+mdmoon2w2			mwdmoon		40	0	20	20		
+mdmoon2w3			mwdmoon		40	0	20	20	
+mdmoon2w4			mwdmoon		40	0	20	20	
+mdmoon2w5			mwdmoon		0	0	40	40
+
+mdmoon3w1			mwdmoon		40	0	20	20		
+mdmoon3w2			mwdmoon		40	0	20	20		
+mdmoon3w3			mwdmoon		40	0	20	20	
+mdmoon3w4			mwdmoon		40	0	20	20		
+mdmoon3w5			mwdmoon		0	0	40	40
+
+gpod1				zpodall		40	0	20	20	
+gpod2				zpodall		40	0	20	20	
+gpod3				zpodall		40	0	20	20		
+gpod4				zpodall		40	0	20	20		
+gpod5				zpodall		0	0	40	40	
+
+# Icons for on wireframes
+@reference=32
+gravmine_icon			gminisys	1	21	10	10
+romspy_icon			gminisys	21	11	10	10
+flag_icon			gminisys	12	21	10	10

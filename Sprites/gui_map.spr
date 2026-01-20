@@ -1,0 +1,50 @@
+sprite_table
+
+# Shared GUI sprites, a.k.a. non-race specific.
+
+# Blending modes
+# --------------
+
+# 0x21 - Normal		
+# 0x56 - Use alpha
+# 0x22 - Additive
+
+## SPRITE DATA ##
+
+# @reference=texture size in pixels from which the u,v,w, and h values
+# were measured.  This value will effect all subsequent textures until
+# a different value is specified.
+
+# Must include this first to ensure texture animations are found
+@include tex_anim.spr
+
+# Name      		File       		U 	V 	W 	H 	
+
+# Minimap Components
+# ------------------
+
+# Minimap Layers
+@reference=128
+@tmaterial=default
+map_nebula1			gmneb1		0	0	128	128
+map_nebula2			gmneb2		0	0	128	128
+map_nebula3			gmneb3		0	0	128	128
+map_nebula4			gmneb4		0	0	128	128
+map_nebula5			gmneb5		0	0	128	128
+map_abelt			gmabelt		0	0	128	128
+
+@reference=32
+@tmaterial=additive
+map_dmoon			gminicon		0	0	5	5
+map_dmooninf			gminicon		0	8	5	5
+map_worm			gminicon		16	0	8	8
+map_bhole			gminicon		8	0	8	8
+map_omega			gminicon		24	0	7	7
+
+# Game Map sprites
+@reference=256
+@tmaterial=add_nomipf
+footprint			MBuild			0	128	128	128
+valid_build			MBuild			128	0	128	128
+invalid_build			MBuild			0	0	128	128
+planet_build			MBuild			128	128	128	128

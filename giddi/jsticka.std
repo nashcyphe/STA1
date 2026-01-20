@@ -1,0 +1,67 @@
+# BATTLEZONE
+# Input Mapping
+
+# {"jsticka","Standard 2 button 2 axis Joystick"}
+
+# OVERVIEW CONTROLS
+
+# X POSITION CONTROL
+cmd_x {
+	+ joystick1	HorizPos
+	+ program	ControlMode
+}
+
+# Y POSITION CONTROL
+cmd_y {
+	+ joystick1	VertPos
+	+ program	ControlMode
+}
+
+# LEFT MOUSE CLICK
+cmd_lclick {
+	+ joystick1	Button1
+	+ program	ControlMode
+}
+
+# LEFT MOUSE HOLD
+cmd_lhold {
+	+ joystick1	Button1
+	+ program	ControlMode
+}
+
+# RIGHT MOUSE CLICK
+cmd_rclick {
+	+ joystick1	Button2
+	+ program	ControlMode
+}
+
+# RIGHT MOUSE HOLD
+cmd_rhold {
+	+ joystick1	Button2
+	+ program	ControlMode
+}
+
+
+# DRIVING CONTROLS
+
+# ANALOG STEER
+steer {
+	- joystick1	HorizPos
+}
+
+# ANALOG PITCH
+pitch {
+	+ joystick1	VertPos
+}
+
+# WEAPON CONTROLS
+
+# TRIGGER CURRENT WEAPON
+weapon_fire {
+	+ joystick1	Button1
+}
+
+# CYCLE WEAPON SELECTION
+weapon_cycle {
+	+ joystick1	Button2
+}

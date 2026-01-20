@@ -1,0 +1,778 @@
+@colour=(0.0,0.3,0.6)
+@scale=(0.8,0.8,0.8)
+@hold=6.0
+Star Trek: Armada
+is dedicated to
+Lee Brisken
+A True Survivor
+@cls
+PROJECT LEADS
+
+Director
+Trey Watkins
+
+Technical Director
+Dr. Ian Lane Davis
+@cls
+Producer
+Marc Turndorf
+
+Art Director
+David Dalzell
+
+Lead Game Designer
+Eric 'Giz' Gewirtz
+@cls
+@hold=11.0
+@scale=(0.5,0.5,0.5)
+PROGRAMMING
+
+Lead Programming
+Dr. Ian Lane Davis
+John Hancock, PhD
+
+Network & Game Core Lead
+Gordon Moyes
+
+Game Core & Interface Lead
+Brian Hawkins
+
+Storm3D Graphics Engine Lead
+Steve Williams
+
+Programming
+Linus Chen
+Dale Son
+Martin C Martin
+@cls
+@hold=6.0
+PROGRAMMING cont.
+
+Additional Programming
+Michael H. Douglas
+Richard Myers
+Mad Doc Software, LLC
+Matthew Nordhaus
+
+Installer Programming
+Alexander Rohra
+@cls
+@hold=11.0
+GAME DESIGN
+
+Game Designers
+Ryan Kirk
+Brad Santos
+Jens Anderson
+Linus Chen
+
+Additional Design
+James Farley
+
+Writer
+Eric 'Giz' Gewirtz
+
+Original Game Concept
+Trey Watkins
+Eric 'Giz' Gewirtz
+Brad Santos
+@cls
+ART
+
+Lead Artist
+Robert DePalma
+
+Concept Artist 
+James Mayeda
+
+3D Artists
+Franz Boehm
+Stanley Woo
+Junki Saita
+
+2D Artist
+Arlene Somers
+
+Additional Art
+Jeff Rosencrans
+Willie Rosas
+@cls
+@hold=8.0
+PRODUCTION
+
+Associate Producers
+Jonathan Moses
+Rick Omori
+Brian Diggs
+
+Production Coordinator
+Frank Stankowski
+
+Web Designer
+Stacey Drellishak
+@cls
+PRODUCTION cont.
+
+Production Testers
+James Coriston
+Eric Lee
+Luke Grannis
+Brelan Duff
+Chad "SCROFT" Siedhoff
+Patrick "The Feds" Ratliff
+David "The Brie" Stolfa
+Rob "The Eagle" Hargraves
+@cls
+In special apprecation of seeing
+the project from beginning to end
+we would like to thank
+
+Dr. Ian Lane Davis
+Trey Watkins
+Gordon Moyes
+Eric 'Giz' Gewirtz
+Marc Turndorf
+Brian Hawkins
+David Dalzell
+Ryan Kirk
+Steve Williams
+@cls
+@hold=8.0
+@scale=(0.8,0.8,0.8)
+VOICE OVER
+Patrick Stewart
+Michael Dorn
+Denise Crosby
+J G Hertzler
+Judith Durand
+@cls
+@hold=8.0
+@scale=(0.5,0.5,0.5)
+ADDITIONAL VOICE OVER
+
+Paul Eckstein
+Jim Jansen
+Tim Harrison
+Jim Hudson
+Tyler Moore
+Richard Penn
+Noreen Reardon
+Gary Schwartz
+Joel Sweton
+@cls
+@hold=5.0
+@scale=(0.6,0.6,0.6)
+CASTING
+
+Ron Surma
+
+Barbara Harris Casting
+@cls
+@hold=11.0
+@scale=(0.5,0.5,0.5)
+SOUND
+
+Sound Designer
+Michael Mancini
+
+Associate Sound Designer
+Frank Stankowski
+
+Voice Over Recording
+NOVASTAR
+INNERSOUND
+
+NOVASTAR
+Tim
+Scott Sondereger
+
+INNERSOUND
+Boyd Lefan
+Gerard Shadrick
+Billy Davis
+@cls
+@hold=8.0
+@scale=(0.6,0.6,0.6)
+MUSIC
+
+Composer
+Danny Pelfrey
+
+Additional Music by
+Danny Baker
+@cls
+@hold=11.0
+@scale=(0.5,0.5,0.5)
+INTRO MOVIE
+
+Written and Directed by
+Trey Watkins
+Eric 'Giz' Gewirtz
+
+Produced by
+Marc Turndorf
+
+Storyboard Artist
+James Mayeda
+
+Sound Designer
+Michael Mancini
+
+CG Animation
+BLUR STUDIOS
+
+Sound Mix by
+NOVASTAR
+@cls
+@scale=(0.4,0.4,0.4)
+BLUR STUDIOS
+
+Executive Producer
+Stephanie Taylor
+
+Producer
+Al Shier
+
+CG Supervisor
+Aaron Powell
+
+Animators
+Jeremy Cook
+Tom Dillon
+Jon Jordan
+Kirby Miller
+David Stinnett
+Jeff Weisend
+Bill Zahn
+
+Best Boy
+Tim Miller
+@cls
+@scale=(0.5,0.5,0.5)
+@hold=5.0
+QUALITY ASSURANCE
+
+Project Lead
+John Sherwood
+
+Senior Project Lead /
+Manager of PC Titles
+Matt Powers
+@cls
+@hold=8.0
+QUALITY ASSURANCE cont.
+
+Testers 
+Alex Coleman
+Sean Shaughnessy
+Bryan Anderson
+Thom Flood
+Jeff Sedivy
+Matt Nelson
+Pat Bowman
+Ronyie Weibel
+Stephen Boisvert
+Patrick Tse
+Jeff Barthel
+Joule Middleton
+Daniel Ramirez
+Chris Biernan
+Todd Hostetler
+Erin Martel
+@cls
+@hold=4.0
+CUSTOMER SERVICE
+
+Customer Service Manager
+Bob McPherson
+
+Customer Service Lead
+Jermaine Clarke
+
+Technical Help
+Gary Bolduc
+@cls
+@hold=8.0
+ACTIVISION STUDIOS
+
+VP of Production, LA Studio
+Scott Lahman
+
+Executive Producers
+Scott Lahman
+Elizabeth Storz
+Zach Norman
+
+Studio Controller
+Stacy Ytuarte
+@cls
+MARKETING
+
+Global Brand Manager
+Laird M. Malamed
+
+Associate Brand Manager
+Michael Webster
+
+Sr. Manager Corporate Communications
+Michelle Nino
+@cls
+@hold=8.0
+@scale=(0.4,0.4,0.4)
+Group Brand Manager, UK/ROE
+Chris Lewis
+
+PR Manager, UK
+James Beaven
+
+PR Manager, ROE
+Sarah Ricchiuti
+
+Marketing Manager, Germany
+Andreas Stock
+
+PR Manager, Germany
+Markus Wilding
+
+Product Manager, Germany
+Achim Kaspers
+@cls
+Marketing Manager, France
+Bernard Sizey
+
+Product Manager, France
+Guillaume Lairan
+
+PR Manager, France
+Diane de Domecy
+
+Marketing Director,
+Asia Pacific Region
+Paul Butcher
+
+Director, Latin American Publishing
+Sandi Isaacs
+
+Localizations Manager
+Peter Nielsen
+
+Activate Coordinator
+Sara Pelton
+@cls
+@hold=6.0
+@scale=(0.4,0.4,0.4)
+Viacom Consumer Products /
+Paramount Pictures Liaisons
+
+Manager
+Interactive Product Development
+Harry Lang
+
+Director
+Interactive Product Development
+Juliet Dutton
+@cls
+@scale=(0.5,0.5,0.5)
+Special Thanks
+Viacom Consumer Products /
+Paramount Pictures:
+
+Pam Newton
+Terri Helton
+Andrea Hein
+Gerald Kline
+Rick Berman
+Peter Lauritson
+Dave Rossi
+Shelley Taniguchi
+@cls
+@hold=4.0
+@scale=(0.4,0.4,0.4)
+Creative Services by IGNITED MINDS
+
+Creative Director
+Ron Gould
+
+Designer
+Erik Jensen
+
+Production Artist
+Ron Graening
+
+Production Artist
+Cindy Whitlock
+@cls
+IGNITED MINDS cont.
+
+Copywriter
+Josh Lieber
+
+Media Director
+Lydia Estrada
+
+Director of Video Production &
+Event Management
+Jean Powell
+
+Account Director
+Claudia Plasencia
+@cls
+Creative Services by THE BALLPARK
+
+Creative Director
+Alan Berkes
+
+Creative Director
+Ron Luscinski
+
+Account Director
+Andrew Shevin
+
+Art Director
+Erick Mangali
+@cls
+@hold=10.0
+@scale=(0.5,0.5,0.5)
+ACTIVISION MANAGEMENT
+Jill Barry
+Chad Benesh
+Bob Dewar
+Ron Doornink
+Larry Goldberg
+Brian Kelly
+Bobby Kotick
+Mitch Lasky
+Maryanne Lataif
+Ehtisham Rabbani
+George Rose
+Ron Scott
+Kathy Vrabeck
+Denise Walsh
+@cls
+WAR ROOM TESTERS
+Mark VanLommel
+Michael "Wardawn" Malone
+Thomas Mix
+Jorge Maldonado
+Scott "Zatoichini" Takano
+Nathan "The Corellian Knight" Yun
+Quoctruong Tan Ngo
+Doug "D-Spice McSpice" Spice
+Justin 'Dark Lord Pi' Nafziger
+Kimo "KK_Battousai" Koshi
+Christopher Rider
+Nathan Burrows
+Alex Shaw
+Clifton Shaw
+Geoffrey "The Method Man" Gan
+@cls
+@hold=10.0
+@scale=(0.4,0.4,0.4)
+VISIONEER TESTERS
+
+Jamie Badgerow
+Tim Barnes
+Cj Biro	
+Armond B. Clark
+Dan Condon
+Aaron Cox
+Clay Culver
+Seth Flaum
+Randy Hanley
+Don Healy
+Jason Hitchens
+Ben Jones
+Clayton Jung
+Mark W. Kaelin
+Scott Kasai
+@cls
+VISIONEER TESTERS cont.
+
+Vince Leamons
+Craig Lewis
+Eric Lo
+Mike McCurdy
+Fernando Mladineo
+Dan Oliver
+Marco Padilla
+Christopher Penney
+Jeff Reitman
+Mark Robertshaw
+Dakota Smith
+Ryan Smolar
+Mark Spadavecchia
+Dominick Ziccarelli
+@cls
+@hold=4.0
+@scale=(0.5,0.5,0.5)
+Movie Player
+technology by
+RAD Tools 
+Uses Bink Video.
+Copyright (C) 1997-2000
+by RAD Game Tools, Inc.
+@cls
+@hold=8.0
+@scale=(0.5,0.5,0.5)
+Famous Music Publishing
+Mary Beth Roberts 
+Irwin Z. Robinson
+
+Music
+"Star Trek - Main Title"
+by Alexander Courage
+Copyright (C) 1966, 1970
+(Renewed 1994, 1998)
+Bruin Music Company (BMI)
+
+"Klingon Battle"
+by Jerry Goldsmith
+Copyright (C) 1979
+Ensign Music Corporation (BMI)
+@cls
+@scale=(0.5,0.5,0.5)
+@hold=5.0
+Unsung Heroes
+
+Kristen Iazzetta
+Matt Harris
+John Wray
+Kelly Chambers
+@cls
+@hold=14.0
+Special Thanks
+
+Mom
+Dad
+Sandy O'Toole
+Reba
+Heather Moses
+Janine Stankowski
+Debbie Hawkins
+Cristian De Palma
+Adrian De Palma
+Diana De Palma
+Debra Turndorf
+Michael Turndorf
+Robert Berger
+J. Tyler Scott
+Kelly Wand
+@cls
+Special Thanks
+
+Gene Roddenberry
+Mark Lamia
+Ed Clune
+Matt Candler
+Joseph Donaldson
+Carey Chico
+Seth and Rachel Flaum
+Greg and Fiona Rubel
+David and Michelle Popowitz
+Dena Brook
+Luvrgirl for giving SCROFT
+a beautiful daughter and
+her sons for accepting SCROFT
+into their family.
+Ferris Bueller
+The FemBots
+@cls
+Special Thanks
+
+Rob "Jugdesh" Canning
+Jason Wong
+Eric Zala
+Tim Vanlaw
+Clarence Bell
+Brian "QuakeGod" Malkowski
+4MC Studios
+Santa Barbara Studios
+Kent Schuelke
+Ronnie Lane
+David Berenbaum
+Harlow
+Bocchie
+James Tiberius Kirk
+@cls
+Special Thanks
+
+Alan Gershenfeld
+The Battlezone Team
+Josh Resnick
+Jim Summers
+John Fritts
+Page Morris
+Laura Weisman
+Ruth Pearson
+Heather Hansz
+Jamey Gottlieb
+Ronnie Lane
+Brian Claar
+Mike Rixford
+Frank Gale
+Daniel Osers
+Darrell Mauldin
+@cls
+Special Thanks
+
+Indra Gunawan
+Aaron King
+Sam Nouriani
+Aaron Casillas
+Marietta Pashayan
+Todd Komesu
+Neil Barizo
+Tommy T & Joey K
+Chanel Summers
+John Fritts
+Chris Keim
+Tanya Langston
+Stacey Ytuarte
+Juan Valdes
+Jenny Cassel
+Jeff Roberts
+Stacey Drellishak
+@cls
+Special Thanks
+
+George Rose
+Marti Spero
+Margaret Roper
+Vinnie Bufano
+Nadine Theuzillot
+Willie Bolton
+Brian Bright
+Todd Jefferson
+Chris Hepburn
+Thaine Lyman
+Jim Wolvington
+Piere Smirnoff
+Stacy Sooter
+Zielin
+BowlingBrad
+@cls
+Special Thanks
+
+Oliver Danan
+Debbie Lusetti
+Alicia Reyes
+Samantha Koehn
+Glenn Vanzura
+Raffa
+Ingrid Braverman
+Holodeck Fantasy Girl
+Lister of Smeg
+Ace Rimmer
+Dwayne Dibley
+Jake Bullet
+Boys from the Dwarf
+@cls
+Special Thanks
+
+The Everquest team
+The Soul Caliber team
+The Delta Force team
+The Team Fortress classic team
+@cls
+
+@hold=3.0
+@scale=(0.6,0.6,0.6)
+Now for the fun stuff...
+@cls
+@hold=10.0
+@scale=(0.5,0.5,0.5)
+"New Expanse"
+
+Dream the new expanse:
+Bright worlds from an older world,
+Outside, look inside.
+
+Step down the dirt path,
+Placing bricks down as you go.
+Inside, play outside.
+
+Look ahead again:
+More before us than behind.
+Outside and inside.
+@cls
+@hold=11.0
+@scale=(0.4,0.4,0.4)
+We couldn't have made it without...
+
+A Leather Glove
+Snackmaster rules
+Groundstabber
+Buck Futter
+The Pen is Mightier
+Keyser Soze
+Baron Sengir
+The Four Deserts of Walter
+Remember That!
+Fire all disbupters
+They've fired torpon torepedos sir
+@cls
+The Dandy of the South Seas
+Fists of the North Stoned Maxi
+The San Francisco Friend
+BEEFBOWL
+The Cheese is strong with this one
+Chicken, Veggies, Fajitas...
+Things are really shaking up at El Torrito
+Sorry sir, Reality Control
+@cls
+Partypeople
+Eschelon
+Kerrigan Everlost
+Bayte Windstalker
+Lyttel Drizzlehead
+Mcruff Mammothheart
+Zerubabbel
+Xnij
+Gladius
+Jazzy
+Torala
+Phantomm Stranger
+Cronkett & Tubas
+Jaxy & Cade
+@cls
+Ikol Amethys
+Ghen Oopslooted
+Shmoo
+Seralyn
+Inydar Omega
+Tendedar Okenshield
+Nemaux Maskdancer
+Nisa Nymphette
+Syven Amersky
+Bakunin
+Maddoctori (the runner)
+Watchman Mylz
+Zontik the Minidog
+@cls
+Captain Silverwind AWAY
+Kerrigan's curse lives on
+May Eschelon find his lost Drum
+Woolyranchula!
+Kerrigan is Lost
+@cls
+Curses to
+Ambassador Dvinn
+Emperor Crush
+Bouncer Hurd
+Cazic Thule
+Mino Hero
+Kill Stealers
+@cls
+@hold=1.5
+@scale=(0.8,0.8,0.8)
+11:11
+@cls
+420
+@cls
+63
+@cls
+612
+@cls
+303
+@cls
+

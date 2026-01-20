@@ -1,0 +1,64 @@
+sprite_table
+
+# Texture 'flipbook' animations
+# =============================
+
+# Keyframes can be specified explicitly, or can be automatically
+# generated for common styles by using the @keyframes command.
+
+
+# 4 column animation
+@animation tex1x4_gui
+offset 4 0.5 step
+# Automatically generate keyframes
+@auto=column
+@keyframes
+
+# 4 column animation
+@animation tex1x4med_gui
+offset 4 2 step
+# Automatically generate keyframes
+@auto=column
+@keyframes
+
+# 2 frame column animation
+@animation tex1x2med_gui
+offset 2 3 step
+# Automatically generate keyframes
+@auto=column
+@keyframes
+
+# 4 column animation - slow
+@animation tex1x4slow_gui
+offset 4 4.5 step
+# Automatically generate keyframes
+@auto=column
+@keyframes
+
+# 2 column animation
+@animation tex1x2_gui
+offset 2 1.0 step
+# Automatically generate keyframes
+@auto=column
+@keyframes
+
+# 4 frame texture 'flipbook' animation 
+@animation tex2x2slow_gui
+offset 4 2.5 step
+# Automatically generate keyframes
+@auto=square
+@keyframes
+
+# 4 frame texture 'flipbook' animation 
+@animation tex2x2slow2_gui
+offset 4 5 step
+# Automatically generate keyframes
+@auto=square
+@keyframes
+
+# GUI 4x4 texture 'flipbook' animation 
+@animation tex4x4slow_gui
+offset 16 3.0 step
+# Automatically generate keyframes
+@auto=square
+@keyframes

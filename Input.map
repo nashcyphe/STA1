@@ -1,0 +1,1270 @@
+##########################################
+#
+# STAR TREK Input Map
+#
+# Modify these to update the keyboard and
+# mouse configuration.
+#
+##########################################
+
+##########################################
+#
+# Game Key
+#
+##########################################
+
+
+# Control Key
+control {
+	+ keyboard	Control
+}
+# Shift Key
+shift {
+	+ keyboard	Shift
+}
+# Alt Key
+alt {
+	+ keyboard	Alt
+}
+
+
+# Cursor movement.
+cursor_x {
+	+ mouse	HorizPos
+}
+cursor_y {
+	+ mouse	VertPos
+}
+
+
+# Mouse button click, double click, and drag.
+left_click {
+	+ mouse	LeftBtn
+}
+left_hold {
+	+ mouse	LeftBtn
+}
+left_double_click {
+	+ mouse	LeftBtnDblClk
+}
+left_double_hold {
+	+ mouse	LeftBtnDblClk
+}
+middle_click {
+	+ mouse	MiddleBtn
+}
+middle_hold {
+	+ mouse	MiddleBtn
+}
+middle_double_click {
+	+ mouse	MiddleBtnDblClk
+}
+middle_double_hold {
+	+ mouse	MiddleBtnDblClk
+}
+right_click {
+	+ mouse	RightBtn
+}
+right_hold {
+	+ mouse	RightBtn
+}
+right_double_click {
+	+ mouse	RightBtnDblClk
+}
+right_double_hold {
+	+ mouse	RightBtnDblClk
+}
+
+
+# Chat Key (enter in-game chat)
+chat {
+	+ keyboard	Enter
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##########################################
+# Fire special weapons.
+##########################################
+fire_special_1 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+fire_special_2 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+fire_special_3 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+fire_special_4 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+fire_special_5 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+fire_special_6 {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##########################################
+# Global hot keys in Normal Mode
+##########################################
+# Attack shortcut.
+attack {
+	+ keyboard	A
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Next construction unit.
+build {
+	+ keyboard	B
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# stop shortcut.
+stop {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# move shortcut.
+move {
+	+ keyboard	M
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# orders shortcut.
+orders {
+	+ keyboard	O
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# transport shortcut.
+transport {
+	+ keyboard	T
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# recrew
+recrew {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# harvest dilithium
+harvest {
+	+ keyboard	D
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# scatter command
+scatter {
+	+ keyboard	X
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# cloak command
+cloak {
+	+ keyboard	C
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# special transport
+special {
+	+ keyboard	T
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+# set rally point
+rally {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# set green alert
+green {
+	+ keyboard	G
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+# set yellow alert
+yellow {
+	+ keyboard	Y
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+# set red alert
+red {
+	+ keyboard	R
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+# set guard mode
+guard {
+	+ keyboard	U
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# set stand down mode
+stand {
+	+ keyboard	S
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+# set patrol mode
+patrol {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# repair 
+repair {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# set scout mode
+scout {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# set search and destroy
+search {
+	+ keyboard	D
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# decommision
+decomm {
+	+ keyboard	D
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+# go back in sub ment
+back {
+	+ keyboard	B
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##########################################
+# Build Sub Menu Keys
+##########################################
+
+# global keys
+cancel {
+	+ keyboard	C
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+construction_rig {
+	+ keyboard	C
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+freighter {
+	+ keyboard	F
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation ships
+fed_scout {
+	+ keyboard	V
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+fed_destroyer {
+	+ keyboard	D
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+fed_photon {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+fed_phaser {
+	+ keyboard	A
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+fed_science {
+	+ keyboard	L
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+fed_battle {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon ships
+kling_scout {
+	+ keyboard	D
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+kling_destroyer {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+kling_photon {
+	+ keyboard	V
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+kling_phaser {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+kling_science {
+	+ keyboard	F
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+kling_battle {
+	+ keyboard	V
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+kling_super {
+	+ keyboard	J
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan ships
+rom_scout {
+	+ keyboard	L
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+rom_destroyer {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+rom_photon {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+rom_phaser {
+	+ keyboard	F
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+rom_science {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+rom_battle {
+	+ keyboard	W
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+rom_super {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Borg ships
+borg_scout {
+	+ keyboard	D
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+borg_destroyer {
+	+ keyboard	I
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+borg_photon {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+borg_phaser {
+	+ keyboard	A
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+borg_science {
+	+ keyboard	D
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+borg_battle {
+	+ keyboard	C
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Research pods
+detect_grid {
+	+ keyboard	D
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Fed specific pods
+an_mines {
+	+ keyboard	A
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+cr_pulsar {
+	+ keyboard	C
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+en_overload {
+	+ keyboard	O
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+co_refractor {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+manheim {
+	+ keyboard	M
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+sh_disruptor {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+fr_team {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+pd_laser {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon specific pods
+po_torpedo {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+kc_team {
+	+ keyboard	O
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+gr_mines {
+	+ keyboard	M
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+pl_cannon {
+	+ keyboard	C
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+ion_storm {
+	+ keyboard	I
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+death_chant {
+	+ keyboard	D
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mi_organisms {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+re_field {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan specific pods
+rom_spy {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+se_jammer {
+	+ keyboard	J
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+psy_blast {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+si_beam {
+	+ keyboard	I
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+holo_proj {
+	+ keyboard	L
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+myotron {
+	+ keyboard	M
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+es_convert {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+ph_cloak {
+	+ keyboard	C
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Borg specific pods
+tw_drive {
+	+ keyboard	W
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+hold_bm {
+	+ keyboard	L
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+regen {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+auto_bore {
+	+ keyboard	A
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+nanites {
+	+ keyboard	A
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+co_override {
+	+ keyboard	C
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+ut_burst {
+	+ keyboard	U
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+sh_remod {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Construction rig build items
+starbase {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+upgrade {
+	+ keyboard	U
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+shipyard {
+	+ keyboard	Y
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+research_station {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+science_station {
+	+ keyboard	C
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mining_station {
+	+ keyboard	D
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+phaser_turret {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+photon_turret {
+	+ keyboard	U
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+sensor_turret {
+	+ keyboard	A
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+adv_shipyard {
+	+ keyboard	V
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+manheim_research {
+	+ keyboard	M
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+subspace_research {
+	+ keyboard	I
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+phoenix_research {
+	+ keyboard	X
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+borg_gate {
+	+ keyboard	W
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##########################################
+#
+# Interface Key
+#
+##########################################
+
+# select all shortcut
+select_all {
+	+ keyboard	E
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# select next visible ship shortcut
+select_next_ship {
+	+ keyboard	N
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Command grouping.
+group_select_0 {
+	+ keyboard	Zero
+}
+group_select_1 {
+	+ keyboard	One
+}
+group_select_2 {
+	+ keyboard	Two
+}
+group_select_3 {
+	+ keyboard	Three
+}
+group_select_4 {
+	+ keyboard	Four
+}
+group_select_5 {
+	+ keyboard	Five
+}
+group_select_6 {
+	+ keyboard	Six
+}
+group_select_7 {
+	+ keyboard	Seven
+}
+group_select_8 {
+	+ keyboard	Eight
+}
+group_select_9 {
+	+ keyboard	Nine
+}
+
+# Place flag visible to allies.
+multiplayer_flag {
+	+ keyboard	Backspace
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Grid toggle.
+grid_toggle {
+	+ keyboard	G
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Minimize interface panels.
+minimize_minimap {
+	+ keyboard	F1
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+minimize_shipinfo {
+	+ keyboard	F2
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+minimize_speed {
+	+ keyboard	F3
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+minimize_cinematic {
+	+ keyboard	F4
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+minimize_control {
+	+ keyboard	F5
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+minimize_resource {
+	+ keyboard	F7
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Hide interface panels.
+hide_minimap {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+hide_shipinfo {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+hide_speed {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+hide_cinematic {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+hide_control {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+hide_resource {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+hide_comm {
+	+ keyboard	F6
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+hide_objectives {
+	+ keyboard	M
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Restore interface.
+interface_default {
+	+ keyboard	F9
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+interface_restore {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Camera rotation.
+camera_rotate_minus {
+	+ keyboard	GreySlash
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+camera_rotate_plus {
+	+ keyboard	GreyStar
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Camera zoom.
+zoom_factor_plus {
+	+ keyboard	GreyPlus
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+zoom_factor_minus {
+	+ keyboard	GreyMinus
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Reset zoom.
+zoom_factor_reset {
+	+ keyboard	GreyInsert
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Pan (scroll) camera.
+scroll_right {
+	+ keyboard	GreyRightArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+scroll_left {
+	+ keyboard	GreyLeftArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+scroll_up {
+	+ keyboard	GreyUpArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+scroll_down {
+	+ keyboard	GreyDownArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Switch to bigger view in cinematics!
+let_me_see_more {
+	+ keyboard	Space
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# In or out of cinematics
+toggle_cinematic {
+	+ keyboard	Z
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+#modifier key to enter a waypoint
+enter_waypoint {
+	+ keyboard	Tab
+	- keyboard	Control
+	- keyboard	Alt
+}
+
+# Recenter camera to mission start.
+center_player {
+	+ keyboard	H
+	- keyboard 	Control
+	- keyboard	Shift
+}
+
+snapshot {
+	+ keyboard	Z
+	+ keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+
+##########################################
+#
+# Debugging Key
+#
+##########################################
+
+# Toggle the fog and shroud on and off
+radar_toggle {
+	+ keyboard	V
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle the display of the object bounding sphere
+bounding_sphere {
+	+ keyboard	I
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle the display of bounding boxes
+bounding_boxes {
+	+ keyboard	U
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle the display of debugging info
+debugging_toggle {
+	+ keyboard	Y
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle the display of the quadtree
+quadtree_toggle {
+	+ keyboard	Q
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle team flags.
+team_flag_toggle {
+	+ keyboard	F
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle VTune sampling
+vtune_toggle {
+	+ keyboard	Tab
+	+ keyboard	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Add dilithium
+debug_add_dilithium {
+	+ keyboard	Plus
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Subtract dilithium
+debug_sub_dilithium {
+	+ keyboard	Minus
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##########################################
+#
+# Edit Mode Key
+#
+##########################################
+
+# Keyboard shortcuts for object placement.
+mode_select_0 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_1 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_2 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_3 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_4 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_5 {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_6 {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_7 {
+	+ keyboard	F8
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_8 {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_9 {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_10 {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_11 {
+	+ keyboard	F12
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Up one level in edit menu.
+menu_back {
+	+ keyboard	Tab
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Object team selection.
+team_up {
+	+ keyboard	GreyUpArrow
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+team_down {
+	+ keyboard	GreyDownArrow
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# Delete object or path point.
+erase {
+	+ keyboard	GreyDelete
+	- keyboard 	Control
+	- keyboard	Shift
+}
+
+# Restore object to ODF settings.
+restore {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Restore ALL objects to ODF settings
+restoreAll {
+	+ keyboard	R
+	- keyboard 	Control
+	+ keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Edit the map size and map parameters.
+change_map {
+	+ keyboard  	R
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Open the obstacle avoidance dialog box
+#Why use Y? Because it's not used yet. :)
+avoidance_dialog {
+	+ keyboard	Y
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Save path to file.
+save_3d_path {
+	+ keyboard  	D
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Switch camera shot
+switch_camera_shot {
+	+ keyboard  Space
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}

@@ -1,0 +1,101 @@
+# BATTLEZONE
+# Input Mapping
+# 2 axis 4 button control with hat
+
+
+# OVERVIEW CONTROLS
+
+# X POSITION CONTROL
+cmd_x {
+	+ joystick1	HorizPos
+	+ program	ControlMode
+}
+
+# Y POSITION CONTROL
+cmd_y {
+	+ joystick1	VertPos
+	+ program	ControlMode
+}
+
+# LEFT MOUSE CLICK
+cmd_lclick {
+	+ joystick1	Button1
+	+ program	ControlMode
+}
+
+# LEFT MOUSE HOLD
+cmd_lhold {
+	+ joystick1	Button1
+	+ program	ControlMode
+}
+
+# RIGHT MOUSE CLICK
+cmd_rclick {
+	+ joystick1	Button2
+	+ program	ControlMode
+}
+
+# RIGHT MOUSE HOLD
+cmd_rhold {
+	+ joystick1	Button2
+	+ program	ControlMode
+}
+
+# MENU SELECTION
+menu_cycle {
+	+ program	AlwaysOn
+	- program	EditMode
+}
+menu_up {
+	+ joystick1	HatUp
+}
+menu_down {
+	+ joystick1	HatDown
+}
+menu_next {
+	+ joystick1	HatRight
+}
+menu_back {
+	+ joystick1	HatLeft
+}
+
+
+
+
+
+
+# DRIVING CONTROLS
+
+# ANALOG STEER
+steer {
+	- joystick1	HorizPos
+}
+
+# ANALOG PITCH
+pitch {
+	+ joystick1	VertPos
+}
+
+# ACTIVATE JUMP
+jump {
+	+ joystick1	Button3
+}
+
+# ACTIVATE TURBO
+turbo {
+	+ joystick1	Button4
+}
+
+
+
+# WEAPON CONTROLS
+
+# TRIGGER CURRENT WEAPON
+weapon_fire {
+	+ joystick1	Button1
+}
+
+# CYCLE WEAPON SELECTION
+weapon_cycle {
+	+ joystick1	Button2
+}

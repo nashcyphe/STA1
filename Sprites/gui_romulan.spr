@@ -1,0 +1,131 @@
+sprite_table
+#Blending Modes
+#-----
+
+#0x21 - Normal
+#0x56 - Alpha
+#0x22 - Additive
+
+## SPRITE DATA  ##
+
+#@ reference=texture size in pixels from which the u, v, w, and h values 
+#were measured.  This value will affect all subsequent textures until 
+#a different value is specified.
+
+
+#Texture		Texture Coordinates	Size			Description	    	Qualifier   Screen Coordinates	Absolute Coordinates	
+#Filename				x	y	Width(x)	Height(y)				x	y	x	y
+#ROMULAN STATUS PANEL												
+
+@skip=off
+@reference=256												
+@tmaterial=interface
+
+info_panel.0		rguib01		0	0	256	20	#Top Border, L side 		0	0	0	292	652
+info_panel.1		rguib01		0	20	238	20	#Top Border, R side 		1	256	0	548	652
+info_panel.2		rguib01		0	40	18	94	#Left Border, top 		2	0	20	292	672
+info_panel.3		rguib01		20	40	18	94	#Right Border, top 		3	476	20	768	672
+info_panel.4		rguib01		40	40	18	96	#Left Border, bottom 		4	0	114	292	766
+info_panel.5		rguib01		60	40	18	96	#Right Border,bottom 		5	476	114	768	766
+info_panel.6		rguib01		0	138	256	18	#Bottom Border, L side 		8	0	210	292	862
+info_panel.7		rguib01		0	156	238	18	#Bottom Border, R side 		9	256	210	548	862
+@tmaterial=additive
+info_system.0		rguib01		144	46	30	30	#System Icon_0			0	30	32	322	684
+info_system.1		rguib01		178	46	30	30	#System Icon_1			1	30	66	322	718
+info_system.2		rguib01		178	78	30	30	#System Icon_4			4	30	168	322	820
+info_system.3		rguib01		212	46	30	30	#System Icon_2			2	30	100	322	752
+info_system.4		rguib01		144	78	30	30	#System Icon_3			3	30	134	322	786
+@tmaterial=interface
+large_shield_bar		rguib01		0	200	96	10	#Shield Meter				76	66	368	718
+large_energy_bar		rguib01		0	188	96	10	#Energy Meter				76	174	368	826
+#				rguib01		166	150	90	2	#Energy Indicator Line			76	190	368	842
+large_construction_bar	rguib01		0	212	96	10	#Construction Meter			76	174	368	826
+large_dilithium_bar	rguib01		158	190	98	10	#Dilithium Meter			76	174	368	826
+
+federation_icon		rguib01		94	110	38	26	#Race Icon - Fed			112	32	404	684
+borg_icon			rguib01		132	110	38	26	#Race Icon - Borg			116	32	408	684
+romulan_icon		rguib01		170	110	38	26	#Race Icon - Romulan			104	32	396	684
+klingon_icon		rguib01		208	110	38	26	#Race Icon - Klingon			114	32	406	684
+
+race_icon_bar		rguic01		0	0	88	26	#Race Icon Bar				80	32	372	684
+single_background.0	rguib01		80	42	18	38	#Class/Name Connector - Rt	0	424	46	716	698
+single_background.1	rguia01		148	136	108	4	#Middle Rt - Rt Horiz		1	334	110	626	762
+single_background.2	rguib01		100	42	10	32	#Diagonal - Left of Race Bar	2	448	166	740	818
+single_background.3	rguia01		206	116	50	16	#Middle Rt - Center Hexagon	3	284	104	576	756
+single_background.4	rguia01		148	136	108	4	#Middle Rt - Lt Horiz		4	176	110	468	762
+single_background.5	rguia01		2	232	228	4	#Bottom Rt - Horiz		5	210	198	502	850
+single_background.6	rguia01		0	232	256	4	#Top Horizontal - Left		6	68	24	360	676
+single_background.7	rguia01		2	232	148	4	#Top Horizontal - Right		7	324	24	616	676
+single_background.8	rguia01		130	22	20	90	#Diagonal - Rt Top		8	452	28	744	680
+single_background.9	rguia01		152	22	18	84	#Diagonal - Rt Bot		9	438	118	730	770
+single_background.10	rguia01		0	168	240	30	#Ship Class Bar				184	32	476	684
+name_label_bar		rguia01		0	168	240	30	#Ship Name Bar				184	68	476	720
+crew_label_bar		rguia01		0	200	256	30	#Crew Bar			0	192	126	484	778
+crew_dot			rguib01		216	82	14	14	#Crew Dot				178	134	470	786
+officer_label_bar		rguib01		0	226	234	30	#Officer Bar				180	162	472	814
+small_shield_bar		rguib01		160	184	86	4	#Multiple Selection Health		0	0	352	678
+small_energy_bar		rguib01		160	180	86	4	#Multiple Selection Energy		6	82	358	760
+small_crew_dot			rguib01		250	180	6	6	#Multiple Selection Crew		78	72	430	750
+small_flag			rguib01		248	170	8	10
+#				rguid01		168	210	24	36	#Scroll Arrow L Side, Up		26	44	318	696
+#				rguid01		198	210	24	36	#Scroll Arrow L Side, Down		26	150	318	802
+#				rguid01		168	210	24	36	#Scroll Arrow R Side, Up		444	44	736	696
+#				rguid01		198	210	24	36	#Scroll Arrow R Side, Down		444	150	736	802
+
+
+#ROMULAN SPEED RAIL												
+@reference=256												
+speed_separator		rguic01		208	28	16	64	#Separator Bar				30	8	322	888
+speed_panel.0		rguic01		0	94	256	80	#Border, L side			0	0	0	292	880
+speed_panel.1		rguic01		0	176	238	80	#Border, R side			1	256	0	548	880
+
+
+#ROMULAN MINIMAP												
+@reference=256												
+map_panel.0		rguia01		0	0	256	20	#Top Border			0	0	0	0	666
+map_panel.1		rguia01		220	20	36	18	#Top Border Rt Corner		1	256	2	256	668
+map_panel.2		rguia01		0	20	30	128	#Left Border, Top half		2	0	20	0	686
+map_panel.3		rguia01		32	20	30	128	#Right Border, Top half		3	262	20	262	686
+map_panel.4		rguia01		64	20	28	128	#Left Border, Bottom half 	4	0	148	0	814
+map_panel.5		rguia01		94	20	30	128	#Right Border, Bottom half 	5	262	148	262	814
+map_panel.6		rguia01		0	148	256	18	#Bottom Border - Left Side	6	0	276	0	942
+map_panel.7		rguia01		220	38	36	18	#Bottom Border - Right Corner	7	256	276	256	942
+
+
+#ROMULAN BUTTON WINDOW												
+@reference=256												
+@tmaterial=interface
+control_panel.0		rguid01		0	0	232	20	#Top Border			0	0	0	786	664
+control_panel.1		rguid01		0	20	232	14	#Bottom Border			1	0	282	786	946
+control_panel.2		rguid01		0	34	18	132	#Left Border, Top  		2	0	20	786	684
+control_panel.3		rguid01		18	34	18	134	#Left Border, Bottom 		3	0	152	786	816
+control_panel.4		rguid01		36	34	18	132	#Right Border, Top  		4	216	18	1002	682
+control_panel.5		rguid01		54	34	18	134	#Right Border, Bottom 		5	216	152	1002	816
+
+
+#ROMULAN CINEMATIC VIEW												
+@reference=256												
+@tmaterial=default
+cinematic_background	rguif01		0	0	226	160	#Communications Logo			18	76	1036	786
+@tmaterial=interface
+cinematic_panel.0	rguie01		0	0	132	80	#Top Border, Left		0	0	0	1018	710
+cinematic_panel.1	rguie01		0	80	130	80	#Top Border, Right 		1	132	0	1150	710
+cinematic_panel.2	rguie01		200	0	26	150	#Left Side Border		2	0	80	1018	790
+cinematic_panel.3	rguie01		228	0	28	150	#Right Side Border		3	234	80	1252	790
+cinematic_panel.4	rguie01		0	160	132	20	#Bottom Border, Left 		4	0	230	1018	940
+cinematic_panel.5	rguie01		0	180	130	20	#Bottom Border, Right 		5	132	230	1150	940
+cinematic_mini_panel.0	rguie01		124	202	132	24		
+cinematic_mini_panel.1	rguie01		126	232	130	24		
+cinematic_comm_button	rguie01		0	200	92	26	#Comm Button Border			28	30	1046	740
+cinematic_menu_button	rguie01		0	228	92	26	#Menu Button Border			42	30	1060	740
+
+
+#ROMULAN RESOURCE												
+@reference=256												
+officer_panel.0		rguid01		0	168	162	32	#Officer Background		0	790	0	790	0
+officer_icon		rguid01		0	204	22	20	#Officer Icon				4	6	794	6
+crew_panel.0		rguid01		0	168	162	32	#Crew Background		0	954	0	954	0
+crew_icon		rguid01		24	204	8	20	#Crew Icon				12	6	966	6
+dilithium_panel.0	rguid01		0	168	162	32	#Dilithium Background		0	1118	0	1118	0
+dilithium_icon		rguid01		34	204	16	20	#Dilithium Icon				6	6	1124	6
+

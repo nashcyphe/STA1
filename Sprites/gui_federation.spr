@@ -1,0 +1,121 @@
+sprite_table
+
+# Federation interface sprites.
+
+# Blending modes
+# --------------
+
+# 0x21 - Normal		
+# 0x56 - Use alpha
+# 0x22 - Additive
+
+## SPRITE DATA ##
+
+# @reference=texture size in pixels from which the u,v,w, and h values
+# were measured.  This value will effect all subsequent textures until
+# a different value is specified.
+
+# Name      		File       		U 	V 	W 	H 	
+
+# Federation Speed Rail
+@reference=256
+@tmaterial=interface
+speed_panel.0		fguic04		0	176	256	80			#left side
+speed_panel.1		fguic04		0	94	238	80			#right side
+speed_separator		fguic04		208	28	16	66		
+
+# Federation Minimap
+@reference=256
+@tmaterial=interface
+map_panel.0			fguia04		0	0	256	18		
+map_panel.1			fguia04		0	20	36	18		
+map_panel.2			fguia04		42	20	32	126		
+map_panel.3			fguia04		76	20	32	126		
+map_panel.4			fguia04		112	20	30	130		
+map_panel.5			fguia04		148	20	30	130		
+map_panel.6			fguia04		0	156	256	18		
+map_panel.7			fguia04		0	40	36	18		
+
+# Federation Resource Displays
+@reference=256
+@tmaterial=interface
+officer_panel.0			fguid04		0	174	162	32		
+officer_icon			fguid04		0	214	20	20		
+crew_panel.0			fguid04		0	174	162	32		
+crew_icon			fguid04		28	214	8	20		
+dilithium_panel.0		fguid04		0	174	162	32		
+dilithium_icon			fguid04		46	214	16	20		
+
+# Federation Cinematic View
+@reference=256
+@tmaterial=default
+cinematic_background	fguif04		0	0	226	160		
+@tmaterial=interface
+cinematic_panel.0		fguie04		0	0	130	70		
+cinematic_panel.1		fguie04		0	72	132	70		
+cinematic_panel.2		fguie04		190	0	30	160		
+cinematic_panel.3		fguie04		222	0	30	160		
+cinematic_panel.4		fguie04		0	144	130	18		
+cinematic_panel.5		fguie04		0	164	132	18		
+cinematic_mini_panel.0	fguie04		124	186	132	24		
+cinematic_mini_panel.1	fguie04		126	218	130	24		
+cinematic_menu_button	fguie04		0	222	96	30		
+cinematic_menu_border	fguie04		0	188	96	30		
+cinematic_comm_button	fguie04		0	222	96	30		
+cinematic_comm_border	fguie04		0	188	96	30		
+
+# Federation Button Window
+@reference=256
+@tmaterial=interface
+control_panel.0			fguid04		0	0	232	14		
+control_panel.1			fguid04		0	16	232	12		
+control_panel.2			fguid04		0	30	16	132		
+control_panel.3			fguid04		18	30	16	134		
+control_panel.4			fguid04		36	30	16	132		
+control_panel.5			fguid04		54	30	16	134		
+
+# Federation Status Panel
+@reference=256
+@tmaterial=interface
+info_panel.0			fguib04		0	0	256	18		
+info_panel.1			fguib04		0	18	238	18		
+info_panel.2			fguib04		0	36	32	96		
+info_panel.3			fguib04		34	36	32	96		
+info_panel.4			fguib04		68	36	30	94		
+info_panel.5			fguib04		100	36	30	94		
+info_panel.6			fguib04		0	132	256	18		
+info_panel.7			fguib04		0	150	238	18		
+single_background.0		fguic04		0	0	244	26		
+single_background.1		fguic04		0	26	20	34		
+single_background.2		fguic04		248	0	6	126		
+single_background.3		fguic04		22	28	12	12		
+single_background.4		fguic04		0	62	196	6		
+single_background.5		fguic04		0	70	180	6		
+race_icon_bar			fguib04		0	170	120	26		
+name_label_bar			fguib04		0	196	248	26		
+crew_label_bar			fguic04		38	28	164	26		
+officer_label_bar		fguib04		0	224	150	26		
+large_shield_bar		fguib04		126	184	96	10		
+large_energy_bar		fguib04		126	172	96	10		
+large_construction_bar		fguib04		156	224	96	10		
+large_dilithium_bar		fguib04		156	236	98	10		
+crew_dot			fguib04		214	74	14	14		
+@tmaterial=additive
+info_system.0			fguib04		142	40	30	30		
+info_system.1			fguib04		176	40	30	30		
+info_system.2			fguib04		176	72	30	30		
+info_system.3			fguib04		210	40	30	30		
+info_system.4			fguib04		142	72	30	30		
+@tmaterial=interface
+small_shield_bar		fguib04		142	252	86	4		
+small_energy_bar		fguib04		142	248	86	4		
+small_crew_dot			fguib04		232	248	6	6		
+#small_flag			fguib04		248	246	8	10
+
+# Race icons
+@reference=256
+federation_icon			fguia04		0	194	38	26		
+borg_icon				fguia04		38	194	38	26		
+romulan_icon			fguia04		76	194	38	26		
+klingon_icon			fguia04		114	194	38	26		
+

@@ -1,0 +1,103 @@
+sprite_table
+
+##### Ship light sprite effects #####
+
+## SPRITE DEFINITIONS ##
+
+# @reference=texture size in pixels from which the u,v,w, and h values
+# were measured.  This value will effect all subsequent textures until
+# a different value is specified.
+
+# Name	File				U	V	W	H	
+
+@reference=64
+@tmaterial=additive
+
+Ballflare	xlite1			0	0	32	32		
+SmallStar	xlite1			32	0	32	32		
+RedMulti	xlite1			0	32	32	32		
+AmberMulti	xlite1			32	32	32	32		
+Spot		xlite2			0	0	64	64		
+Borglight1	xborglight		0	0	32	32		
+Borglight2	xborglight		32	0	32	32		
+Borglight3	xborglight		0	32	32	32		
+flare		xflare			0	0	32	32		
+Borglight4	xborglight		32	32	32	32		
+dmoonglow	Mdmoonglo4		0	0	64	64
+softglow	xglow_soft		0	0	64	64	
+
+
+@tmaterial=additive
+borgore		xore			32	32	32	32
+klinore		xore			32	32	32	32
+romore		xore			32	32	32	32
+fedore		xore			32	32	32	32
+
+@reference=256
+@tmaterial=additive
+
+badge		stabadge		5	5	246	246
+
+
+## SPRITE NODE DEFINITIONS ##
+
+# @sprite_node name sprite animation (width,height) (r,g,b)
+# RGB Colour values range from 0 (none) to 1.0 (full intensity)
+
+# blue lights
+@sprite_node blueconst AmberMulti const (.7,.7) (0,0.5,1)
+@sprite_node blueconstbig Ballflare const (1,1) (0,0.1,1)
+@sprite_node bluestrobe SmallStar strobe1 (.5,.5) (0,0.1,1) billboard
+@sprite_node bluestrobebig RedMulti strobe1 (1,1) (0,0.1,1) billboard
+
+# green lights
+@sprite_node greenconst AmberMulti const (.7,.7) (0,1,0)
+@sprite_node greenconstbig Ballflare const (1,1) (0,1,0)
+@sprite_node greenstrobe AmberMulti strobe (.5,.5) (0,1,0) billboard
+@sprite_node greenstrobebig AmberMulti strobe2 (1,1) (0,1,0) billboard
+
+# red lights
+@sprite_node redconst AmberMulti const (.7,.7)) (1,.8,0)
+@sprite_node redconstbig Ballflare const (1,1) (1,.8,0)
+@sprite_node redstrobe RedMulti strobe (.5,.5) (1,.8,0) billboard
+@sprite_node redstrobebig RedMulti strobe2 (1,1) (1,.8,0) billboard
+
+# white-ish lights
+@sprite_node whiteconst Ballflare const	(.5,.5) (.7,.8,1)
+@sprite_node whiteconstbig Spot const (7,18) (.7,.8,.8)
+@sprite_node whitestrobe Ballflare strobe (.5,.5) (1,1,1) //billboard
+@sprite_node whitestrobe2 SmallStar strobe2 (.5,.5) (1,1,1) billboard
+@sprite_node whitestrobebig RedMulti strobe (2,2) (1,1,1) billboard
+
+# amber lights
+@sprite_node yellowconst AmberMulti const (1,1) (1,1,0) 
+@sprite_node yellowconstbig Ballflare flicker (2,2) (1,.8,.8)
+@sprite_node yellowstrobe SmallStar strobe (.5,.5) (1,1,0) billboard
+@sprite_node yellowstrobebig RedMulti strobe (1,1) (1,1,0) billboard
+@sprite_node bigbillboard Ballflare flicker (1,1) (1,.8,.8) billboard
+
+
+#borg ore minning tanks
+@sprite_node borgore borgore const (4.5,4.5) (0.2,0.9,1) billboard
+
+#federation ore minning tanks
+@sprite_node fedore fedore const (6.5,6.5) (0.2,0.9,1) billboard
+
+#borg ore freight tanks
+@sprite_node borgtank borgore const (5,5) (0.2,0.9,1)
+
+#borg queen purple glow
+@sprite_node borgprpl borgore const (6,6) (0.5,0,1) billboard
+
+#Dilithium Moon Glow Sprites
+@sprite_node oreglow dmoonglow moonpulse (40,40) (0,0,0) billboard
+@sprite_node dmooninf dmoonglow infpulse (40,40) (0,0,0) billboard
+
+#Klingon ore minning tanks
+@sprite_node klinore klinore const (5.5,5.5) (0.2,0.9,1) billboard
+
+#Romulan ore minning tanks
+@sprite_node romore romore const (2.5,2.5) (0.2,0.9,1) billboard
+
+#logoimage
+@sprite_node stabadge badge const (16,16) (1,1,1) 

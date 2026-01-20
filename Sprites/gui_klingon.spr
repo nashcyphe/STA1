@@ -1,0 +1,140 @@
+sprite_table
+
+# Blending modes
+# --------------
+
+# 0x21 - Normal		
+# 0x56 - Use alpha
+# 0x22 - Additive
+
+## SPRITE DATA ##
+
+
+
+
+# @reference=texture size in pixels from which the u,v,w, and h values
+# were measured.  This value will effect all subsequent textures until
+# a different value is specified.
+														
+# Name	 		Filename													Quali	Screen Co. 	Absolute Coord
+#							U	V	W	H								fier	x	y	x	y
+														
+#KLINGON STATUS PANEL														
+
+@skip=off
+@reference=256
+@tmaterial=interface
+														
+info_panel.0		kguib01		0	0	256	22			#Top Border, L side 		0	12	2	304	650
+info_panel.1		kguib01		0	22	214	22			#Top Border, R side 		1	268	2	560	650
+info_panel.2		kguib01		0	44	36	44			#Left Border, top diagonal 	2	0	24	292	672
+info_panel.3		kguib01		36	44	38	44			#Right Border, top diagonal 	3	456	24	748	672
+info_panel.4		kguib01		0	88	30	34			#Left Border, bottom diagonal 4	0	180	292	828
+info_panel.5		kguib01		38	88	30	34			#Right Border,bottom diagonal 5	464	180	756	828
+info_panel.6		kguib01		76	44	16	112			#Left Border, vertical		6	2	68	294	716
+info_panel.7		kguib01		94	44	16	112			#Right Border, vertical 	7	476	68	768	716
+info_panel.8		kguib01		0	156	256	18			#Bottom Border, L side  	8	0	214	292	862
+info_panel.9		kguib01		0	174	238	18			#Bottom Border, R side  	9	256	214	548	862
+@tmaterial=additive
+info_system.0		kguib01		144	46	30	30			#System Icon_0			0	30	36	322	684
+info_system.1		kguib01		178	46	30	30			#System Icon_1			1	30	70	322	718
+info_system.2		kguib01		178	78	30	30			#System Icon_2			4	30	172	322	820
+info_system.3		kguib01		212	46	30	30			#System Icon_3			2	30	104	322	752
+info_system.4		kguib01		144	78	30	30			#System Icon_4			3	30	138	322	786
+@tmaterial=interface
+large_shield_bar		kguib01		158	206	96	10			#Shield Meter			76	70	368	718
+large_energy_bar		kguib01		158	194	96	10			#Energy Meter			76	178	368	826
+large_construction_bar	kguib01		158	218	96	10			#Construction Meter		76	178	368	826
+large_dilithium_bar	kguib01		56	194	98	10			#Dilithium Meter			74	178	368	826
+
+federation_icon		kguid01		0	228	38	26		
+borg_icon			kguid01		38	228	38	26		
+romulan_icon		kguid01		76	228	38	26		
+klingon_icon		kguid01		114	228	38	26		
+
+race_icon_bar		kguib01		0	126	76	26			#Race Icon Bar			92	32	384	680
+single_background.0	kguia01		148	56	34	14			#Class/Name Connector - Rt	0	432	56	724	704
+single_background.1	kguib01		114	44	10	100			#Red Vertical			1	460	70	752	718
+single_background.2	kguib01		0	192	22	34			#Red Diagonal			2	448	170	740	818
+single_background.3	kguib01		56	206	100	10			#Red Horizontal Triangle-Bott	3	348	196	640	844
+single_background.4	kguid01		222	26	10	172			#Vertical Bar - System		4	60	32	352	680
+single_background.5	kguid01		204	26	14	168			#Vertical Bar - Middle		5	168	32	460	680
+single_background.6	kguid01		110	28	90	2			#Red Horizontal 1-WireFrame	6	78	84	370	732
+single_background.7	kguid01		110	28	90	2			#Red Horizontal 2-WireFrame	7	78	170	370	818
+single_background.8	kguia01		0	170	246	26			#Ship Class Bar			186	32	478	680
+name_label_bar		kguia01		0	196	246	26			#Ship Name Bar			186	68	478	716
+crew_label_bar		kguia01		0	226	256	26			#Crew Bar 1				0	182	132	474	780
+crew_dot			kguib01		216	82	14	14			#Crew Dot				178	138	470	786
+officer_label_bar		kguib01		0	230	242	26			#Officer Bar			178	166	470	814
+small_shield_bar		kguib01		160	148	86	4			#Multiple Selection Health	0	0	352	678
+small_energy_bar		kguib01		160	144	86	4			#Multiple Selection Energy	6	82	358	760
+small_crew_dot			kguib01		250	144	6	6			#Multiple Selection Crew	78	72	430	750
+small_flag			kguib01		150	146	8	10
+#				kguid01		170	200	14	56			#Scroll Arrow L Side, Up	30	46	322	694
+#				kguid01		186	200	14	56			#Scroll Arrow L Side, Down	30	134	322	782
+#				kguid01		204	200	14	56			#Scroll Arrow R Side, Up	450	46	742	694
+#				kguid01		220	200	14	56			#Scroll Arrow R Side, Down	450	134	742	782
+#				kguid01		236	28	8	172			#Scroll Arrow Bar - Left Side	40	34	332	682
+#				kguid01		246	28	8	172			#Scroll Arrow Bar - Right Sid	444	34	736	682
+														
+														
+#KLINGON SPEED RAIL														
+@reference=256														
+speed_separator		kguic01		208	28	16	66			#Separator Bar			30	8	322	888
+speed_panel.0		kguic01		0	94	256	80			#Border, L side 		0	0	0	292	880
+speed_panel.1		kguic01		0	176	238	80			#Border, R side 		1	256	0	548	880
+														
+														
+#KLINGON MINIMAP														
+@reference=256														
+map_panel.0			kguia01		0	0	254	18			#Top Border			0	14	0	14	668
+map_panel.1			kguia01		240	18	10	18			#Top Border Rt Corner		1	268	0	268	668
+map_panel.2			kguia01		0	18	38	128			#Left Border, Top half 		2	0	18	0	686
+map_panel.3			kguia01		40	18	38	128			#Right Border, Top half 	3	254	18	254	686
+map_panel.4			kguia01		80	18	32	128			#Left Border, Bottom half 	4	0	146	0	814
+map_panel.5			kguia01		114	18	30	128			#Right Border, Bottom half 	5	260	146	260	814
+map_panel.6			kguia01		168	18	70	18			#Bottom Border - Left Side	6	0	274	0	942
+map_panel.7			kguia01		168	36	70	22			#Bottom Border - Right Side	7	222	274	222	942
+map_panel.8			kguia01		0	146	152	22			#Bottom Border - Middle		8	70	270	70	938
+														
+														
+#KLINGON CONTROL PANEL														
+@reference=256														
+@tmaterial=interface
+control_panel.0		kguid01		0	0	232	14			#Top Border			0	0	10	786	668
+control_panel.1		kguid01		0	14	232	12			#Bottom Border			1	0	290	786	948
+control_panel.2		kguid01		0	26	16	132			#Left Border, Top "		2	0	24	786	682
+control_panel.3		kguid01		36	26	16	134			#Left Border, Bottom"		3	0	156	786	814
+control_panel.4		kguid01		18	26	18	132			#Right Border, Top "		4	216	24	1002	682
+control_panel.5		kguid01		54	26	16	134			#Right Border, Bottom"		5	216	156	1002	814
+														
+														
+#KLINGON CINEMATIC VIEW														
+@reference=256														
+@tmaterial=default
+cinematic_background	kguif01		0	0	226	160		#Communications Logo			1018	706	1036	782
+@tmaterial=interface
+cinematic_panel.0		kguie01		0	0	130	76			#Top Border, Left"		0	0	0	1018	706
+cinematic_panel.1		kguie01		0	76	132	76			#Top Border, Right"		1	130	0	1148	706
+cinematic_panel.2		kguie01		154	0	102	52			#Left Side BorderTop		2	0	76	1018	782
+cinematic_panel.3		kguie01		156	52	100	52			#Right Side BorderTop		3	162	76	1180	782
+cinematic_panel.4		kguie01		142	104	50	108			#Left Side BorderBottom		4	0	128	1018	834
+cinematic_panel.5		kguie01		198	104	46	108			#Right Side BorderBottom	5	216	128	1234	834
+cinematic_panel.6		kguie01		0	154	130	18			#Bottom Border, Left"		6	2	236	1020	942
+cinematic_panel.7		kguie01		0	174	128	18			#Bottom Border, Right"		7	132	236	1150	942
+cinematic_mini_panel.0	kguif01		124	172	132	24		
+cinematic_mini_panel.1	kguif01		126	206	130	24		
+cinematic_comm_button	kguie01		0	192	92	26			#Comm Button Border			30	36	1048	742
+cinematic_menu_button	kguie01		0	222	92	26			#Menu Button Border			140	36	1158	742
+														
+														
+#KLINGON RESOURCE														
+@reference=256														
+officer_panel.0			kguid01		0	166	162	32			#Officer Background		0	790	0	790	0
+officer_icon			kguid01		0	200	22	24			#Officer Icon				6	2	796	2
+crew_panel.0			kguid01		0	166	162	32			#Crew Background		0	954	0	954	0
+crew_icon			kguid01		26	200	8	20			#Crew Icon				12	4	966	4
+dilithium_panel.0		kguid01		0	166	162	32			#Dilithium Background		0	1118	0	1118	0
+dilithium_icon			kguid01		40	200	16	20			#Dilithium Icon				6	4	1124	4
+
+

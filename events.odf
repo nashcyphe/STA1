@@ -1,0 +1,2263 @@
+#EVENT data file
+
+InvalidEvent { #this event should be the first in this file
+#No marker
+}
+
+DefaultMarkerOnly{
+Marker #uses default radius, etc.
+}
+
+#########################################
+#FOR DEBUGGING PURPOSES -- DO NOT CHANGE#
+#########################################
+VTuneOn{
+Text "VTune sampling turned on."
+}
+
+VTuneOff{
+Text "VTune sampling turned off."
+}
+
+
+##############################
+# Computer Voice Topics      #
+# DO NOT CHANGE EVENT NAMES! #
+##############################
+
+FerengiArrives{
+Table
+	Sound "gvofer01.wav"
+	Sound "gvofer02.wav"
+	Sound "gvofer03.wav"
+	Sound "gvofer04.wav"
+	Sound "gvofer05.wav"
+	Sound "gvofer06.wav"
+Text "Ferengi have stolen one of your derelict vessels."
+}
+
+CannotRepair{
+Table
+	Sound <borg> "gvobcv77.wav"
+	Sound <federation> "gvofcv24.wav"
+	Sound <klingon> "gvokcv77.wav"
+	Sound <romulan> "gvorcv77.wav"
+Text "You have no repair facilities. Build a shipyard."
+}
+
+ResearchCancelled{
+Table
+	Sound <borg> "gvobcv66.wav"
+	Sound <federation> "gvofcv66.wav"
+	Sound <federation> "gvofcv66.wav"
+	Sound <klingon> "gvokcv66.wav"
+	Sound <romulan> "gvorcv66.wav"
+}
+
+UnableToTransport{
+Table
+	Sound <borg> "gvobcv40.wav"
+	Sound <federation> "gvofcv39.wav"
+	Sound <federation> "gvofcv40.wav"
+	Sound <klingon> "gvokcv39.wav"
+	Sound <romulan> "gvorcv39.wav"
+}
+
+StationDecommission{
+Table
+	Sound <borg> "gvobcv35.wav"
+	Sound <federation> "gvofcv32.wav"
+	Sound <klingon> "gvokcv35.wav"
+	Sound <romulan> "gvorcv35.wav"
+}
+
+ShipDecommission{
+Table
+	Sound <borg> "gvobcv32.wav"
+	Sound <federation> "gvofcv32.wav"
+	Sound <klingon> "gvokcv32.wav"
+	Sound <romulan> "gvorcv32.wav"
+}
+
+ComputerAcknowledge{
+Table
+	Sound <borg> "gvobcv13.wav"
+	Sound <federation> "gvofcv13.wav"
+	Sound <klingon> "gvokcv13.wav"
+	Sound <romulan> "gvorcv13.wav"
+}
+
+SelfDestructCancel{
+Table
+	Sound <borg> "gvobcv50.wav"
+	Sound <federation> "gvofcv50.wav"
+	Sound <klingon> "gvokcv50.wav"
+	Sound <romulan> "gvorcv50.wav"
+}
+
+ComputerGreenAlert{
+Table
+	Sound <borg> "gvobcv19.wav"
+	Sound <federation> "gvofcv11.wav"
+	Sound <klingon> "gvokcv19.wav"
+	Sound <romulan> "gvorcv19.wav"
+}
+
+ComputerYellowAlert{
+Table
+	Sound <borg> "gvobcv42.wav"
+	Sound <federation> "gvofcv42.wav"
+	Sound <klingon> "gvokcv42.wav"
+	Sound <romulan> "gvorcv42.wav"
+}
+
+ComputerRedAlert{
+Table
+	Sound <borg> "gvobcv27.wav"
+	Sound <federation> "gvofcv27.wav"
+	Sound <klingon> "gvokcv27.wav"
+	Sound <romulan> "gvorcv27.wav"
+}
+
+ShipConstructionBegin{
+Table
+	Sound <borg> "gvobcv31.wav"
+	Sound <federation> "gvofcv31.wav"
+	Sound <klingon> "gvokcv31.wav"
+	Sound <romulan> "gvorcv31.wav"
+#	Text "Beginning ship construction."
+}
+
+ShipConstructionComplete{
+Table
+	Sound <borg> "gvobcv30.wav"
+	Sound <federation> "gvofcv30.wav"
+	Sound <klingon> "gvokcv30.wav"
+	Sound <romulan> "gvorcv30.wav"
+	SaveLocation
+#CinematicPriority 2.0
+#CinematicTime 8.0
+#	Text "Ship construction complete."
+}
+
+FacilityConstructionBegin{
+Table
+	Sound <borg> "gvobcv34.wav"
+	Sound <federation> "gvofcv34.wav"
+	Sound <klingon> "gvokcv34.wav"
+	Sound <romulan> "gvorcv34.wav"
+#	Text "Beginning station construction."
+}
+
+FacilityConstructionComplete{
+Table
+	Sound <borg> "gvobcv33.wav"
+	Sound <federation> "gvofcv33.wav"
+	Sound <klingon> "gvokcv33.wav"
+	Sound <klingon> "gvokcv51.wav"
+	Sound <romulan> "gvorcv33.wav"
+	SaveLocation
+#	Text "Station construction completed."
+}
+
+UpgradeConstructionBegin{
+Table
+	Sound <borg> "gvobcv64.wav"
+	Sound <federation> "gvofcv64.wav"
+	Sound <klingon> "gvokcv64.wav"
+	Sound <romulan> "gvorcv64.wav"
+}
+
+UpgradeConstructionComplete{
+Table
+	Sound <borg> "gvobcv63.wav"
+	Sound <federation> "gvofcv63.wav"
+	Sound <klingon> "gvokcv63.wav"
+	Sound <romulan> "gvorcv63.wav"
+	SaveLocation
+}
+
+ResearchBegin{
+Table
+	Sound <borg> "gvobcv60.wav"
+	Sound <federation> "gvofcv60.wav"
+	Sound <klingon> "gvokcv60.wav"
+	Sound <romulan> "gvorcv60.wav"
+#	Text "Research begun."
+}
+
+ResearchComplete{
+Table
+	Sound <borg> "gvobcv28.wav"
+	Sound <federation> "gvofcv28.wav"
+	Sound <klingon> "gvokcv28.wav"
+	Sound <romulan> "gvorcv28.wav"
+	SaveLocation
+#	Text "Research complete."
+}
+
+ConstructionCancelled{
+Table
+	Sound <borg> "gvobcv04.wav"
+	Sound <federation> "gvofcv04.wav"
+	Sound <klingon> "gvokcv04.wav"
+	Sound <romulan> "gvorcv04.wav"
+}
+
+InsufficientSpecialEnergy{
+Table
+	Sound <borg> "gvobcv23.wav"
+	Sound <federation> "gvofcv23.wav"
+	Sound <klingon> "gvokcv23.wav"
+	Sound <romulan> "gvorcv23.wav"
+}
+
+CrewTransferred{
+Table
+	Sound <borg> "gvobcv05.wav"
+	Sound <federation> "gvofcv05.wav"
+	Sound <klingon> "gvokcv05.wav"
+	Sound <romulan> "gvorcv05.wav"
+}
+
+DilithiumTransferred{
+Table
+	Sound <borg> "gvobcv06.wav"
+	Sound <federation> "gvofcv06.wav"
+	Sound <klingon> "gvokcv06.wav"
+	Sound <romulan> "gvorcv06.wav"
+}
+
+UnitsTransferred{
+Table
+	Sound <borg> "gvobcv41.wav"
+	Sound <federation> "gvofcv41.wav"
+	Sound <klingon> "gvokcv41.wav"
+	Sound <romulan> "gvorcv41.wav"
+}
+
+EnemyDetected{
+Table
+	Sound <borg> "gvobcv07.wav"
+	Sound <federation> "gvofcv07.wav"
+	Sound <klingon> "gvokcv07.wav"
+	Sound <romulan> "gvorcv07.wav"
+}
+
+EnemyEngaged{
+Table
+	Sound <borg> "gvobcv09.wav"
+	Sound <federation> "gvofcv09.wav"
+	Sound <klingon> "gvokcv09.wav"
+	Sound <romulan> "gvorcv09.wav"
+	SaveLocation
+SoundPriority 2
+Marker radius 128 shrink 0.025 time 4 color 1 0 0
+Text "Enemy engaged."
+TriggerInterval 60
+}
+
+InvalidAction{
+Table
+	Sound <borg> "gvobcv24.wav"
+	Sound <federation> "gvofcv24.wav"
+	Sound <klingon> "gvokcv24.wav"
+	Sound <romulan> "gvorcv24.wav"
+}
+
+SelfDestructBegun{
+Table
+	Sound <borg> "gvobcv29.wav"
+	Sound <federation> "gvofcv29.wav"
+	Sound <klingon> "gvokcv29.wav"
+	Sound <romulan> "gvorcv29.wav"
+}
+
+StationRecrewing{
+Table
+	Sound <borg> "gvobcv36.wav"
+	Sound <federation> "gvofcv36.wav"
+	Sound <klingon> "gvokcv36.wav"
+	Sound <romulan> "gvorcv36.wav"
+}
+
+BaseUnderAttack{
+Table
+	Sound <borg> "gvobcv01.wav"
+	Sound <federation> "gvofcv01.wav"
+	Sound <klingon> "gvokcv01.wav"
+	Sound <romulan> "gvorcv01.wav"
+	SaveLocation
+SoundPriority 2
+Marker radius 128 shrink 0.025 time 4 color 1 0 0
+Text "Your base is under attack!"
+TriggerInterval 30
+#CinematicPriority 5.0
+#CinematicTime 10.0
+}
+
+InsufficientDilithium{
+Table
+	Sound <borg> "gvobcv21.wav"
+	Sound <federation> "gvofcv21.wav"
+	Sound <klingon> "gvokcv21.wav"
+	Sound <romulan> "gvorcv21.wav"
+	Sound <romulan> "gvorcv53.wav"
+	SaveLocation
+SoundPriority 2
+Text "Insufficient dilithium to build. Mine more dilithium."
+}
+
+InsufficientCrew{
+Table
+	Sound <borg> "gvobcv20.wav"
+	Sound <federation> "gvofcv20.wav"
+	Sound <klingon> "gvokcv20.wav"
+	Sound <romulan> "gvorcv20.wav"
+	Sound <romulan> "gvorcv52.wav"
+	SaveLocation
+SoundPriority 2
+Text "Insufficient crew to build. Build more starbases."
+}
+
+InsufficientOfficers{
+Table
+	Sound <borg> "gvobcv22.wav"
+	Sound <federation> "gvofcv22.wav"
+	Sound <klingon> "gvokcv22.wav"
+	Sound <romulan> "gvorcv22.wav"
+	SaveLocation
+SoundPriority 2
+Text "Insufficient officers to build. Build more upgrades."
+}
+
+InsufficientSpace{
+SoundPriority 2
+Text "Insufficient space for more upgrades. Build another starbase."
+}
+
+CantBuildThere{
+Table
+	Sound <borg> "gvobcv03.wav"
+	Sound <federation> "gvofcv03.wav"
+	Sound <klingon> "gvokcv03.wav"
+	Sound <romulan> "gvorcv03.wav"
+	SaveLocation
+SoundPriority 2
+Text "Can not build at specified location."
+}
+
+###############################  END OF COMPUTER VOICE EVENTS
+
+
+
+########################################
+# SPECIAL WEAPON HIT INFO EVENTS       #
+# (Played when a weapon hits a ship)   #
+# Event Name specified in ordnance odf #
+########################################
+
+NaniteHitInfo{
+Table
+	Sound <borg> "gvobcv26.wav"
+	Sound <federation> "gvofcv26.wav"
+	Sound <klingon> "gvokcv26.wav"
+	Sound <romulan> "gvorcv26.wav"
+	SaveLocation
+Marker radius 128 shrink 0.025 time 2 color 1 0 1
+Text "Computer systems infected by Borg nanites."
+}
+
+//DO NOT CHANGE NAME OF EVENT
+MassTranswarpWarning{
+Table
+	Sound <borg> "gvobcv25.wav"
+	Sound <federation> "gvofcv25.wav"
+	Sound <klingon> "gvokcv25.wav"
+	Sound <romulan> "gvorcv25.wav"
+SoundPriority 2
+SaveLocation
+Global
+Marker radius 128 shrink 0.025 time 2 color 1 0 1
+Text "Transwarp Gate detected."
+}
+
+SubspaceRippleWarning{
+Table
+	Sound <borg> "gvobcv37.wav"
+	Sound <federation> "gvofcv37.wav"
+	Sound <klingon> "gvokcv37.wav"
+	Sound <romulan> "gvorcv37.wav"
+SoundPriority 2
+SaveLocation
+Global
+Marker radius 128 shrink 0.025 time 2 color 1 0 1
+Text "Subspace Shockwave detected."
+}
+
+TemporalDisplacementWarning{
+Table
+	Sound <borg> "gvobcv38.wav"
+	Sound <federation> "gvofcv38.wav"
+	Sound <klingon> "gvokcv38.wav"
+	Sound <romulan> "gvorcv38.wav"
+SoundPriority 2
+SaveLocation
+Global
+Marker radius 128 shrink 0.025 time 2 color 1 0 1
+Text "Temporal Stasis Field detected."
+}
+
+BlackHoleCreatorWarning{
+Table
+	Sound <borg> "gvobcv02.wav"
+	Sound <federation> "gvofcv02.wav"
+	Sound <klingon> "gvokcv02.wav"
+	Sound <romulan> "gvorcv02.wav"
+SoundPriority 2
+SaveLocation
+Global
+Marker radius 128 shrink 0.025 time 2 color 1 0 1
+Text "Spacial Rift detected."
+}
+
+
+
+
+
+##################################
+# CAPTAINS VOICE SOUNDS          #
+# Depends on Race and Craft Type #
+# Specified in Craft odf         #
+##################################
+
+#################################################################################
+# SCOUT SOUNDS
+
+ScoutAcknowledge{
+Table
+	Sound <borg> "gvobor04.wav"
+	Sound <federation> "gvofsc01.wav"
+	Sound <klingon> "gvoksc01.wav"
+	Sound <romulan> "gvorsc01.wav"
+}
+
+ScoutSelect{
+Table
+	Sound <borg> "gvobor60.wav"
+	Sound <borg> "gvobor62.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <federation> "gvofsc16.wav"
+	Sound <federation> "gvofsc17.wav"
+	Sound <federation> "gvofsc18.wav"
+	Sound <klingon> "gvoksc16.wav"
+	Sound <klingon> "gvoksc17.wav"
+	Sound <klingon> "gvoksc18.wav"
+	Sound <romulan> "gvorsc16.wav"
+	Sound <romulan> "gvorsc17.wav"
+	Sound <romulan> "gvorsc18.wav"
+}
+
+ScoutAttack{
+Table
+	Sound <borg> "gvobor10.wav"
+	Sound <borg> "gvobor41.wav"
+	Sound <borg> "gvobor42.wav"
+	Sound <federation> "gvofsc06.wav"
+	Sound <federation> "gvofsc07.wav"
+	Sound <federation> "gvofsc08.wav"
+	Sound <klingon> "gvoksc06.wav"
+	Sound <klingon> "gvoksc07.wav"
+	Sound <klingon> "gvoksc08.wav"
+	Sound <romulan> "gvorsc06.wav"
+	Sound <romulan> "gvorsc07.wav"
+	Sound <romulan> "gvorsc08.wav"
+	Sound <borg> "gvobor04.wav"
+	Sound <federation> "gvofsc01.wav"
+	Sound <klingon> "gvoksc01.wav"
+	Sound <romulan> "gvorsc01.wav"
+	Sound <borg> "gvobor62.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <federation> "gvofsc16.wav"
+	Sound <federation> "gvofsc17.wav"
+	Sound <klingon> "gvoksc17.wav"
+	Sound <klingon> "gvoksc18.wav"
+	Sound <romulan> "gvorsc16.wav"
+	Sound <romulan> "gvorsc17.wav"
+
+}
+
+ScoutStop{
+Table
+	Sound <borg> "gvobor21.wav"
+	Sound <federation> "gvofsc21.wav"
+	Sound <klingon> "gvoksc21.wav"
+	Sound <romulan> "gvorsc21.wav"
+}
+
+ScoutMove{
+Table
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <federation> "gvofsc11.wav"
+	Sound <federation> "gvofsc12.wav"
+	Sound <federation> "gvofsc13.wav"
+	Sound <klingon> "gvoksc11.wav"
+	Sound <klingon> "gvoksc12.wav"
+	Sound <klingon> "gvoksc13.wav"
+	Sound <romulan> "gvorsc11.wav"
+	Sound <romulan> "gvorsc12.wav"
+	Sound <romulan> "gvorsc13.wav"
+	Sound <borg> "gvobor04.wav"
+	Sound <federation> "gvofsc01.wav"
+	Sound <klingon> "gvoksc01.wav"
+	Sound <romulan> "gvorsc01.wav"
+	Sound <borg> "gvobor62.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <federation> "gvofsc16.wav"
+	Sound <federation> "gvofsc17.wav"
+	Sound <klingon> "gvoksc17.wav"
+	Sound <klingon> "gvoksc18.wav"
+	Sound <romulan> "gvorsc16.wav"
+	Sound <romulan> "gvorsc17.wav"
+}
+	
+ScoutRepair{
+Table
+	Sound <borg> "gvobor26.wav"
+	Sound <federation> "gvofsc26.wav"
+	Sound <klingon> "gvoksc26.wav"
+	Sound <romulan> "gvorsc26.wav"
+}
+
+###################################################################################
+
+	
+#################################################################################
+# Destroyer SOUNDS
+
+DestroyerAcknowledge{
+Table
+	Sound <borg> "gvobor03.wav"
+	Sound <federation> "gvofdc01.wav"
+	Sound <klingon> "gvokdc01.wav"
+	Sound <romulan> "gvordc01.wav"
+}
+
+DestroyerSelect{
+Table
+	Sound <borg> "gvobor18.wav"
+	Sound <borg> "gvobor19.wav"
+	Sound <borg> "gvobor61.wav"
+	Sound <federation> "gvofdc16.wav"
+	Sound <federation> "gvofdc17.wav"
+	Sound <federation> "gvofdc18.wav"
+	Sound <klingon> "gvokdc16.wav"
+	Sound <klingon> "gvokdc17.wav"
+	Sound <klingon> "gvokdc18.wav"
+	Sound <romulan> "gvordc16.wav"
+	Sound <romulan> "gvordc17.wav"
+	Sound <romulan> "gvordc18.wav"
+}
+
+DestroyerAttack{
+Table
+	Sound <borg> "gvobor45.wav"
+	Sound <borg> "gvobor43.wav"
+	Sound <borg> "gvobor44.wav"
+	Sound <federation> "gvofdc06.wav"
+	Sound <federation> "gvofdc07.wav"
+	Sound <federation> "gvofdc08.wav"
+	Sound <klingon> "gvokdc06.wav"
+	Sound <klingon> "gvokdc07.wav"
+	Sound <klingon> "gvokdc08.wav"
+	Sound <romulan> "gvordc06.wav"
+	Sound <romulan> "gvordc07.wav"
+	Sound <romulan> "gvordc08.wav"
+	Sound <borg> "gvobor03.wav"
+	Sound <federation> "gvofdc01.wav"
+	Sound <klingon> "gvokdc01.wav"
+	Sound <borg> "gvobor19.wav"
+	Sound <borg> "gvobor61.wav"
+	Sound <federation> "gvofdc16.wav"
+	Sound <federation> "gvofdc17.wav"
+	Sound <klingon> "gvokdc18.wav"
+	Sound <romulan> "gvordc16.wav"
+	Sound <romulan> "gvordc17.wav"
+}
+
+
+DestroyerStop{
+Table
+	Sound <borg> "gvobor22.wav"
+	Sound <federation> "gvofdc21.wav"
+	Sound <klingon> "gvokdc21.wav"
+	Sound <romulan> "gvordc21.wav"
+}
+
+DestroyerMove{
+Table
+	Sound <borg> "gvobor14.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <federation> "gvofdc11.wav"
+	Sound <federation> "gvofdc12.wav"
+	Sound <federation> "gvofdc13.wav"
+	Sound <klingon> "gvokdc11.wav"
+	Sound <klingon> "gvokdc12.wav"
+	Sound <klingon> "gvokdc13.wav"
+	Sound <romulan> "gvordc11.wav"
+	Sound <romulan> "gvordc12.wav"
+	Sound <romulan> "gvordc13.wav"
+	Sound <borg> "gvobor03.wav"
+	Sound <federation> "gvofdc01.wav"
+	Sound <klingon> "gvokdc01.wav"
+	Sound <borg> "gvobor19.wav"
+	Sound <borg> "gvobor61.wav"
+	Sound <federation> "gvofdc16.wav"
+	Sound <federation> "gvofdc17.wav"
+	Sound <klingon> "gvokdc18.wav"
+	Sound <romulan> "gvordc16.wav"
+	Sound <romulan> "gvordc17.wav"
+}
+	
+DestroyerRepair{
+Table
+	Sound <borg> "gvobor26.wav"
+	Sound <federation> "gvofdc26.wav"
+	Sound <klingon> "gvokdc26.wav"
+	Sound <romulan> "gvordc26.wav"
+}
+
+###################################################################################
+
+
+#################################################################################
+# Cruiser1 SOUNDS
+
+Cruiser1Acknowledge{
+Table
+	Sound <borg> "gvobor30.wav"
+	Sound <federation> "gvofc101.wav"
+	Sound <klingon> "gvokc101.wav"
+	Sound <romulan> "gvorc101.wav"
+}
+
+Cruiser1Select{
+Table
+	Sound <borg> "gvobor17.wav"
+	Sound <borg> "gvobor19.wav"
+	Sound <borg> "gvobor60.wav"
+	Sound <federation> "gvofc116.wav"
+	Sound <federation> "gvofc117.wav"
+	Sound <federation> "gvofc118.wav"
+	Sound <klingon> "gvokc116.wav"
+	Sound <klingon> "gvokc117.wav"
+	Sound <klingon> "gvokc118.wav"
+	Sound <romulan> "gvorc116.wav"
+	Sound <romulan> "gvorc117.wav"
+	Sound <romulan> "gvorc118.wav"
+}
+
+Cruiser1Attack{
+Table
+	Sound <borg> "gvobor06.wav"
+	Sound <borg> "gvobor09.wav"
+	Sound <borg> "gvobor42.wav"
+	Sound <federation> "gvofc106.wav"
+	Sound <federation> "gvofc107.wav"
+	Sound <federation> "gvofc108.wav"
+	Sound <klingon> "gvokc106.wav"
+	Sound <klingon> "gvokc107.wav"
+	Sound <klingon> "gvokc108.wav"
+	Sound <romulan> "gvorc106.wav"
+	Sound <romulan> "gvorc107.wav"
+	Sound <romulan> "gvorc108.wav"
+	Sound <borg> "gvobor30.wav"
+	Sound <klingon> "gvokc101.wav"
+	Sound <romulan> "gvorc101.wav"
+	Sound <borg> "gvobor19.wav"
+	Sound <borg> "gvobor60.wav"
+	Sound <federation> "gvofc116.wav"
+	Sound <federation> "gvofc117.wav"
+	Sound <klingon> "gvokc117.wav"
+	Sound <klingon> "gvokc118.wav"
+	Sound <romulan> "gvorc116.wav"
+	Sound <romulan> "gvorc117.wav"
+}
+
+Cruiser1Stop{
+Table
+	Sound <borg> "gvobor23.wav"
+	Sound <federation> "gvofc121.wav"
+	Sound <klingon> "gvokc121.wav"
+	Sound <romulan> "gvorc121.wav"
+}
+
+Cruiser1Move{
+Table
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <borg> "gvobor14.wav"
+	Sound <federation> "gvofc111.wav"
+	Sound <federation> "gvofc112.wav"
+	Sound <federation> "gvofc113.wav"
+	Sound <klingon> "gvokc111.wav"
+	Sound <klingon> "gvokc112.wav"
+	Sound <klingon> "gvokc113.wav"
+	Sound <romulan> "gvorc111.wav"
+	Sound <romulan> "gvorc112.wav"
+	Sound <romulan> "gvorc113.wav"
+	Sound <borg> "gvobor30.wav"
+	Sound <klingon> "gvokc101.wav"
+	Sound <romulan> "gvorc101.wav"
+	Sound <borg> "gvobor19.wav"
+	Sound <borg> "gvobor60.wav"
+	Sound <federation> "gvofc116.wav"
+	Sound <federation> "gvofc117.wav"
+	Sound <klingon> "gvokc117.wav"
+	Sound <klingon> "gvokc118.wav"
+	Sound <romulan> "gvorc116.wav"
+	Sound <romulan> "gvorc117.wav"
+}
+	
+Cruiser1Repair{
+Table
+	Sound <borg> "gvobor26.wav"
+	Sound <federation> "gvofc126.wav"
+	Sound <klingon> "gvokc126.wav"
+	Sound <romulan> "gvorc126.wav"
+}
+
+###################################################################################
+
+#################################################################################
+# Cruiser2 SOUNDS
+
+Cruiser2Acknowledge{
+Table
+	Sound <borg> "gvobor32.wav"
+	Sound <federation> "gvofc201.wav"
+	Sound <klingon> "gvokc201.wav"
+	Sound <romulan> "gvorc201.wav"
+}
+
+Cruiser2Select{
+Table
+	Sound <borg> "gvobor16.wav"
+	Sound <borg> "gvobor62.wav"
+	Sound <borg> "gvobor61.wav"
+	Sound <federation> "gvofc216.wav"
+	Sound <federation> "gvofc217.wav"
+	Sound <federation> "gvofc218.wav"
+	Sound <klingon> "gvokc216.wav"
+	Sound <klingon> "gvokc217.wav"
+	Sound <klingon> "gvokc218.wav"
+	Sound <romulan> "gvorc216.wav"
+	Sound <romulan> "gvorc217.wav"
+	Sound <romulan> "gvorc218.wav"
+}
+
+Cruiser2Attack{
+Table
+	Sound <borg> "gvobor07.wav"
+	Sound <borg> "gvobor41.wav"
+	Sound <borg> "gvobor44.wav"
+	Sound <federation> "gvofc206.wav"
+	Sound <federation> "gvofc207.wav"
+	Sound <federation> "gvofc208.wav"
+	Sound <klingon> "gvokc206.wav"
+	Sound <klingon> "gvokc207.wav"
+	Sound <klingon> "gvokc208.wav"
+	Sound <romulan> "gvorc206.wav"
+	Sound <romulan> "gvorc207.wav"
+	Sound <romulan> "gvorc208.wav"
+	Sound <borg> "gvobor32.wav"
+	Sound <federation> "gvofc201.wav"
+	Sound <klingon> "gvokc201.wav"
+	Sound <romulan> "gvorc201.wav"
+	Sound <borg> "gvobor62.wav"
+	Sound <borg> "gvobor61.wav"
+	Sound <federation> "gvofc216.wav"
+	Sound <federation> "gvofc217.wav"
+	Sound <klingon> "gvokc217.wav"
+	Sound <klingon> "gvokc218.wav"
+	Sound <romulan> "gvorc216.wav"
+	Sound <romulan> "gvorc217.wav"
+}
+
+Cruiser2Stop{
+Table
+	Sound <borg> "gvobor24.wav"
+	Sound <federation> "gvofc221.wav"
+	Sound <klingon> "gvokc221.wav"
+	Sound <romulan> "gvorc221.wav"
+}
+
+Cruiser2Move{
+Table
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <borg> "gvobor14.wav"
+	Sound <federation> "gvofc211.wav"
+	Sound <federation> "gvofc212.wav"
+	Sound <federation> "gvofc213.wav"
+	Sound <klingon> "gvokc211.wav"
+	Sound <klingon> "gvokc212.wav"
+	Sound <klingon> "gvokc213.wav"
+	Sound <romulan> "gvorc211.wav"
+	Sound <romulan> "gvorc212.wav"
+	Sound <romulan> "gvorc213.wav"
+	Sound <borg> "gvobor32.wav"
+	Sound <federation> "gvofc201.wav"
+	Sound <klingon> "gvokc201.wav"
+	Sound <romulan> "gvorc201.wav"
+	Sound <borg> "gvobor62.wav"
+	Sound <borg> "gvobor61.wav"
+	Sound <federation> "gvofc216.wav"
+	Sound <federation> "gvofc217.wav"
+	Sound <klingon> "gvokc217.wav"
+	Sound <klingon> "gvokc218.wav"
+	Sound <romulan> "gvorc216.wav"
+	Sound <romulan> "gvorc217.wav"
+}
+	
+Cruiser2Repair{
+Table
+	Sound <borg> "gvobor26.wav"
+	Sound <federation> "gvofc226.wav"
+	Sound <klingon> "gvokc226.wav"
+	Sound <romulan> "gvorc226.wav"
+}
+
+##################################################################################
+
+#################################################################################
+# Special SOUNDS
+
+SpecialAcknowledge{
+Table
+	Sound <borg> "gvobor33.wav"
+	Sound <federation> "gvofsp01.wav"
+	Sound <klingon> "gvoksp01.wav"
+	Sound <romulan> "gvorsp01.wav"
+}
+
+SpecialSelect{
+Table
+	Sound <borg> "gvobor19.wav"
+	Sound <borg> "gvobor60.wav"
+	Sound <borg> "gvobor16.wav"
+	Sound <federation> "gvofsp16.wav"
+	Sound <federation> "gvofsp17.wav"
+	Sound <federation> "gvofsp18.wav"
+	Sound <klingon> "gvoksp16.wav"
+	Sound <klingon> "gvoksp17.wav"
+	Sound <klingon> "gvoksp18.wav"
+	Sound <romulan> "gvorsp16.wav"
+	Sound <romulan> "gvorsp17.wav"
+	Sound <romulan> "gvorsp18.wav"
+}
+
+SpecialAttack{
+Table
+	Sound <borg> "gvobor06.wav"
+	Sound <borg> "gvobor09.wav"
+	Sound <borg> "gvobor43.wav"
+	Sound <federation> "gvofsp06.wav"
+	Sound <federation> "gvofsp07.wav"
+	Sound <federation> "gvofsp08.wav"
+	Sound <klingon> "gvoksp06.wav"
+	Sound <klingon> "gvoksp07.wav"
+	Sound <klingon> "gvoksp08.wav"
+	Sound <romulan> "gvorsp06.wav"
+	Sound <romulan> "gvorsp07.wav"
+	Sound <romulan> "gvorsp08.wav"
+	Sound <borg> "gvobor33.wav"
+	Sound <federation> "gvofsp01.wav"
+	Sound <klingon> "gvoksp01.wav"
+	Sound <romulan> "gvorsp01.wav"
+	Sound <borg> "gvobor60.wav"
+	Sound <borg> "gvobor16.wav"
+	Sound <federation> "gvofsp16.wav"
+	Sound <federation> "gvofsp17.wav"
+	Sound <klingon> "gvoksp17.wav"
+	Sound <klingon> "gvoksp18.wav"
+	Sound <romulan> "gvorsp16.wav"
+	Sound <romulan> "gvorsp17.wav"
+}
+
+
+SpecialStop{
+Table
+	Sound <borg> "gvobor25.wav"
+	Sound <federation> "gvofsp21.wav"
+	Sound <klingon> "gvoksp21.wav"
+	Sound <romulan> "gvorsp21.wav"
+}
+
+SpecialMove{
+Table
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <borg> "gvobor14.wav"
+	Sound <federation> "gvofsp11.wav"
+	Sound <federation> "gvofsp12.wav"
+	Sound <federation> "gvofsp13.wav"
+	Sound <klingon> "gvoksp11.wav"
+	Sound <klingon> "gvoksp12.wav"
+	Sound <klingon> "gvoksp13.wav"
+	Sound <romulan> "gvorsp11.wav"
+	Sound <romulan> "gvorsp12.wav"
+	Sound <romulan> "gvorsp13.wav"
+	Sound <borg> "gvobor33.wav"
+	Sound <federation> "gvofsp01.wav"
+	Sound <klingon> "gvoksp01.wav"
+	Sound <romulan> "gvorsp01.wav"
+	Sound <borg> "gvobor60.wav"
+	Sound <borg> "gvobor16.wav"
+	Sound <federation> "gvofsp16.wav"
+	Sound <federation> "gvofsp17.wav"
+	Sound <klingon> "gvoksp17.wav"
+	Sound <klingon> "gvoksp18.wav"
+	Sound <romulan> "gvorsp16.wav"
+	Sound <romulan> "gvorsp17.wav"
+}
+	
+SpecialRepair{
+Table
+	Sound <borg> "gvobor26.wav"
+	Sound <federation> "gvofsp26.wav"
+	Sound <klingon> "gvoksp26.wav"
+	Sound <romulan> "gvorsp26.wav"
+}
+
+###################################################################################
+
+
+
+#################################################################################
+# Battleship SOUNDS
+
+BattleAcknowledge{
+Table
+	Sound <borg> "gvobor31.wav"
+	Sound <federation> "gvofbs01.wav"
+	Sound <klingon> "gvokbs01.wav"
+	Sound <romulan> "gvorbs01.wav"
+}
+
+BattleSelect{
+Table
+	Sound <borg> "gvobor17.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <borg> "gvobor18.wav"
+	Sound <federation> "gvofbs16.wav"
+	Sound <federation> "gvofbs17.wav"
+	Sound <federation> "gvofbs18.wav"
+	Sound <klingon> "gvokbs16.wav"
+	Sound <klingon> "gvokbs17.wav"
+	Sound <klingon> "gvokbs18.wav"
+	Sound <romulan> "gvorbs16.wav"
+	Sound <romulan> "gvorbs17.wav"
+	Sound <romulan> "gvorbs18.wav"
+}
+
+BattleAttack{
+Table
+	Sound <borg> "gvobor10.wav"
+	Sound <borg> "gvobor45.wav"
+	Sound <borg> "gvobor08.wav"
+	Sound <federation> "gvofbs06.wav"
+	Sound <federation> "gvofbs07.wav"
+	Sound <federation> "gvofbs08.wav"
+	Sound <klingon> "gvokbs06.wav"
+	Sound <klingon> "gvokbs07.wav"
+	Sound <klingon> "gvokbs08.wav"
+	Sound <romulan> "gvorbs06.wav"
+	Sound <romulan> "gvorbs07.wav"
+	Sound <romulan> "gvorbs08.wav"
+	Sound <borg> "gvobor31.wav"
+	Sound <federation> "gvofbs01.wav"
+	Sound <klingon> "gvokbs01.wav"
+	Sound <romulan> "gvorbs01.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <borg> "gvobor18.wav"
+	Sound <federation> "gvofbs16.wav"
+	Sound <federation> "gvofbs17.wav"
+	Sound <klingon> "gvokbs17.wav"
+	Sound <klingon> "gvokbs18.wav"
+	Sound <romulan> "gvorbs16.wav"
+	Sound <romulan> "gvorbs17.wav"
+}
+
+
+BattleStop{
+Table
+	Sound <borg> "gvobor21.wav"
+	Sound <federation> "gvofbs21.wav"
+	Sound <klingon> "gvokbs21.wav"
+	Sound <romulan> "gvorbs21.wav"
+}
+
+BattleMove{
+Table
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <borg> "gvobor14.wav"
+	Sound <federation> "gvofbs11.wav"
+	Sound <federation> "gvofbs12.wav"
+	Sound <federation> "gvofbs13.wav"
+	Sound <klingon> "gvokbs11.wav"
+	Sound <klingon> "gvokbs12.wav"
+	Sound <klingon> "gvokbs13.wav"
+	Sound <romulan> "gvorbs11.wav"
+	Sound <romulan> "gvorbs12.wav"
+	Sound <romulan> "gvorbs13.wav"
+	Sound <borg> "gvobor31.wav"
+	Sound <federation> "gvofbs01.wav"
+	Sound <klingon> "gvokbs01.wav"
+	Sound <romulan> "gvorbs01.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <borg> "gvobor18.wav"
+	Sound <federation> "gvofbs16.wav"
+	Sound <federation> "gvofbs17.wav"
+	Sound <klingon> "gvokbs17.wav"
+	Sound <klingon> "gvokbs18.wav"
+	Sound <romulan> "gvorbs16.wav"
+	Sound <romulan> "gvorbs17.wav"
+}
+	
+BattleRepair{
+Table
+	Sound <borg> "gvobor26.wav"
+	Sound <federation> "gvofbs26.wav"
+	Sound <klingon> "gvokbs26.wav"
+	Sound <romulan> "gvorbs26.wav"
+}
+
+###################################################################################
+
+#################################################################################
+# Super SOUNDS
+
+SuperAcknowledge{
+Table
+	Sound <borg> "gvobor31.wav"
+	Sound <federation> "gvofbs01.wav"
+	Sound <klingon> "gvoksw01.wav"
+	Sound <romulan> "gvorsw01.wav"
+}
+
+SuperSelect{
+Table
+	Sound <borg> "gvobor17.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <borg> "gvobor18.wav"
+	Sound <federation> "gvofbs16.wav"
+	Sound <federation> "gvofbs17.wav"
+	Sound <federation> "gvofbs18.wav"
+	Sound <klingon> "gvoksw16.wav"
+	Sound <klingon> "gvoksw17.wav"
+	Sound <klingon> "gvoksw18.wav"
+	Sound <romulan> "gvorsw16.wav"
+	Sound <romulan> "gvorsw17.wav"
+	Sound <romulan> "gvorsw18.wav"
+}
+
+SuperStop{
+Table
+	Sound <borg> "gvobor21.wav"
+	Sound <federation> "gvofbs21.wav"
+	Sound <klingon> "gvoksw21.wav"
+	Sound <romulan> "gvorsw21.wav"
+}
+
+SuperMove{
+Table
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <borg> "gvobor14.wav"
+	Sound <federation> "gvofbs11.wav"
+	Sound <federation> "gvofbs12.wav"
+	Sound <federation> "gvofbs13.wav"
+	Sound <klingon> "gvoksw11.wav"
+	Sound <klingon> "gvoksw12.wav"
+	Sound <klingon> "gvoksw13.wav"
+	Sound <romulan> "gvorsw11.wav"
+	Sound <romulan> "gvorsw12.wav"
+	Sound <romulan> "gvorsw13.wav"
+	Sound <borg> "gvobor31.wav"
+	Sound <federation> "gvofbs01.wav"
+	Sound <klingon> "gvoksw01.wav"
+	Sound <romulan> "gvorsw01.wav"
+	Sound <klingon> "gvoksw17.wav"
+	Sound <klingon> "gvoksw18.wav"
+	Sound <romulan> "gvorsw16.wav"
+	Sound <romulan> "gvorsw17.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <borg> "gvobor18.wav"
+	Sound <federation> "gvofbs16.wav"
+	Sound <federation> "gvofbs17.wav"
+}
+	
+SuperRepair{
+Table
+	Sound <borg> "gvobor26.wav"
+	Sound <federation> "gvofbs26.wav"
+	Sound <klingon> "gvoksw26.wav"
+	Sound <romulan> "gvorsw26.wav"
+}
+
+
+###################################################################################
+
+#################################################################################
+# Freighter SOUNDS
+
+MoonDepleted{
+Table
+	Sound <borg> "gvobor29.wav"
+	Sound <federation> "gvoffc29.wav"
+	Sound <klingon> "gvokfc29.wav"
+	Sound <romulan> "gvorfc29.wav"
+	SoundPriority 2
+	SaveLocation
+	Text "Moon has been depleted of dilithium."
+}
+
+FreighterAcknowledge{
+Table
+	Sound <borg> "gvobor01.wav"
+	Sound <borg> "gvobor04.wav"
+	Sound <borg> "gvobor31.wav"
+	Sound <federation> "gvoffc01.wav"
+	Sound <federation> "gvoffc02.wav"
+	Sound <federation> "gvoffc03.wav"
+	Sound <klingon> "gvokfc01.wav"
+	Sound <klingon> "gvokfc02.wav"
+	Sound <klingon> "gvokfc03.wav"
+	Sound <romulan> "gvorfc01.wav"
+	Sound <romulan> "gvorfc02.wav"
+	Sound <romulan> "gvorfc03.wav"
+}
+
+FreighterSelect{
+Table
+	Sound <borg> "gvobor16.wav"
+	Sound <borg> "gvobor62.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <federation> "gvoffc16.wav"
+	Sound <federation> "gvoffc17.wav"
+	Sound <federation> "gvoffc18.wav"
+	Sound <klingon> "gvokfc16.wav"
+	Sound <klingon> "gvokfc17.wav"
+	Sound <klingon> "gvokfc18.wav"
+	Sound <romulan> "gvorfc16.wav"
+	Sound <romulan> "gvorfc17.wav"
+	Sound <romulan> "gvorfc18.wav"
+}
+
+FreighterStop{
+Table
+	Sound <borg> "gvobor23.wav"
+	Sound <federation> "gvoffc21.wav"
+	Sound <klingon> "gvokfc21.wav"
+	Sound <romulan> "gvorfc21.wav"
+}
+
+FreighterMove{
+Table
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <borg> "gvobor14.wav"
+	Sound <federation> "gvoffc11.wav"
+	Sound <federation> "gvoffc12.wav"
+	Sound <federation> "gvoffc13.wav"
+	Sound <klingon> "gvokfc11.wav"
+	Sound <klingon> "gvokfc12.wav"
+	Sound <klingon> "gvokfc13.wav"
+	Sound <romulan> "gvorfc11.wav"
+	Sound <romulan> "gvorfc12.wav"
+	Sound <romulan> "gvorfc13.wav"
+	Sound <borg> "gvobor01.wav"
+	Sound <borg> "gvobor04.wav"
+	Sound <borg> "gvobor31.wav"
+	Sound <federation> "gvoffc01.wav"
+	Sound <federation> "gvoffc02.wav"
+	Sound <federation> "gvoffc03.wav"
+	Sound <klingon> "gvokfc01.wav"
+	Sound <klingon> "gvokfc02.wav"
+	Sound <klingon> "gvokfc03.wav"
+	Sound <romulan> "gvorfc01.wav"
+	Sound <romulan> "gvorfc02.wav"
+	Sound <romulan> "gvorfc03.wav"
+}
+	
+FreighterRepair{
+Table
+	Sound <borg> "gvobor26.wav"
+	Sound <federation> "gvoffc26.wav"
+	Sound <klingon> "gvokfc26.wav"
+	Sound <romulan> "gvorfc26.wav"
+}
+
+
+###################################################################################
+
+
+#################################################################################
+# Construction ship SOUNDS
+
+ConstructAcknowledge{
+Table
+	Sound <borg> "gvobor34.wav"
+	Sound <borg> "gvobor05.wav"
+	Sound <borg> "gvobor32.wav"
+	Sound <federation> "gvofcc01.wav"
+	Sound <federation> "gvofcc02.wav"
+	Sound <federation> "gvofcc03.wav"
+	Sound <klingon> "gvokcc01.wav"
+	Sound <klingon> "gvokcc02.wav"
+	Sound <klingon> "gvokcc03.wav"
+	Sound <romulan> "gvorcc01.wav"
+	Sound <romulan> "gvorcc02.wav"
+	Sound <romulan> "gvorcc03.wav"
+}
+
+ConstructSelect{
+Table
+	Sound <borg> "gvobor17.wav"
+	Sound <borg> "gvobor61.wav"
+	Sound <borg> "gvobor18.wav"
+	Sound <federation> "gvofcc16.wav"
+	Sound <federation> "gvofcc17.wav"
+	Sound <federation> "gvofcc18.wav"
+	Sound <klingon> "gvokcc16.wav"
+	Sound <klingon> "gvokcc17.wav"
+	Sound <klingon> "gvokcc18.wav"
+	Sound <romulan> "gvorcc16.wav"
+	Sound <romulan> "gvorcc17.wav"
+	Sound <romulan> "gvorcc18.wav"
+}
+
+ConstructStop{
+Table
+	Sound <borg> "gvobor22.wav"
+	Sound <federation> "gvofcc21.wav"
+	Sound <klingon> "gvokcc21.wav"
+	Sound <romulan> "gvorcc21.wav"
+}
+
+ConstructMove{
+Table
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <borg> "gvobor14.wav"
+	Sound <federation> "gvofcc11.wav"
+	Sound <federation> "gvofcc12.wav"
+	Sound <federation> "gvofcc13.wav"
+	Sound <klingon> "gvokcc11.wav"
+	Sound <klingon> "gvokcc12.wav"
+	Sound <klingon> "gvokcc13.wav"
+	Sound <romulan> "gvorcc11.wav"
+	Sound <romulan> "gvorcc12.wav"
+	Sound <romulan> "gvorcc13.wav"
+	Sound <borg> "gvobor34.wav"
+	Sound <borg> "gvobor05.wav"
+	Sound <borg> "gvobor32.wav"
+	Sound <federation> "gvofcc01.wav"
+	Sound <federation> "gvofcc02.wav"
+	Sound <klingon> "gvokcc01.wav"
+	Sound <klingon> "gvokcc02.wav"
+	Sound <klingon> "gvokcc03.wav"
+	Sound <romulan> "gvorcc01.wav"
+	Sound <romulan> "gvorcc02.wav"
+	Sound <romulan> "gvorcc03.wav"
+}
+	
+ConstructRepair{
+Table
+	Sound <borg> "gvobor26.wav"
+	Sound <federation> "gvofcc26.wav"
+	Sound <klingon> "gvokcc26.wav"
+	Sound <romulan> "gvorcc26.wav"
+}
+
+
+###################################################################################
+
+#################################################################################
+# Martok SOUNDS
+
+MartokAcknowledge{
+Table
+	Sound <klingon> "gvomar01.wav"
+	Sound <borg> "gvobor31.wav"
+	Sound <federation> "gvofbs01.wav"
+	Sound <romulan> "gvorbs01.wav"
+}
+
+MartokSelect{
+Table
+	Sound <klingon> "gvomar62.wav"
+	Sound <klingon> "gvomar17.wav"
+	Sound <klingon> "gvomar18.wav"
+	Sound <klingon> "gvomar19.wav"
+	Sound <klingon> "gvomar20.wav"
+	Sound <klingon> "gvomar60.wav"
+	Sound <borg> "gvobor17.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <borg> "gvobor18.wav"
+	Sound <federation> "gvofbs16.wav"
+	Sound <federation> "gvofbs17.wav"
+	Sound <federation> "gvofbs18.wav"
+	Sound <romulan> "gvorbs16.wav"
+	Sound <romulan> "gvorbs17.wav"
+	Sound <romulan> "gvorbs18.wav"
+}
+
+MartokAttack{
+Table
+	Sound <klingon> "gvomar06.wav"
+	Sound <klingon> "gvomar07.wav"
+	Sound <klingon> "gvomar41.wav"
+	Sound <klingon> "gvomar09.wav"
+	Sound <klingon> "gvomar10.wav"
+	Sound <klingon> "gvomar40.wav"
+	Sound <borg> "gvobor10.wav"
+	Sound <borg> "gvobor45.wav"
+	Sound <borg> "gvobor08.wav"
+	Sound <federation> "gvofbs06.wav"
+	Sound <federation> "gvofbs07.wav"
+	Sound <federation> "gvofbs08.wav"
+	Sound <romulan> "gvorbs06.wav"
+	Sound <romulan> "gvorbs07.wav"
+	Sound <romulan> "gvorbs08.wav"
+}
+
+
+MartokStop{
+Table
+	Sound <klingon> "gvomar21.wav"
+	Sound <borg> "gvobor21.wav"
+	Sound <federation> "gvofbs21.wav"
+	Sound <romulan> "gvorbs21.wav"
+}
+
+MartokMove{
+Table
+	Sound <klingon> "gvomar11.wav"
+	Sound <klingon> "gvomar12.wav"
+	Sound <klingon> "gvomar13.wav"
+	Sound <klingon> "gvomar14.wav"
+	Sound <klingon> "gvomar15.wav"
+	Sound <klingon> "gvomar52.wav"
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <federation> "gvofbs11.wav"
+	Sound <federation> "gvofbs12.wav"
+	Sound <federation> "gvofbs13.wav"
+	Sound <romulan> "gvorbs11.wav"
+	Sound <romulan> "gvorbs12.wav"
+	Sound <romulan> "gvorbs13.wav"
+}
+	
+MartokRepair{
+Table
+	Sound <klingon> "gvomar26.wav"
+	Sound <borg> "gvobor26.wav"
+	Sound <federation> "gvofbs26.wav"
+	Sound <romulan> "gvorbs26.wav"
+}
+
+###################################################################################
+
+#################################################################################
+# Picard SOUNDS
+
+PicardAcknowledge{
+Table
+	Sound <borg> "gvobor31.wav"
+	Sound <federation> "gvopic01.wav"
+	Sound <klingon> "gvokbs01.wav"
+	Sound <romulan> "gvorbs01.wav"
+}
+
+PicardSelect{
+Table
+	Sound <federation> "gvopic16.wav"
+	Sound <federation> "gvopic20.wav"
+	Sound <borg> "gvobor17.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <borg> "gvobor18.wav"
+	Sound <klingon> "gvokbs16.wav"
+	Sound <klingon> "gvokbs17.wav"
+	Sound <klingon> "gvokbs18.wav"
+	Sound <romulan> "gvorbs16.wav"
+	Sound <romulan> "gvorbs17.wav"
+	Sound <romulan> "gvorbs18.wav"
+}
+
+PicardAttack{
+Table
+	Sound <federation> "gvopic06.wav"
+	Sound <federation> "gvopic07.wav"
+	Sound <federation> "gvopic08.wav"
+	Sound <federation> "gvopic09.wav"
+	Sound <federation> "gvopic10.wav"
+	Sound <federation> "gvopic40.wav"
+	Sound <borg> "gvobor10.wav"
+	Sound <borg> "gvobor45.wav"
+	Sound <borg> "gvobor08.wav"
+	Sound <klingon> "gvokbs06.wav"
+	Sound <klingon> "gvokbs07.wav"
+	Sound <klingon> "gvokbs08.wav"
+	Sound <romulan> "gvorbs06.wav"
+	Sound <romulan> "gvorbs07.wav"
+	Sound <romulan> "gvorbs08.wav"
+}
+
+PicardRedAlert{
+Table
+	Sound <federation> "gvopic98.wav"
+}
+
+PicardYellowAlert{
+Table
+	Sound <federation> "gvopic95.wav"
+}
+
+PicardGreenAlert{
+Table
+	Sound <federation> "gvopic99.wav"
+}
+
+PicardStop{
+Table
+	Sound <federation> "gvopic21.wav"
+	Sound <borg> "gvobor21.wav"
+	Sound <klingon> "gvokbs21.wav"
+	Sound <romulan> "gvorbs21.wav"
+}
+
+PicardMove{
+Table
+	Sound <federation> "gvopic12.wav"
+	Sound <federation> "gvopic11.wav"
+	Sound <federation> "gvopic15.wav"
+	Sound <federation> "gvopic50.wav"
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <klingon> "gvokbs11.wav"
+	Sound <klingon> "gvokbs12.wav"
+	Sound <klingon> "gvokbs13.wav"
+	Sound <romulan> "gvorbs11.wav"
+	Sound <romulan> "gvorbs12.wav"
+	Sound <romulan> "gvorbs13.wav"
+}
+	
+PicardRepair{
+Table
+	Sound <federation> "gvopic26.wav"
+	Sound <borg> "gvobor26.wav"
+	Sound <klingon> "gvokbs26.wav"
+	Sound <romulan> "gvorbs26.wav"
+}
+
+PicardTransport{
+Table
+	Sound <federation> "gvopic97.wav"
+	Sound <federation> "gvopic96.wav"
+}
+
+##################################################################################
+
+#################################################################################
+# Locutus SOUNDS
+
+LocutusAcknowledge{
+Table
+	Sound <borg> "gvoloc01.wav"
+	Sound <federation> "gvofbs01.wav"
+	Sound <klingon> "gvokbs01.wav"
+	Sound <romulan> "gvorbs01.wav"
+}
+
+LocutusSelect{
+Table
+	Sound <borg> "gvoloc16.wav"
+	Sound <borg> "gvoloc17.wav"
+	Sound <borg> "gvoloc18.wav"
+	Sound <borg> "gvoloc19.wav"
+	Sound <borg> "gvoloc20.wav"
+	Sound <borg> "gvoloc60.wav"
+	Sound <federation> "gvofbs16.wav"
+	Sound <federation> "gvofbs17.wav"
+	Sound <federation> "gvofbs18.wav"
+	Sound <klingon> "gvokbs16.wav"
+	Sound <klingon> "gvokbs17.wav"
+	Sound <klingon> "gvokbs18.wav"
+	Sound <romulan> "gvorbs16.wav"
+	Sound <romulan> "gvorbs17.wav"
+	Sound <romulan> "gvorbs18.wav"
+}
+
+LocutusAttack{
+Table
+	Sound <borg> "gvoloc09.wav"
+	Sound <borg> "gvoloc10.wav"
+	Sound <borg> "gvoloc40.wav"
+	Sound <borg> "gvoloc07.wav"
+	Sound <borg> "gvoloc06.wav"
+	Sound <borg> "gvoloc08.wav"
+	Sound <federation> "gvofbs06.wav"
+	Sound <federation> "gvofbs07.wav"
+	Sound <federation> "gvofbs08.wav"
+	Sound <klingon> "gvokbs06.wav"
+	Sound <klingon> "gvokbs07.wav"
+	Sound <klingon> "gvokbs08.wav"
+	Sound <romulan> "gvorbs06.wav"
+	Sound <romulan> "gvorbs07.wav"
+	Sound <romulan> "gvorbs08.wav"
+}
+
+LocutusStop{
+Table
+	Sound <borg> "gvoloc21.wav"
+	Sound <federation> "gvofbs21.wav"
+	Sound <klingon> "gvokbs21.wav"
+	Sound <romulan> "gvorbs21.wav"
+
+}
+
+LocutusMove{
+Table
+	Sound <borg> "gvoloc11.wav"
+	Sound <borg> "gvoloc12.wav"
+	Sound <borg> "gvoloc13.wav"
+	Sound <borg> "gvoloc14.wav"
+	Sound <borg> "gvoloc15.wav"
+	Sound <borg> "gvoloc50.wav"
+	Sound <federation> "gvofbs11.wav"
+	Sound <federation> "gvofbs12.wav"
+	Sound <federation> "gvofbs13.wav"
+	Sound <klingon> "gvokbs11.wav"
+	Sound <klingon> "gvokbs12.wav"
+	Sound <klingon> "gvokbs13.wav"
+	Sound <romulan> "gvorbs11.wav"
+	Sound <romulan> "gvorbs12.wav"
+	Sound <romulan> "gvorbs13.wav"
+}
+	
+LocutusRepair{
+Table
+	Sound <borg> "gvoloc26.wav"
+	Sound <federation> "gvofbs26.wav"
+	Sound <klingon> "gvokbs26.wav"
+	Sound <romulan> "gvorbs26.wav"
+}
+
+
+###################################################################################
+
+#################################################################################
+# Sela SOUNDS
+
+SelaAcknowledge{
+Table
+	Sound <romulan> "gvosel29.wav"
+	Sound <romulan> "gvosel30.wav"
+	Sound <romulan> "gvosel31.wav"
+	Sound <romulan> "gvosel32.wav"
+	Sound <romulan> "gvosel33.wav"
+	Sound <borg> "gvobor31.wav"
+	Sound <federation> "gvofbs01.wav"
+	Sound <klingon> "gvokbs01.wav"
+}
+
+SelaSelect{
+Table
+	Sound <romulan> "gvosel01.wav"
+	Sound <romulan> "gvosel02.wav"
+	Sound <romulan> "gvosel18.wav"
+	Sound <romulan> "gvosel19.wav"
+	Sound <romulan> "gvosel25.wav"
+	Sound <romulan> "gvosel35.wav"
+	Sound <borg> "gvobor17.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <borg> "gvobor18.wav"
+	Sound <federation> "gvofbs16.wav"
+	Sound <federation> "gvofbs17.wav"
+	Sound <federation> "gvofbs18.wav"
+	Sound <klingon> "gvokbs16.wav"
+	Sound <klingon> "gvokbs17.wav"
+	Sound <klingon> "gvokbs18.wav"
+}
+
+SelaAttack{
+Table
+	Sound <romulan> "gvosel03.wav"
+	Sound <romulan> "gvosel05.wav"
+	Sound <romulan> "gvosel06.wav"
+	Sound <romulan> "gvosel09.wav"
+	Sound <romulan> "gvosel10.wav"
+	Sound <romulan> "gvosel11.wav"
+	Sound <borg> "gvobor10.wav"
+	Sound <borg> "gvobor45.wav"
+	Sound <borg> "gvobor08.wav"
+	Sound <federation> "gvofbs06.wav"
+	Sound <federation> "gvofbs07.wav"
+	Sound <federation> "gvofbs08.wav"
+	Sound <klingon> "gvokbs06.wav"
+	Sound <klingon> "gvokbs07.wav"
+	Sound <klingon> "gvokbs08.wav"
+}
+
+SelaRedAlert{
+#	Sound <romulan> "gvosel15.wav" #out by Jonathan - not in VO list.
+}
+
+SelaYellowAlert{
+#	Sound <romulan> "gvosel16.wav" #out by Jonathan - not in VO list.
+}
+
+SelaGreenAlert{
+#	Sound <romulan> "gvosel17.wav" #out by Jonathan - not in VO list.
+}
+
+SelaStop{
+Table
+	Sound <romulan> "gvosel21.wav"
+	Sound <romulan> "gvosel36.wav"
+	Sound <romulan> "gvosel37.wav"
+	Sound <borg> "gvobor21.wav"
+	Sound <federation> "gvofbs21.wav"
+	Sound <klingon> "gvokbs21.wav"
+}
+
+SelaMove{
+Table
+	Sound <romulan> "gvosel22.wav"
+	Sound <romulan> "gvosel23.wav"
+	Sound <romulan> "gvosel24.wav"
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <federation> "gvofbs11.wav"
+	Sound <federation> "gvofbs12.wav"
+	Sound <federation> "gvofbs13.wav"
+	Sound <klingon> "gvokbs11.wav"
+	Sound <klingon> "gvokbs12.wav"
+	Sound <klingon> "gvokbs13.wav"
+}
+	
+SelaRepair{
+Table
+	Sound <romulan> "gvosel13.wav"
+	Sound <borg> "gvobor26.wav"
+	Sound <federation> "gvofbs26.wav"
+	Sound <klingon> "gvokbs26.wav"
+}
+
+SelaTransport{
+#	Sound <romulan> "gvosel26.wav" #out by Jonathan - not in VO list.
+}
+
+SelaCloakEngage{
+Table
+	Sound <romulan> "gvosel27.wav"
+}
+
+SelaCloakDisengage{
+Table
+	Sound <romulan> "gvosel28.wav"
+}
+
+SelaSelfDestruct{
+}
+
+###################################################################################
+
+#################################################################################
+# Worf SOUNDS
+
+WorfAcknowledge{
+Table
+	Sound <federation> "gvowor06.wav"
+	Sound <federation> "gvowor07.wav"
+	Sound <federation> "gvowor08.wav"
+	Sound <federation> "gvowor09.wav"
+	Sound <borg> "gvobor03.wav"
+	Sound <klingon> "gvokdc01.wav"
+	Sound <romulan> "gvordc01.wav"
+}
+
+WorfSelect{
+Table
+	Sound <federation> "gvowor01.wav"
+	Sound <federation> "gvowor02.wav"
+	Sound <federation> "gvowor11.wav"
+	Sound <federation> "gvowor03.wav"
+	Sound <federation> "gvowor04.wav"
+	Sound <federation> "gvowor05.wav"
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <klingon> "gvokdc16.wav"
+	Sound <klingon> "gvokdc17.wav"
+	Sound <klingon> "gvokdc18.wav"
+	Sound <romulan> "gvordc16.wav"
+	Sound <romulan> "gvordc17.wav"
+	Sound <romulan> "gvordc18.wav"
+}
+
+WorfAttack{
+Table
+	Sound <federation> "gvowor14.wav"
+	Sound <federation> "gvowor16.wav"
+	Sound <federation> "gvowor20.wav"
+	Sound <federation> "gvowor36.wav"
+	Sound <federation> "gvowor37.wav"
+	Sound <federation> "gvowor39.wav"
+	Sound <borg> "gvobor45.wav"
+	Sound <borg> "gvobor43.wav"
+	Sound <borg> "gvobor44.wav"
+	Sound <klingon> "gvokdc06.wav"
+	Sound <klingon> "gvokdc07.wav"
+	Sound <klingon> "gvokdc08.wav"
+	Sound <romulan> "gvordc06.wav"
+	Sound <romulan> "gvordc07.wav"
+	Sound <romulan> "gvordc08.wav"
+}
+
+WorfRedAlert{
+Table
+	Sound <federation> "gvowor21.wav"
+}
+
+WorfYellowAlert{
+Table
+	Sound <federation> "gvowor22.wav"
+}
+
+WorfGreenAlert{
+Table
+	Sound <federation> "gvowor24.wav"
+	Sound <federation> "gvowor25.wav"
+}
+
+WorfStop{
+Table
+	Sound <federation> "gvowor27.wav"
+	Sound <federation> "gvowor48.wav"
+	Sound <federation> "gvowor49.wav"
+	Sound <borg> "gvobor22.wav"
+	Sound <klingon> "gvokdc21.wav"
+	Sound <romulan> "gvordc21.wav"
+}
+
+WorfMove{
+Table
+	Sound <federation> "gvowor28.wav"
+	Sound <federation> "gvowor29.wav"
+	Sound <federation> "gvowor30.wav"
+	Sound <federation> "gvowor44.wav"
+	Sound <federation> "gvowor45.wav"
+	Sound <federation> "gvowor46.wav"
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <klingon> "gvokdc11.wav"
+	Sound <klingon> "gvokdc12.wav"
+	Sound <klingon> "gvokdc13.wav"
+	Sound <romulan> "gvordc11.wav"
+	Sound <romulan> "gvordc12.wav"
+	Sound <romulan> "gvordc13.wav"
+}
+	
+WorfRepair{
+Table
+	Sound <federation> "gvowor26.wav"
+	Sound <borg> "gvobor26.wav"
+	Sound <klingon> "gvokdc26.wav"
+	Sound <romulan> "gvordc26.wav"
+}
+
+WorfTransport{
+Table
+	Sound <federation> "gvowor32.wav"
+	Sound <federation> "gvowor33.wav"
+#	Sound "gvowor34.wav" #out by Jonathan - not in VO list.
+}
+
+###################################################################################
+
+#################################################################################
+# Deming SOUNDS
+
+DemingAcknowledge{
+Table
+	Sound <federation> "gvodem01.wav"
+	Sound <borg> "gvobor31.wav"
+	Sound <klingon> "gvokbs01.wav"
+	Sound <romulan> "gvorbs01.wav"
+}
+
+DemingSelect{
+Table
+	Sound <federation> "gvodem15.wav"
+	Sound <federation> "gvodem16.wav"
+	Sound <federation> "gvodem17.wav"
+	Sound <federation> "gvodem18.wav"
+	Sound <federation> "gvodem19.wav"
+	Sound <federation> "gvodem20.wav"
+	Sound <borg> "gvobor17.wav"
+	Sound <borg> "gvobor63.wav"
+	Sound <borg> "gvobor18.wav"
+	Sound <klingon> "gvokbs16.wav"
+	Sound <klingon> "gvokbs17.wav"
+	Sound <klingon> "gvokbs18.wav"
+	Sound <romulan> "gvorbs16.wav"
+	Sound <romulan> "gvorbs17.wav"
+	Sound <romulan> "gvorbs18.wav"
+}
+
+DemingAttack{
+Table
+	Sound <federation> "gvodem02.wav"
+	Sound <federation> "gvodem03.wav"
+	Sound <federation> "gvodem04.wav"
+	Sound <federation> "gvodem05.wav"
+	Sound <federation> "gvodem06.wav"
+	Sound <federation> "gvodem07.wav"
+	Sound <borg> "gvobor10.wav"
+	Sound <borg> "gvobor45.wav"
+	Sound <borg> "gvobor08.wav"
+	Sound <klingon> "gvokbs06.wav"
+	Sound <klingon> "gvokbs07.wav"
+	Sound <klingon> "gvokbs08.wav"
+	Sound <romulan> "gvorbs06.wav"
+	Sound <romulan> "gvorbs07.wav"
+	Sound <romulan> "gvorbs08.wav"
+}
+
+DemingStop{
+Table
+	Sound <federation> "gvodem21.wav"
+	Sound <borg> "gvobor21.wav"
+	Sound <klingon> "gvokbs21.wav"
+	Sound <romulan> "gvorbs21.wav"
+}
+
+DemingMove{
+Table
+	Sound <federation> "gvodem08.wav"
+	Sound <federation> "gvodem09.wav"
+	Sound <federation> "gvodem10.wav"
+	Sound <federation> "gvodem11.wav"
+	Sound <federation> "gvodem12.wav"
+	Sound <federation> "gvodem13.wav"
+	Sound <borg> "gvobor11.wav"
+	Sound <borg> "gvobor12.wav"
+	Sound <borg> "gvobor13.wav"
+	Sound <klingon> "gvokbs11.wav"
+	Sound <klingon> "gvokbs12.wav"
+	Sound <klingon> "gvokbs13.wav"
+	Sound <romulan> "gvorbs11.wav"
+	Sound <romulan> "gvorbs12.wav"
+	Sound <romulan> "gvorbs13.wav"
+}
+	
+DemingRepair{
+Table
+	Sound <federation> "gvodem14.wav"
+	Sound <borg> "gvobor26.wav"
+	Sound <klingon> "gvokbs26.wav"
+	Sound <romulan> "gvorbs26.wav"
+}
+
+###################################################################################
+
+##################################
+# STATION SOUNDS                 #
+# Depends on Race and Craft Type #
+# Specified in Craft odf         #
+##################################
+
+#################################################################################
+
+#################################################################################
+# STARBASE SOUNDS
+
+StarbaseAcknowledge{
+}
+
+StarbaseSelect{
+Table
+	Sound <borg> "bubbase.wav"
+	Sound <federation> "bufbase.wav"
+	Sound <klingon> "bukbase.wav"
+	Sound <romulan> "burbase.wav"
+}
+
+StarbaseAttack{
+}
+
+
+StarbaseDecommission{
+
+}
+
+################################################################################
+# MINING STATION SOUNDS
+
+MiningStationAcknowledge{
+}
+
+MiningStationSelect{
+Table
+	Sound <borg> "bubmine.wav"
+	Sound <federation> "bufmine.wav"
+	Sound <klingon> "bukmine.wav"
+	Sound <romulan> "burmine.wav"
+}
+
+
+MiningStationDecommission{
+}
+
+#################################################################################
+# RESEARCH STATION SOUNDS
+
+ResearchStationAcknowledge{
+}
+
+ResearchStationSelect{
+Table
+	Sound <borg> "bubres.wav"
+	Sound <federation> "bufres.wav"
+	Sound <klingon> "bukres.wav"
+	Sound <romulan> "burres.wav"
+}
+
+
+ResearchStationDecommission{
+
+}
+
+#################################################################################
+# ADVANCED RESEARCH STATION SOUNDS
+
+AdvResearchStationAcknowledge{
+}
+
+AdvResearchStationSelect{
+Table
+	Sound <borg> "bubres2.wav"
+	Sound <federation> "bufres2.wav"
+	Sound <klingon> "bukres2.wav"
+	Sound <romulan> "burres2.wav"
+}
+
+
+AdvResearchStationDecommission{
+
+}
+
+#################################################################################
+# SHIPYARD SOUNDS
+
+ShipyardAcknowledge{
+}
+
+ShipyardSelect{
+Table
+	Sound <borg> "bubyard.wav"
+	Sound <federation> "bufyard.wav"
+	Sound <klingon> "bukyard.wav"
+	Sound <romulan> "buryard.wav"
+}
+
+
+ShipyardDecommission{
+
+}
+
+#################################################################################
+# ADV SHIPYARD SOUNDS
+
+AdvShipyardAcknowledge{
+}
+
+AdvShipyardSelect{
+Table
+	Sound <borg> "bubyard2.wav"
+	Sound <federation> "bufyard2.wav"
+	Sound <klingon> "bukyard2.wav"
+	Sound <romulan> "buryard2.wav"
+}
+
+
+AdvShipyardDecommission{
+
+}
+
+#################################################################################
+# SENSOR ARRAY SOUNDS
+
+SensorAcknowledge{
+}
+
+SensorSelect{
+Table
+	Sound <borg> "bubsen.wav"
+	Sound <federation> "bufsen.wav"
+	Sound <klingon> "buksen.wav"
+	Sound <romulan> "bursen.wav"
+}
+
+
+SensorDecommission{
+
+}
+
+#################################################################################
+# PHOTON TURRET SOUNDS
+
+PhotonTurretAcknowledge{
+}
+
+PhotonTurretSelect{
+Table
+	Sound <borg> "bubturr2.wav"
+	Sound <federation> "bufturr2.wav"
+	Sound <klingon> "bukturr2.wav"
+	Sound <romulan> "burturr2.wav"
+}
+
+PhotonTurretAttack{
+Table
+	Sound <borg> "pobturr.wav"
+	Sound <federation> "pofwea2.wav"
+	Sound <klingon> "pokplas.wav"
+	Sound <romulan> "porwea.wav"
+}
+
+
+PhotonTurretDecommission{
+
+}
+
+#################################################################################
+# PHASER TURRET SOUNDS
+
+PhaserTurretAcknowledge{
+}
+
+PhaserTurretSelect{
+Table
+	Sound <borg> "bubturr.wav"
+	Sound <federation> "bufturr.wav"
+	Sound <klingon> "bukturr.wav"
+	Sound <romulan> "burturr.wav"
+}
+
+PhaserTurretAttack{
+Table
+	Sound <borg> "phbturr.wav"
+	Sound <federation> "phfturr.wav"
+	Sound <klingon> "phkwea.wav"
+	Sound <romulan> "phrwea.wav"
+}
+
+
+PhaserTurretDecommission{
+
+}
+
+#################################################################################
+# SUPERWEAPON STATION SOUNDS
+
+SuperblAcknowledge{
+}
+
+SuperblSelect{
+Table
+	Sound <borg> "swbmasts.wav"
+	Sound <federation> "swftmpos.wav"
+	Sound <klingon> "swkripst.wav"
+	Sound <romulan> "swrblcks.wav"
+}
+
+SuperblDecommission{
+
+}
+
+#################################################################################
+# POD SOUNDS
+
+PodAcknowledge{
+}
+
+PodSelect{
+
+}
+
+BorgTachGrid{
+	Sound "cdb.wav"
+}
+
+FedTachGrid{
+	Sound "cdf.wav"
+}
+
+RomTachGrid{
+	Sound "cdr.wav"
+}
+
+KlingTachGrid{
+	Sound "cdk.wav"
+}
+
+HoldingBeam{
+	Sound "swbhbp.wav"
+}
+
+AssBore{
+	Sound "swbautop.wav"
+}
+
+Regen{
+	Sound "swbregp.wav"
+}
+
+TransDrive{
+	Sound "swbtrnsp.wav"
+}
+
+ShieldRemod{
+	Sound "swbsremp.wav"
+}
+
+ComputerOverride{
+	Sound "swbcompp.wav"
+}
+
+Nanites{
+	Sound "swbnanp.wav"
+}
+
+Utritium{
+	Sound "swbultrp.wav"
+}
+
+Corbimite{
+	Sound "swfcorbp.wav"
+}
+
+ChainReaction{
+	Sound "swfchanx.wav"
+}
+
+EngineOver{
+	Sound "swfengop.wav"
+}
+
+AntiMatter{
+	Sound "swfantif.wav"
+}
+
+GeminiEffect{
+	Sound "swfgemnp.wav"
+}
+
+ShieldDisrupt{
+	Sound "swfshldp.wav"
+}
+
+FedRepair{
+	Sound "swfdrepp.wav"
+}
+
+PointLaser{
+	Sound "swfpontp.wav"
+}
+
+PlasmaCannon{
+	Sound "swkplsmp.wav"
+}
+
+PoleronTorpedo{
+	Sound "swkpolrp.wav"
+}
+
+CommandoTeam{
+	Sound "swkcommp.wav"
+}
+
+GravityMine{
+	Sound "swkgrvmp.wav"
+}
+
+DeathChant{
+	Sound "swkdethf.wav"
+}
+
+RepulsionField{
+	Sound "swkrpulp.wav"
+}
+
+IonStorm{
+	Sound "swkionp.wav"
+}
+
+MicroOrganisms{
+	Sound "swkmicrp.wav"
+}
+
+ShieldInversion{
+	Sound "swrsldip.wav"
+}
+
+MytronicInhib{
+	Sound "swrmyotp.wav"
+}
+
+SensorJam{
+	Sound "swrsensp.wav"
+}
+
+PsychonicBlast{
+	Sound "swrpsybf.wav"
+}
+
+HoloEmitterJam{
+	Sound "swholop.wav"
+}
+
+RomulanSpy{
+	Sound "swrspyp.wav"
+}
+
+EnergyShieldConvert{
+	Sound "swrenerp.wav"
+}
+
+PhaseShift{
+	Sound "swrphasp.wav"
+}
+
+PodDecommission{
+
+}

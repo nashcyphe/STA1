@@ -1,0 +1,269 @@
+sprite_table
+
+# Blend mode - Defined in ST3D.h - Same values as D3DBLEND.
+# First hex digit - source blend mode
+# Second hex digit - dest blend mode
+
+# @reference=texture size in pixels from which the u,v,w, and h values
+# were measured.  This value will effect all subsequent textures until
+# a different value is specified.
+
+# Name		File			U	V	W	H
+
+#---------------------------
+# Star Trek Weapon Effects
+#---------------------------
+
+@reference=128
+@tmaterial=additive
+flareflash	Momegpartc		30	60	68	68
+origin		xspark01		0	0	32	32	@anim=tex4x4
+plasmaball	Wplascannon		0	0	42	42	@anim=tex3x3	
+photon		Wphoton			0	0	32	32	@anim=tex4x4	
+
+@reference=32
+@tmaterial=additive
+
+# Klingon superweapon wave texture
+klingsuper	wsuperkl		0	0	32	32	
+
+@reference=256
+@tmaterial=additive
+# premonition's gate and borgate sprites
+xpremgate	xprmgate	0	0	128	128	@anim=tex2x2
+borgate		Xborgate	0	0	64	64	@anim=tex4x4slow
+
+# Poleron Torpedo
+wpoleron	wpoltorp		0	0	64	64	@anim=tex4x4
+
+@reference=128
+@tmaterial=additive
+
+# Psychonic Blast
+wpsyblast	wpsyblst	0	0	128	21 	@anim=tex1x4		
+
+# Poleron Torpedo
+wpoleron	wpoltorp	0	0	32	32	@anim=tex4x4
+
+# Photon artillery
+wartord		wartord		0	0	32	32	@anim=tex4x4
+
+# computer override
+woveride	wcompovr	0	0	64	64	@anim=tex2x2
+
+# Phaser Flare
+pflare		xflare		0	0	64	64	@anim=tex2x2	
+
+# Manheim sprite effect
+wmanheim	Wmansprt	0	0	32	32	@anim=tex4x4
+
+# Nanites
+Nanites	Wnanites		0	0	32	32	@anim=tex4x4
+
+# Particle spark effect
+Xparticle02	Xparticle02	0	0	32	32	@anim=tex4x4
+
+# Particle smoke effect
+Xsmoke	Xsmoke			0	0	32	32	@anim=tex4x4
+
+# Chain Reaction Pulsar
+wchainpulse	wchainpulse	0	0	32	32	@anim=tex4x4
+
+# Federation Photon torpedo
+wphoton		wphoton		0	0	32	32	@anim=photanim
+
+# Borg Photon torpedo
+bphoton		wphoton		32	0	32	32	@anim=photanim
+
+# Klingon Photon torpedo
+kphoton		wphoton		64	0	32	32	@anim=photanim
+
+# Romulan Photon torpedo
+rphoton		wphoton		32	0	32	32	@anim=photanim
+
+# Subspace Ripple
+# ripple	wssripple2	0	0	32	32	
+
+# Self destruct
+# wselfdes	wssripple2	0	0	32	32	@anim=tex4x4
+
+# Micro Organism particle
+wmicropart	xsmoke		0	0	32	32	@anim=tex4x4
+
+# Warp Core Overload particle
+wcoverpart	xparticle02	0	0	32	32	@anim=tex4x4
+
+#  Federation Pulse phaser
+pphaser		wpulse		0	0	128	32	
+
+# Klingon Pulse phaser
+kpphaser	wpulse		0	32	128	32	
+
+# Borg Pulse phaser
+bpphaser	wpulse		0	64	128	32	
+
+# Romulan Pulse phaser
+rpphaser	wpulse		0	64	128	32	
+
+# Warp Core Overload
+wwarpcoreol	Wovrload	0	0	128	21 	@anim=tex1x4
+
+# Shield Inversion beam
+wshieldi	Wshldinvbm	0	0	128	32 	@anim=tex1x4
+
+# Borg Bore
+# Dave - fix
+# wborgbpart	wionitrans2	0	0	32	32	@anim=tex4x1
+
+# Point defense laser
+pdlaser		wbeam		0	0	32	32	
+
+# Federation phaser
+fphaser		Wphaser		0	0	128	21
+
+# Borg phaser
+bphaser		Wphaser		0	21	128	21
+
+# Klingon phaser
+kphaser		Wphaser		0	43	128	21
+
+# Red phaser
+rdphaser	Wphaser		0	65	128	21
+
+# Blue phaser
+blphaser	Wphaser		0	86	128	21
+
+# magenta phaser
+mphaser		Wphaser		0	107	128	21
+
+# Romulan phaser
+rphaser		Wphaser		0	21	128	21
+
+# General phaser
+phaser		Wphaser		0	0	128	21
+
+# Plasma Cannon
+wplascannon	wplascannon	0	0	42	42	@anim=tex3x3
+
+# Utritium Beam
+utribm		Wuitritium	0	0	128 	32	@anim=tex1x4
+
+# Repulsion field
+rfield		wrepulfld2	0	0	32	32	@anim=tex4x4
+
+# Transport Effect
+xtransport	xtransport	0	0	32	32	@anim=tex4x4
+@sprite_node xtransport xtransport const (32,32) (1,1,1) billboard
+
+@reference=64
+
+#Death Chant sprite
+wdeathchant	wdeathch	0	0	64	64
+@sprite_node wdeathchant wdeathchant const (64,64) (1,1,1) billboard
+
+#Fed Repair sprite
+wfedrep		wfedrptm	0	0	64	64
+
+#Romulan Spy sprite
+wromspy		wromspy		0	0	64	64
+
+#---------------------------
+# Star Trek Building Effects
+#---------------------------
+
+@reference=128
+@tmaterial=additive
+
+# Welding Sparks
+xspark		xspark01	0	0	32	32	@anim=tex4x4
+
+# Welding Beam
+weldbeam	weldbeam	0	0	128	32	@anim=tex1x4
+
+#----------------------------
+# Star Trek Explosion Effects
+#----------------------------
+
+@tmaterial=additive
+
+# Small Explosion Sprite
+explosion1	xcritical01	0	0	32	32	@anim=tex4x4
+
+# Small Explosion Sprite
+explosion6	xcritical06	0	0	32	32	@anim=tex4x4
+
+# Chunk Effect Particle Trail Sprite
+bsmoke		xsmoke		0	0	32	32	
+
+# Small Explosion Sprites
+systemexpl1		xcritical01		0	0	32	32	@anim=tex4x4
+systemexpl2		xcritical02		0	0	32	32	@anim=tex4x4
+systemexpl3		xcritical03		0	0	32	32	@anim=tex4x4
+systemexpl4		xcritical04		0	0	32	32	@anim=tex4x4
+systemexpl5		xcritical05		0	0	32	32	@anim=tex4x4
+systemexpl6		xcritical06		0	0	32	32	@anim=tex4x4
+systemexpl7		xcritical07		0	0	32	32	@anim=tex4x4
+
+#---------------------------
+# Old Battlezone sprites
+#---------------------------
+
+@tmaterial=additive
+
+# Light Smoke
+lsmoke		xcritical05	0	0	32	32	@anim=tex4x4
+
+# Medium Smoke
+msmoke		xcritical04	0	0	32	32	@anim=tex4x4
+
+# Dark Smoke
+dsmoke		xcritical03	0	0	32	32	@anim=tex4x4
+
+# Rocket Smoke
+rsmoke		xsmoke		0	0	32	32	@anim=tex4x4
+
+# Plasma Blue Puff
+bpuff		xcritical07	0	0	32	32	@anim=tex4x4
+
+# Plasma Ball
+plasma		xsmoke		0	0	64	64	@anim=tex2x2
+
+# Particle Ember
+particle	xcritical05	0	0	32	32 	@anim=tex4x4
+
+# Rocket Flares
+flare		xflare		0	0	64	64	@anim=tex2x2
+
+nanites	Wnanites		0	0	32	32	@anim=tex4x4
+@sprite_node nanite nanites const (5,5) (1,1,1) billboard
+@sprite_node bpnanites nanites const (5,5) (1,1,1) billboard
+
+# Klingon Pods
+@sprite_node ionsprite Nebtext2 red1.colour (10,10) (.2,.1,.1) billboard
+@sprite_node plasprite plasmaball const (2.5,2.5) (1,1,1) billboard
+
+#tractor beams and bores
+@sprite_node holdbeam fedore const (2.5,2.5) (0.2,1.0,0.3) billboard
+@sprite_node assimbeam fedore const (2.5,2.5) (0.0,0.7,1.0) billboard
+@sprite_node tractor softglow const (2.2,2.2) (0.0,0.5,1.0) billboard
+@sprite_node otractor softglow const (2.2,2.2) (1.0,0.3,1.0) billboard
+@sprite_node beamorigin origin const (2,2) (0.0,0.5,1.0) billboard
+@sprite_node holdorigin origin const (1.3,1.3) (0.2,1.0,0.3) billboard
+@sprite_node tractorigin origin const (1.3,1.3) (0.0,0.5,1.0) billboard
+@sprite_node otractorigin origin const (1.3,1.3) (1.0,0.3,1.0) billboard
+
+#romulan rift creator
+@sprite_node riftcore flare const (6,6) (1.0,0.4,0.0) billboard
+
+#Premonition's gate
+@sprite_node anomily xpremgate pulse2 (18,18) (1,1,1)
+
+#Borg's gate
+@sprite_node borgate borgate const (400,400) (1,1,1)
+
+#Myotron burst ordinance
+@sprite_node myotron photon const (3,3) (1,1,1) billboard
+
+#Omega Particle
+@sprite_node omegaglow flareflash const (15,15) (1,1,1) billboard
+@sprite_node omegaborg flareflash const (15,15) (1,1,1) billboard

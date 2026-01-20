@@ -1,0 +1,1 @@
+netsh advfirewall firewall delete rule name="Star Trek Armada" program="%~dp0Armada.exe"

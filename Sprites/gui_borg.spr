@@ -1,0 +1,122 @@
+sprite_table
+#Blending Modes
+#-----
+
+#0x21 - Normal
+#0x56 - Alpha
+#0x22 - Additive
+
+## SPRITE DATA  ##
+
+
+#@ reference=texture size in pixels from which the u, v, w, and h values 
+#were measured.  This value will affect all subsequent textures until 
+#a different value is specified.
+
+@skip=off
+@reference=256												
+@tmaterial=interface
+
+#Texture		Texture Coordinates	Size			Description	    	Qualifier   Screen Coordinates	Absolute Coordinates	
+#Filename		x	y	Width(x)	Height(y)				x	y	x	y
+info_panel.0		bguib01	0	0	256	24	#	"Top Border, L side "
+info_panel.1		bguib01	0	60	238	24	#	"Top Border, R side "
+info_panel.2		bguib01	0	160	18	96	#	"Left Border, top half"
+info_panel.3		bguib01	54	160	18	96	#	"Right Border, top half"
+info_panel.4		bguib01	18	162	18	94	#	"Left Border, bottom half"
+info_panel.5		bguib01	36	162	18	94	#	"Right Border,bottom half"
+info_panel.6		bguib01	0	24	256	18	#	"Bottom Border, L side "
+info_panel.7		bguib01	0	42	238	18	#	"Bottom Border, R side "
+single_background.0	bguig01	0	0	256	190	#	"Left"	
+single_background.1	bguih01	0	0	202	190	#	"Right"
+@tmaterial=additive
+info_system.0		bguib01	142	90	30	30	#	System Icon_0
+info_system.1		bguib01	176	90	30	30	#	System Icon_1
+info_system.2		bguib01	176	122	30	30	#	System Icon_3
+info_system.3		bguib01	210	90	30	30	#	System Icon_4
+info_system.4		bguib01	142	122	30	30	#	System Icon_2
+@tmaterial=interface
+large_shield_bar		bguib01	126	206	96	10	#	Shield Meter
+large_energy_bar		bguib01	126	194	96	10	#	Energy Meter
+large_construction_bar	bguib01	156	224	96	10	#	Construction Meter
+large_dilithium_bar	bguib01	156	236	98	10	#	Dilithium Meter
+
+federation_icon		bguib01	100	154	38	26	#	Race Icon - Fed
+borg_icon			bguib01	138	154	38	26	#	Race Icon - Borg
+romulan_icon		bguib01	176	154	38	26	#	Race Icon - Romulan
+klingon_icon		bguib01	214	154	38	26	#	Race Icon - Klingon
+
+race_icon_bar		bguib01	0	86	108	24	#	Race Icon Bar
+#				N/A	N/A	N/A	238	18	#	Ship Class Label
+#				0	0	0	0	0	#	Ship Name Bar
+#				N/A	N/A	N/A	228	18	#	Ship Name Label
+#				0	0	0	0	0	#	Crew Bar
+#				N/A	N/A	N/A	88	26	#	Crew Numbers
+#				N/A	N/A	N/A	126	18	#	Crew Label
+crew_dot			bguib01	214	126	14	14	#	Crew Dot
+#				0	0	0	0	0	#	Officer Bar
+#				N/A	N/A	N/A	38	26	#	Officer Numbers
+#				N/A	N/A	N/A	126	18	#	Officer Label
+small_shield_bar		Bguib01	142	252	86	2	#	Multiple Selection Health
+small_energy_bar		Bguib01	142	248	86	2	#	Multiple Selection Energy
+small_crew_dot			Bguib01	232	248	6	6	#	Multiple Selection Crew
+small_flag			Bguib01	248	246	8	10	#	Multiple Selection flag
+#				Bguid01	196	160	28	84	#	"Scroll Arrow L Side, Up"
+#				Bguid01	226	160	28	84	#	"Scroll Arrow L Side, Down"
+#				Bguid01	196	160	28	84	#	"Scroll Arrow R Side, Up"
+#				Bguid01	226	160	28	84	#	"Scroll Arrow R Side, Down"
+#				Bguid01	166	160	28	84	#	"Border L Side, Up"
+#				Bguid01	166	160	28	84	#	"Border L Side, Down"
+#				Bguid01	166	160	28	84	#	"Border R Side, Up"
+#				Bguid01	166	160	28	84	#	"Border R Side, Down"
+
+
+speed_separator		Bguic01	208	28	16	66	#	Separator Bar
+speed_panel.0		Bguic01	0	176	256	80	#	"Border, L side"
+speed_panel.1		Bguic01	0	94	238	80	#	"Border, R side"
+
+
+map_panel.0			Bguia01	0	0	256	22	#	Top Border
+map_panel.1			Bguia01	0	22	36	22	#	Top Border Rt Corner
+map_panel.2			Bguia01	38	24	18	128	#	"Left Border, Top half"
+map_panel.3			Bguia01	60	24	18	128	#	"Right Border, Top half"
+map_panel.4			Bguia01	82	24	18	128	#	"Left Border, Bottom half"
+map_panel.5			Bguia01	106	24	18	128	#	"Right Border, Bottom half"
+map_panel.6			Bguia01	0	156	256	18	#	Bottom Border
+map_panel.7			Bguia01	0	44	36	18	#	Bottom Border Rt Corner
+
+
+control_panel.0		Bguid01	0	0	234	24	#	Top Border
+control_panel.1		Bguid01	0	244	234	12	#	Bottom Border
+control_panel.2		Bguid01	0	30	16	132	#	"Left Border, Top "
+control_panel.3		Bguid01	18	30	16	134	#	"Left Border, Bottom"
+control_panel.4		Bguid01	36	30	18	132	#	"Right Border, Top "
+control_panel.5		Bguid01	54	30	18	134	#	"Right Border, Bottom"
+
+
+@tmaterial=default
+cinematic_background	Bguif01	0	0	226	160	#	Communications Logo
+@tmaterial=interface
+cinematic_panel.0		Bguie01	0	0	130	74	#	"Top Border, Left"
+cinematic_panel.1		Bguie01	0	74	130	76	#	"Top Border, Right"
+cinematic_panel.2		Bguie01	130	0	92	92	#	Left Side BorderTop
+cinematic_panel.3		Bguie01	222	0	30	78	#	Right Side BorderTop
+cinematic_panel.4		Bguie01	148	92	28	44	#	Left Side BorderBottom
+cinematic_panel.5		Bguie01	176	92	80	56	#	Right Side BorderBottom
+cinematic_panel.6		Bguie01	126	186	130	36	#	"Bottom Border, Right"
+cinematic_panel.7		Bguie01	126	150	130	36	#	"Bottom Border, Left"
+cinematic_mini_panel.0	bguif01	124	174	132	24		
+cinematic_mini_panel.1	bguif01	126	202	130	24		
+cinematic_comm_border	Bguie01	0	188	96	30	#	Comm Button Border
+cinematic_comm_button	Bguie01	0	222	96	30	#	Comm Button Inside
+cinematic_menu_border	Bguie01	0	188	96	30	#	Menu Button Border
+cinematic_menu_button	Bguie01	0	156	96	30	#	Menu Button Inside
+
+
+officer_panel.0		Bguid01	0	174	162	32	#	Officer Background
+officer_icon		Bguid01	0	212	16	26	#	Officer Icon
+crew_panel.0		Bguid01	0	174	162	32	#	Crew Background
+crew_icon		Bguid01	28	214	8	20	#	Crew Icon
+dilithium_panel.0		Bguid01	0	174	162	32	#	Dilithium Background
+dilithium_icon		Bguid01	46	214	16	20	#	Dilithium Icon
+
