@@ -1,0 +1,72 @@
+//
+// Klingon_Offensive_List.aip
+//
+// Contains an offensive (not rude) build list for the klingon AI
+//
+// first pass edited by the Nord 2/16/00
+
+// Load up the basic structures...
+#include "aipdef.h"
+
+
+Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+//--------------------------------------------------------------------  
+
+
+	"kbase",	1,0,		// first base
+	"kconst",	1,0,		// we only need one at first
+
+	"kmining",	1,1,		// two mining facilities
+	"kfreight",	2,0,		// and two freighters for each
+	"kturret",	1,1,		// defend the mining stations
+	"kmining",	1,2,
+	"kfreight",	2,0,
+	"kturret",	1,2,		
+	
+	"kyard",	1,0,		// first shipyard
+	"kscout",	1,0,		// scout around the map
+	"kdestroy",	3,0,		// basic base defense
+	"kscout",	1,0,		// scout around the map
+
+	"kresear",	1,0,		// time to research
+	"klipod5",	1,0,		// tachyon grid for scouts instead
+							// 	of sensor arrays
+	
+	"kmining",	1,3,		// another mine...
+
+	"klipod4",	1,0,		// Gravity mines research
+
+	"kconst",	1,0,		// now it's time for 2 constructors
+	"kturret",	2,0,		// defend the main base
+
+	"klipod2", 	1,0,		// Poleron torpedo
+	"kcruise1",	3,0,		// Vor'cha (poleron)
+
+	"kbase",	1,0,		// more crew and officers
+
+	"kyard2",	1,0,		// time to get jiggy with it
+	"klipod1",	1,0,		// Plasma cannon research
+	"kyard",	1,0,		// Pump out those grunts
+	"kbattle",	1,0,
+	"klipod3",	1,0,		// Klingon Commando Team
+	"kbattle", 	1,0,
+	"kcruise2",	3,0,		// SuQ'jagh assault ships (commando ships)
+	"kbattle",	1,0,
+	
+	"kresear2",	1,0,		// advanced research station
+	"kspecial",	1,0,		
+	"klipod6",	1,0,		// death chant
+	"ksuperbl",	1,0,
+	"kbase",	1,1,		// more crew and officers
+	"ksuper",	1,0,		// super ship!
+	"kspecial",	1,0,	
+	"kbattle",	1,0,
+	"klipod8",	1,0,		// ion storm
+	"kspecial",	1,0,	
+	"kbattle",	1,0,	
+	"klipod9",	1,0,		// Micro organisms - Energy dissipator
+		
+	"klipod7",	1,0,		// repulsion field
+}; 
+

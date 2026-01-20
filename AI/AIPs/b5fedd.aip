@@ -1,0 +1,177 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// b5fedd.aip
+//
+// Defensive aip for federation in borg5.bzn The Twilight Hour
+//
+///////////////////////////////////////////////////////////////////////////////
+
+// Load up the basic structures...
+#include "aipdef.h"
+
+/////////////////////////////////////////////////////////////////////
+// IV. Raw Priority parameters
+//
+// The raw priority of each goal in a grid square is computed by
+// summing the relevant values below.
+
+/////////////////////////////////////////////////////////////////////
+// Selected goals add these terms (as indicated):
+/////////////////////////////////////////////////////////////////////
+
+// This priority is multiplied by each enemy craft in a grid cell for
+// ATTACK and DEFEND goals; for ATTACK_BASE goals this number is multiplied
+// by -1 * the number of enemy craft.
+// NOTE: Increase positive values to make the AI more likely to attack and defend
+// places with many enemy ships (and to prefer undefended bases).
+// NOTE: Decrease negative values to make the AI less likely to attack and defend 
+// places with many enemy ships (or more likely to attack defended bases)
+//
+int attack_troops_priority = 1000;
+
+// Added for each friendly base in a grid cell for DEFEND goals.
+// NOTE: Increase this value to make the AI more likely to defend bases, or decrease
+// to make the AI less likely to defend bases. (valid values: -99999 to 99999)
+//
+int defend_priority = 5000;
+
+// Added for each enemy base in a grid cell for ATTACK_BASE goals.
+// NOTE: Increase this value to make the AI more likely to attack enemy bases, 
+// or decrease to make the AI less likely to defend bases. 
+// (valid values: -99999 to 99999)
+//
+int attack_enemy_base_priority = 1000;
+
+// Added for each unit of enemy intrinsic value in a grid cell for ATTACK
+// and ATTACK_BASE goals.
+// NOTE: Increase this value to make the AI more likely to attack
+// valuable targets, or decrease to make the AI less likely to attack
+// valuable targets.  (valid values: 0 to 99999)
+//
+int intrinsic_value_bonus = 1000;
+
+// Added to unexplored grid cell for EXPLORE goals.
+// NOTE: Increase this value to make the AI more likely to explore unexplored
+// grid cells, or decrease to make the AI less likely to explore unexplored
+// grid cells. (valid values: -99999 to 99999)
+//
+int exploration_priority = 0;
+
+// Added for each escorted ship in a grid cell for ESCORT goals.
+// NOTE: Increase this value to make the AI more likely to escort escortable
+// ships, or decrease to make the AI less likely to escort escortable ships. 
+// (valid values: -99999 to 99999)
+//
+int escort_priority = 0;
+
+// Added for each moon in a grid cell for ATTACK, DEFEND, ATTACK_BASE and 
+// RESOURCE goals.
+// NOTE: Increase this value to make the AI more likely to defend moons, or 
+// decrease to make the AI less likely to defend moons.
+// (valid values: -99999 to 99999)
+//
+int resource_priority = 1000;				
+
+/////////////////////////////////////////////////////////////////////
+// V. Match Priority parameters
+// The matching value between each goal in a grid square and a
+// craft that can execute that goal is computed by summing the
+// raw_priority (computed above) with the following terms:
+
+/////////////////////////////////////////////////////////////////////
+// Based on Distance:
+/////////////////////////////////////////////////////////////////////
+
+// The distance from the craft to the goal is multiplied by this term
+// for every legal goal and craft match.  
+// NOTE: The more negative the term, the more likely craft will be assigned to 
+// nearby goals before goals that are far away.  
+//
+double distance_from_goal_match_modifier = -0.01;
+
+// A goal will only be executed if ships with enough force have been committed to 
+// the goal.  The amount of force committed to a goal is the total maximum shield
+// strength of each craft multipled by the attack_power of the craft.  This
+// force amount must exceed the same computation of enemy ships in the cell times the
+// max_matching_force_ration below.  For example, if the ratio is set to 0.8, then
+// only goals inwhich the AI can match 80% of the enemy threat will be executed.
+double max_matching_force_ratio = 0.8;
+
+// Minimum number of craft to use for each goal type
+// NOTE: If this value is set to 'n', then a minimum of 'n' ships will be used to escort 
+// escortable craft even when they are unthreatened by nearby enemy craft.
+//
+int min_escort_force = 1;
+
+// NOTE: If this value is set to 'n', then a minimum of 'n' ships will be used to defend
+// bases even when they are unthreatened by nearby enemy craft.
+int min_defense_force = 6;
+
+// NOTE: If this value is set to 'n', then a minimum of 'n' ships will be used to explore
+// an unexplored grid cell.
+int min_exploration_force = 1;
+
+// NOTE: If this value is set to 'n', then a minimum of 'n' ships will be used to
+// attack bases and enemy ships irregardless of the strength of enemy craft defending.
+int min_attack_force = 3;			
+
+// NOTE: If this value is set to 'n', then a minimum of 'n' ships will be used to
+// defend grid cells with moons even when they are unthreatened by nearby enemy craft.
+int min_resource_force = 2;
+
+// NOTE: list the ships in your build list below
+
+Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+//--------------------------------------------------------------------  
+		"fbase", 1,
+		"fmining", 1,
+
+		"ffreight", 2,
+		"fconst", 1,
+		"fturret", 1,
+
+		"fyard", 2,
+		"fturret2", 1,
+
+		"fdestroy", 2,
+		"fturret", 1,
+
+		"fresear", 1,
+		"fturret2", 1,
+
+		"fcruise1", 2,
+		"fturret", 1,
+		"fcruise2", 2,
+
+		"fyard2", 1,
+		"fturret2", 1,
+
+		"fresear2", 1,
+		"fedpod7", 1,
+
+		"fbattle",  2,
+		"fspecial", 2,
+
+		"fcruise1", 2,
+		"fcruise2", 2,
+		"fbattle",  2,
+		
+		"fedpod1", 1,
+		"fedpod2", 1,
+		"fedpod3", 1,
+		"fedpod4", 1,
+		"fedpod5", 1,
+	
+		"fedpod6", 1,
+		"fedpod8", 1,
+		"fedpod9", 1,
+	
+}; 
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// END
+//
+///////////////////////////////////////////////////////////////////////////////

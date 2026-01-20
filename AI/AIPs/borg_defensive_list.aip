@@ -1,0 +1,61 @@
+//
+// Borg_Build_List.aip
+//
+// Contains a defensive build list for the borg AI
+//
+// edited by the Nord
+
+// Load up the basic structures...
+#include "aipdef.h"
+
+
+Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+//--------------------------------------------------------------------  
+
+
+	"bbase",	1,0,		// first base
+	"bconst",	1,0,		// we only need one at first
+
+	"bmining",	1,1,		// two mining facilities
+	"bturret",	3,1,		// defend the mining stations
+	"bmining",	1,2,
+	"bturret",	3,2,		
+
+	"bsensor",	1,0,
+	
+	"byard",	1,0,		// first shipyard
+
+	"bresear",	1,0,		// time to research
+	"bturret",	4,0,		// defend the main base
+
+	"borpod1", 	1,0,		// assimilator for 
+	"bcruise2",	3,0,		//	the assimilators we build
+
+	"bbase",	1,0,		// more drones!
+	"bturret",	1,0,		// and more defense
+
+	"byard2",	1,0,		// time to get jiggy with it
+	"borpod2",	1,0,		// holding beam
+	"bbattle",	1,0,
+	"borpod3",	1,0,		// regeneration for spheres
+	"bcruise1",	3,0,		// spheres
+	
+	"bresear2",	1,0,		// advanced research station
+	"bspecial",	1,0,		
+	"borpod9",	1,0,		// ultritium burst
+
+	"bbase",	1,1,		// more drones!
+	"bturret",	4,1,		// more defense!
+	
+	"bspecial",	1,0,	
+	"bbattle",	1,0,
+	"borpod8",	1,0,		// nanites
+	"bspecial",	1,0,	
+	"bbattle",	1,0,	
+	"borpod7",	1,0,		// computer override
+	"bsuperbl",	1,0,		
+	"borpod6",	1,0,		// shield remodulation
+
+}; 
+

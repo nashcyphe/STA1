@@ -1,0 +1,167 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// finale4_ambient.aip
+//
+// AIP = Artificial Intelligence Personality
+//
+// Romulan allies just doing stuff for show.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+// Load up the basic structures...
+#include "aipdef.h"
+
+/////////////////////////////////////////////////////////////////////
+// I. Threat Map
+//
+// Parameters used to compute the threat map.
+
+// Iteration for relaxing grid borders
+int relaxation_cycles = 1;				
+
+// Relaxation bleedover
+double relaxation_coefficient = 0.5;		
+
+// How much to reduce danger recorded in grid cell each cycle
+double danger_diminishment = 1;
+
+/////////////////////////////////////////////////////////////////////
+// II. Strategy Upkeep
+//
+// Parameters used to control how often strategic goals are
+// recomputed
+
+// How long to wait before recomputing the strategy
+int recompute_strategy_period = 200;
+
+
+/////////////////////////////////////////////////////////////////////
+// III. Evaluated/execute goal counts
+//
+// Used to specify how many of each goal type to evaluate and how
+// many to execute.  Small counts increase performance, but decrease
+// intelligence.  You can also 'turn off' goals by specifying
+// a MAX_EVAL count of zero.
+
+// Note: If the maxes have positive values, they are multiplied by
+// number of bases owned by the team; negative numbers are absolute.
+
+// Note: If both are positive, make sure the execute isnt bigger than the
+// evaluate.
+
+// ATTACK BASE goals
+int MAX_EVAL_ATTACK_BASE = 0;
+int MAX_EXEC_ATTACK_BASE = 0;
+
+// ATTACK goals
+int MAX_EVAL_ATTACK = 0;
+int MAX_EXEC_ATTACK = 0;
+
+// DEFEND goals
+int MAX_EVAL_DEFEND = 1000;
+int MAX_EXEC_DEFEND = 1000;
+
+// ESCORT goals
+int MAX_EVAL_ESCORT = 0;
+int MAX_EXEC_ESCORT = 0;
+
+// EXPLORE goals
+int MAX_EVAL_EXPLORE = 0;
+int MAX_EXEC_EXPLORE = 0;
+
+// RESOURCE goals
+int MAX_EVAL_RESOURCE = 0;
+int MAX_EXEC_RESOURCE = 0;
+
+/////////////////////////////////////////////////////////////////////
+// IV. Raw Priority parameters
+//
+// The raw priority of each goal in a grid square is computed by
+// summing the relevant values below.
+
+/////////////////////////////////////////////////////////////////////
+// ALL goals add these terms:
+/////////////////////////////////////////////////////////////////////
+
+// Positive for emphasis away from home, negative for emphasis near home
+int distance_from_home_priority_modifier = 0;
+
+// Positive for emphasis away from enemy, negative for emphasis near enemy
+int distance_from_enemy_priority_modifier = 0;
+
+// Positive for emphasis in region between home and enemy
+int perimeter_priority = 0;
+
+// Positive to avoid places where we have lost more units than we have 
+// killed (not currently computed)
+int avoid_danger_priority_modifier = 10;
+
+/////////////////////////////////////////////////////////////////////
+// Selected goals add these terms (as indicated):
+/////////////////////////////////////////////////////////////////////
+
+// This priority is multiplied by each unit of enemy threat in a grid cell for
+// ATTACK, DEFEND and ATTACK_BASE goals.
+int attack_troops_priority = 0;
+
+// Added for each friendly base in a grid cell for DEFEND goals.
+int defend_priority = 1000;
+
+// Added for each enemy base in a grid cell for ATTACK_BASE goals.
+int attack_enemy_base_priority = 0;
+
+// Added to unexplored grid cell for EXPLORE goals.
+int exploration_priority = 0;
+
+// Added for each escorted ship in a grid cell for ESCORT goals.
+int escort_priority = 0;
+
+// Added for each moon in a grid cell for RESOURCE goals.
+int resource_priority = 0;				
+
+/////////////////////////////////////////////////////////////////////
+// V. Match Priority parameters
+//
+// The matching value between each goal in a grid square and a
+// craft that can execute that goal is computed by summing the
+// raw_priority (computed above) with the following terms:
+
+/////////////////////////////////////////////////////////////////////
+// Based on Distance:
+/////////////////////////////////////////////////////////////////////
+
+// The distance from the craft to the goal is multiplied by this term
+// for every legal goal and craft match.  The more negative the term,
+// the more likely craft will be assigned to nearby goals before
+// goals that are far away.  
+double distance_from_goal_match_modifier = -0.01;
+
+// Minimum number of craft to use for each goal type
+int min_escort_force = 0;				
+int min_defense_force = 5;
+int min_exploration_force = 0;
+int min_attack_force = 0;			
+int min_resource_force = 0;
+
+///////////////////////////////////////////////////////////////////////////////  
+//  
+// the_build_list  
+//   
+// Defines the types of troops we want to be building  
+//  
+Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+//  
+//--------------------------------------------------------------------  
+		"rfreight", 1,
+		"rconst", 1,
+		"rresear", 1,
+		"rscout", 1,
+		"rdestroy", 2,
+		"rompod1", 1,
+		"rcruise2", 2,
+		"rompod2", 1,
+		"rompod3", 1,
+		"rompod4", 1,
+		"rompod5", 1
+}; 

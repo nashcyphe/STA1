@@ -1,0 +1,71 @@
+//
+// Federation_Offensive_List.aip
+//
+// Contains an offensive (not rude) build list for the fed AI
+//
+// first pass edited by the Nord 2/16/00
+
+// Load up the basic structures...
+#include "aipdef.h"
+
+
+Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+//--------------------------------------------------------------------  
+
+	"fbase",	1,0,		// first base
+	"fconst",	1,0,		// we only need one at first
+
+	"fmining",	1,1,		// two mining facilities
+	"ffreight",	2,0,		// and two freighters for each
+	"fturret",	1,1,		// defend the mining stations
+	"fmining",	1,2,
+	"ffreight",	2,0,
+	"fturret",	1,2,		
+	
+	"fyard",	1,0,		// first shipyard
+	"fscout",	1,0,		// scout around the map
+	"fdestroy",	3,0,		// basic base defense
+	"fscout",	1,0,		// scout around the map
+
+	"fresear",	1,0,		// time to research
+	"fedpod5",	1,0,		// tachyon grid for scouts instead
+							// 	of sensor arrays
+
+	"fmining",	1,3,		// another mine...
+
+
+	"fconst",	1,0,		// now it's time for 2 constructors
+	"fturret",	2,0,		// defend the main base
+
+	"fedpod2", 	1,0,		// chain reaction pulsar
+	"fcruise1",	3,0,		// Akira class cruiser
+	"fbase",	1,0,		// more crew
+	"fedpod4",	1,0,		// antimatter mines
+
+	"fyard2",	1,0,		// time to get jiggy with it
+	"fedpod1",	1,0,		// corbomite reflector
+	"fyard",	1,0,		// Pump out those grunts
+	"fbattle",	1,0,
+	"fedpod3",	1,0,		// engine overload for steamrunners
+	"fbattle", 	1,0,
+	"fcruise2",	3,0,		// steamrunners
+	"fbattle",	1,0,
+	
+	"fresear2",	1,0,		// advanced research station
+	"fspecial",	1,0,		
+	"fedpod7",	1,0,		// shield disruptor
+	"fsuperbl",	1,0,		// SuperWeapon -- temporal displacement
+	"fedpod8",	1,0,		// fed engineering team
+	"fbase",	1,1,		// more drones!
+	
+	"fspecial",	1,0,	
+	"fbattle",	1,0,
+	"fspecial",	1,0,	
+	"fedpod9",	1,0,		// point defense phaser
+	"fbattle",	1,0,	
+	
+	"fedpod6",	1,0,		// gemini effect
+	"fbattle",	1,0,
+}; 
+

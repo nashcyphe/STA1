@@ -1,0 +1,72 @@
+//
+// Borg_Offensive_List.aip
+//
+// Contains an offensive (not rude) build list for the borg AI
+//
+// first pass edited by the Nord 2/16/00
+
+// Load up the basic structures...
+#include "aipdef.h"
+
+
+Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+//--------------------------------------------------------------------  
+
+
+	"rbase",	1,0,		// first base
+	"rconst",	1,0,		// we only need one at first
+
+	"rmining",	1,1,		// two mining facilities
+	"rfreight",	2,0,		// and two freighters for each
+	"rturret",	1,1,		// defend the mining stations
+	"rmining",	1,2,
+	"rfreight",	2,0,
+	"rturret",	1,2,		
+	
+	"ryard",	1,0,		// first shipyard
+	"rscout",	1,0,		// scout around the map
+	"rdestroy",	3,0,		// basic base defense
+	"rscout",	1,0,		// scout around the map
+
+	"rresear",	1,0,		// time to research
+	"rompod5",	1,0,		// tachyon grid for scouts instead
+							// 	of sensor arrays
+
+	"rmining",	1,3,		// another mine...
+
+	"rconst",	1,0,		// now it's time for 2 constructors
+	"rturret",	2,0,		// defend the main base
+
+	"rompod3",	1,0,		// sensor jammer research
+	"rcruise1",	3,0,		// Griffin class vessels (sensor jammer)
+
+	"rbase",	1,0,		// more drones!
+
+	"ryard2",	1,0,		// time to get jiggy with it
+	"rompod1", 	1,0,		// shield inversion beam 
+	"ryard",	1,0,		// Pump out those grunts
+	"rbattle",	1,0,
+	"rompod4",	1,0,		// myotronic inhibitor (disables weapons)
+	"rbattle", 	1,0,
+	"rcruise2",	3,0,		// Raptor class artillery cruisers
+	"rbattle",	1,0,
+	
+	"rresear2",	1,0,		// advanced research station
+	"rspecial",	1,0,		
+	"rompod6",	1,0,		// holo-emitter
+
+	"rbase",	1,1,		// more crew
+	
+	"rspecial",	1,0,	
+	"rbattle",	1,0,
+	"rompod8",	1,0,		// energy shield converter
+	"rspecial",	1,0,	
+	"rbattle",	1,0,	
+	"rompod7",	1,0,		// psychonic blast
+	"rsuperbl",	1,0,		
+	"rompod9",	1,0,		// phase cloak
+	"rsuper",	1,0,
+
+}; 
+

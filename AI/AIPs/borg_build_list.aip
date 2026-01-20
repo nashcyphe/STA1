@@ -1,0 +1,71 @@
+//
+// Borg_Build_List.aip
+//
+// Contains a default build list for the klingon AI
+//
+// edited by the Nord
+
+// Load up the basic structures...
+#include "aipdef.h"
+
+
+Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+//--------------------------------------------------------------------  
+
+
+	"bbase",	1,0,		// first base
+	"bconst",	1,0,		// we only need one at first
+
+	"bmining",	1,1,		// two mining facilities
+	"bfreight",	2,0,		// and two freighters for each
+	"bturret",	1,1,		// defend the mining stations
+	"bmining",	1,2,
+	"bfreight",	2,0,
+	"bturret",	1,2,		
+	
+	"byard",	1,0,		// first shipyard
+	"bscout",	1,0,		// scout around the map
+	"bdestroy",	3,0,		// basic base defense
+	"bscout",	1,0,		// scout around the map
+
+	"bresear",	1,0,		// time to research
+	"borpod5",	1,0,		// tachyon grid for scouts instead
+							// 	of sensor arrays
+
+	"bmining",	1,3,		// another mine...
+
+	"bconst",	1,0,		// now it's time for 2 constructors
+	"bturret",	2,0,		// defend the main base
+
+	"borpod1", 	1,0,		// assimilator for 
+	"bcruise2",	3,0,		//	the assimilators we build
+
+	"bbase",	1,0,		// more drones!
+
+	"byard2",	1,0,		// time to get jiggy with it
+	"borpod2",	1,0,		// holding beam
+	"byard",	1,0,		// Pump out those grunts
+	"bbattle",	1,0,
+	"borpod3",	1,0,		// regeneration for spheres
+	"bbattle", 	1,0,
+	"bcruise1",	3,0,		// spheres
+	"bbattle",	1,0,
+	
+	"bresear2",	1,0,		// advanced research station
+	"bspecial",	1,0,		
+	"borpod9",	1,0,		// ultritium burst
+
+	"bbase",	1,1,		// more drones!
+	
+	"bspecial",	1,0,	
+	"bbattle",	1,0,
+	"borpod8",	1,0,		// nanites
+	"bspecial",	1,0,	
+	"bbattle",	1,0,	
+	"borpod7",	1,0,		// computer override
+	"bsuperbl",	1,0,		
+	"borpod6",	1,0,		// shield remodulation
+
+}; 
+
